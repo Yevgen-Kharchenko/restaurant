@@ -85,7 +85,7 @@
   </dependencies>
 
   <build>
-    <finalName>RepairAgency</finalName>
+    <finalName>restaurant</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.tomcat.maven</groupId>
@@ -93,7 +93,7 @@
         <version>2.2</version>
         <configuration>
           <port>8880</port>
-          <path>/RepairAgency</path>
+          <path>/restaurant</path>
           <contextFile>./src/main/webapp/META-INF/context.xml</contextFile>
         </configuration>
         <dependencies>
