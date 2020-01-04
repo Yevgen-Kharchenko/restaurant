@@ -19,8 +19,8 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center text-center">
             <div class="col-md-10 col-sm-12 ftco-animate">
-              <h1 class="mb-3">Book a table for yourself at a time convenient for you</h1>
-              <p><a href="reservation" class="btn btn-primary btn-outline-white px-5 py-3">Book a table</a></p>
+              <h1 class="mb-3"><fmt:message key="book"/></h1>
+              <p><a href="reservation" class="btn btn-primary btn-outline-white px-5 py-3"><fmt:message key="book2"/></a></p>
             </div>
           </div>
         </div>
@@ -31,8 +31,8 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center text-center">
             <div class="col-md-10 col-sm-12 ftco-animate">
-              <h1 class="mb-3">Tasty &amp; Delicious Food</h1>
-              <p><a href="reservation" class="btn btn-primary btn-outline-white px-5 py-3">Book a table</a></p>
+              <h1 class="mb-3"><fmt:message key="tasty"/></h1>
+              <p><a href="reservation" class="btn btn-primary btn-outline-white px-5 py-3"><fmt:message key="book2"/></a></p>
             </div>
           </div>
         </div>
@@ -43,8 +43,8 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center text-center">
             <div class="col-md-10 col-sm-12 ftco-animate">
-              <h1 class="mb-3">Book a table for yourself at a time convenient for you</h1>
-              <p><a href="reservation" class="btn btn-primary btn-outline-white px-5 py-3">Book a table</a></p>
+              <h1 class="mb-3"><fmt:message key="book"/></h1>
+              <p><a href="reservation" class="btn btn-primary btn-outline-white px-5 py-3"><fmt:message key="book2"/></a></p>
             </div>
           </div>
         </div>
@@ -60,20 +60,20 @@
               <form action="" method="post" class="d-block d-lg-flex">
                 <div class="fields d-block d-lg-flex">
 
-                  <div class="textfield-name one-third"><input type="text" class="form-control" placeholder="Name"></div>
+                  <div class="textfield-name one-third"><input type="text" class="form-control" placeholder="<fmt:message key="name"/>"></div>
 
-                  <div class="textfield-phone one-third"><input type="text" class="form-control" placeholder="Phone"></div>
+                  <div class="textfield-phone one-third"><input type="text" class="form-control" placeholder="<fmt:message key="phone"/>"></div>
 
                   <div class="book-date one-third"><input type="text" id="book_date" class="form-control" placeholder="M/D/YYYY"></div>
 
                   <div class="book-time one-third">
-                    <input type="text" id="book_time" class="form-control" placeholder="Time">
+                    <input type="text" id="book_time" class="form-control" placeholder="<fmt:message key="time"/>">
                   </div>
 
                   <div class="select-wrap one-third">
                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                     <select name="" id="" class="form-control">
-                      <option value="">Person</option>
+                      <option value=""><fmt:message key="person"/></option>
                       <option value="">1</option>
                       <option value="">2</option>
                       <option value="">3</option>
@@ -81,7 +81,7 @@
                     </select>
                   </div>
                 </div>
-                <input type="submit" class="search-submit btn btn-primary" value="Book a table">  
+                <input type="submit" class="search-submit btn btn-primary" value="<fmt:message key="book2"/>">
               </form>
             </div>
           </div>
@@ -96,11 +96,11 @@
           </div>
           <div class="text col-lg-6 ftco-animate">
             <div class="text-inner align-self-start">
-              <span class="subheading">About Tasty</span>
-              <h3 class="heading">Our chef cooks the most delicious food for you</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <span class="subheading"><fmt:message key="about.t"/></span>
+              <h3 class="heading"><fmt:message key="our.chef"/></h3>
+              <p><fmt:message key="far.away"/> <fmt:message key="separated"/></p>
 
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+              <p><fmt:message key="small.river"/></p>
             </div>
           </div>
         </div>
@@ -111,17 +111,17 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Our Menu</span>
-            <h2>Discover Our Exclusive Menu</h2>
+            <span class="subheading"><fmt:message key="our.menu"/></span>
+            <h2><fmt:message key="discover"/></h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 dish-menu">
 
             <div class="nav nav-pills justify-content-center ftco-animate" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-meat"></span> Main</a>
-              <a class="nav-link py-3 px-4" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="flaticon-cutlery"></span> Dessert</a>
-              <a class="nav-link py-3 px-4" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="flaticon-cheers"></span> Drinks</a>
+              <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-meat"></span><fmt:message key="main"/></a>
+              <a class="nav-link py-3 px-4" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="flaticon-cutlery"></span><fmt:message key="dessert"/></a>
+              <a class="nav-link py-3 px-4" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="flaticon-cheers"></span><fmt:message key="drinks"/></a>
             </div>
 
             <div class="tab-content py-5" id="v-pills-tabContent">
@@ -515,8 +515,8 @@
                 </div>
               </div>
               <div class="col-sm-12 pt-4 text-center ftco-animate">
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost</p>
-                <span><a href="reservation" class="btn btn-primary btn-outline-primary p-3">Make a Reservation</a></span>
+                <p><fmt:message key="even"/></p>
+                <span><a href="reservation" class="btn btn-primary btn-outline-primary p-3"><fmt:message key="make.res"/></a></span>
               </div>
             </div>
           </div>
@@ -529,7 +529,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-            <h2>Our Specialties</h2>
+            <h2><fmt:message key="our.spe"/></h2>
           </div>
         </div>
       </div>
@@ -541,17 +541,17 @@
             <div class="block-3 d-md-flex ftco-animate">
               <div class="image order-last" style="background-image: url(static/images/dish-3.jpg);"></div>
               <div class="text text-center order-first">
-                <h2 class="heading">Beef Steak</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-                <span class="price">from $10.00</span>
+                <h2 class="heading"><fmt:message key="beef.steak"/></h2>
+                <p><fmt:message key="far.away"/></p>
+                <span class="price"><fmt:message key="from"/> $10.00</span>
               </div>
             </div>
             <div class="block-3 d-md-flex ftco-animate">
               <div class="image order-first" style="background-image: url(static/images/dish-4.jpg);"></div>
               <div class="text text-center order-first">
-                <h2 class="heading">Beef Ribs Steak</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-                <span class="price">from $10.00</span>
+                <h2 class="heading"><fmt:message key="beef.ribs"/></h2>
+                <p><fmt:message key="far.away"/></p>
+                <span class="price"><fmt:message key="from"/> $10.00</span>
               </div>
             </div>
           </div>
@@ -559,17 +559,17 @@
             <div class="block-3 d-md-flex ftco-animate">
               <div class="image order-last" style="background-image: url(static/images/dish-5.jpg);"></div>
               <div class="text text-center order-first">
-                <h2 class="heading">Chopsuey</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-                <span class="price">from $10.00</span>
+                <h2 class="heading"><fmt:message key="chopsuey"/></h2>
+                <p><fmt:message key="far.away"/></p>
+                <span class="price"><fmt:message key="from"/> $10.00</span>
               </div>
             </div>
             <div class="block-3 d-md-flex ftco-animate">
               <div class="image order-first" style="background-image: url(static/images/dish-6.jpg);"></div>
               <div class="text text-center order-first">
-                <h2 class="heading">Roasted Chieken</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-                <span class="price">from $10.00</span>
+                <h2 class="heading"><fmt:message key="roasted.chicken"/></h2>
+                <p><fmt:message key="far.away"/></p>
+                <span class="price"><fmt:message key="from"/> $10.00</span>
               </div>
             </div>
           </div>
@@ -581,8 +581,8 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Guests Says</span>
-            <h2>Our Satisfied Guests says</h2>
+            <span class="subheading"><fmt:message key="guests.says"/></span>
+            <h2><fmt:message key="satisfied"/></h2>
           </div>
         </div>
         <div class="row ftco-animate">
@@ -592,9 +592,9 @@
                 <div class="user-img mb-4" style="background-image: url(static/images/person_1.jpg)" style="border: 1px solid red;"></div>
                 <div class="text">
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                  <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <p class="name">Dennis Green</p>
-                  <span class="position">Guests from Italy</span>
+                  <p class="mb-5"><fmt:message key="far.away"/>.</p>
+                  <p class="name"><fmt:message key="dennis.green"/></p>
+                  <span class="position"><fmt:message key="guests"/></span>
                 </div>
               </div>
             </div>
@@ -603,9 +603,9 @@
                 <div class="user-img mb-4" style="background-image: url(static/images/person_2.jpg)" style="border: 1px solid red;"></div>
                 <div class="text">
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                  <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <p class="name">Dennis Green</p>
-                  <span class="position">Guests from Italy</span>
+                  <p class="mb-5"><fmt:message key="far.away"/>.</p>
+                  <p class="name"><fmt:message key="dennis.green"/></p>
+                  <span class="position"><fmt:message key="guests"/></span>
                 </div>
               </div>
             </div>
@@ -614,9 +614,9 @@
                 <div class="user-img mb-4" style="background-image: url(static/images/person_3.jpg)" style="border: 1px solid red;"></div>
                 <div class="text">
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                  <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <p class="name">Dennis Green</p>
-                  <span class="position">Guests from Italy</span>
+                  <p class="mb-5"><fmt:message key="far.away"/>.</p>
+                  <p class="name"><fmt:message key="dennis.green"/></p>
+                  <span class="position"><fmt:message key="guests"/></span>
                 </div>
               </div>
             </div>
@@ -625,9 +625,9 @@
                 <div class="user-img mb-4" style="background-image: url(static/images/person_1.jpg)" style="border: 1px solid red;"></div>
                 <div class="text">
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                  <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <p class="name">Dennis Green</p>
-                  <span class="position">Guests from Italy</span>
+                  <p class="mb-5"><fmt:message key="far.away"/>.</p>
+                  <p class="name"><fmt:message key="dennis.green"/></p>
+                  <span class="position"><fmt:message key="guests"/></span>
                 </div>
               </div>
             </div>
@@ -636,9 +636,9 @@
                 <div class="user-img mb-4" style="background-image: url(static/images/person_1.jpg)" style="border: 1px solid red;"></div>
                 <div class="text">
                   <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                  <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <p class="name">Dennis Green</p>
-                  <span class="position">Guests from Italy</span>
+                  <p class="mb-5"><fmt:message key="far.away"/>.</p>
+                  <p class="name"><fmt:message key="dennis.green"/></p>
+                  <span class="position"><fmt:message key="guests"/></span>
                 </div>
               </div>
             </div>
@@ -651,8 +651,8 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Blog</span>
-            <h2>Recent Blog</h2>
+            <span class="subheading"><fmt:message key="blog"/></span>
+            <h2><fmt:message key="recent.blog"/></h2>
           </div>
         </div>
         <div class="row ftco-animate">
@@ -663,12 +663,12 @@
                 </a>
                 <div class="text p-4">
                   <div class="meta">
-                    <div><a href="#">July 7, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
+                    <div><a href="#"><fmt:message key="july"/></a></div>
+                    <div><a href="#"><fmt:message key="admin"/></a></div>
                   </div>
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                   <p class="clearfix">
-                    <a href="#" class="float-left read">Read more</a>
+                    <a href="#" class="float-left read"><fmt:message key="more"/></a>
                     <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                   </p>
                 </div>
@@ -680,12 +680,12 @@
                 </a>
                 <div class="text p-4">
                   <div class="meta">
-                    <div><a href="#">July 7, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
+                    <div><a href="#"><fmt:message key="july"/></a></div>
+                    <div><a href="#"><fmt:message key="admin"/></a></div>
                   </div>
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                   <p class="clearfix">
-                    <a href="#" class="float-left read">Read more</a>
+                    <a href="#" class="float-left read"><fmt:message key="more"/></a>
                     <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                   </p>
                 </div>
@@ -697,12 +697,12 @@
                 </a>
                 <div class="text p-4">
                   <div class="meta">
-                    <div><a href="#">July 7, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
+                    <div><a href="#"><fmt:message key="july"/></a></div>
+                    <div><a href="#"><fmt:message key="admin"/></a></div>
                   </div>
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                   <p class="clearfix">
-                    <a href="#" class="float-left read">Read more</a>
+                    <a href="#" class="float-left read"><fmt:message key="more"/></a>
                     <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                   </p>
                 </div>
@@ -714,12 +714,12 @@
                 </a>
                 <div class="text p-4">
                   <div class="meta">
-                    <div><a href="#">July 7, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
+                    <div><a href="#"><fmt:message key="july"/></a></div>
+                    <div><a href="#"><fmt:message key="admin"/></a></div>
                   </div>
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                   <p class="clearfix">
-                    <a href="#" class="float-left read">Read more</a>
+                    <a href="#" class="float-left read"><fmt:message key="more"/></a>
                     <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                   </p>
                 </div>
@@ -731,12 +731,12 @@
                 </a>
                 <div class="text p-4">
                   <div class="meta">
-                    <div><a href="#">July 7, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
+                    <div><a href="#"><fmt:message key="july"/></a></div>
+                    <div><a href="#"><fmt:message key="admin"/></a></div>
                   </div>
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                   <p class="clearfix">
-                    <a href="#" class="float-left read">Read more</a>
+                    <a href="#" class="float-left read"><fmt:message key="more"/></a>
                     <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                   </p>
                 </div>
@@ -747,7 +747,6 @@
       </div>
     </section>
 
-    <c:import url="templ/instagram-part.jsp"/>
     <c:import url="templ/footer-part.jsp"/>
     <c:import url="templ/loader.jsp"/>
   </body>

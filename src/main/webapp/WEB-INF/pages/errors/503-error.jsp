@@ -5,45 +5,33 @@
 <fmt:setLocale value="${locale}"/>
 <fmt:setBundle basename="${bundle}"/>
 
-<html lang="en" class="wide wow-animation">
+<html lang="en">
 <head>
-    <title>503</title>
-    <c:import url="../templ/head-part.jsp"/>
+  <title>503</title>
+  <c:import url="../templ/head-part.jsp"/>
 </head>
 <body>
-<div class="page section-single bg-venice-blue">
-    <header class="page-head">
-        <section>
-            <div class="shell text-center">
-                <div class="brand-wrap"><a href="" class="brand"><img src="static/images/logo-white-250x40.png" alt="" width="250" height="40"/></a></div>
-            </div>
-        </section>
-    </header>
-    <main class="page-content text-center">
-        <section>
-            <div class="shell">
-                <div class="range range-sm-center">
-                    <div class="cell-md-10 cell-lg-8">
-                        <h5 class="h5-variant-1"><fmt:message key="temporary.unavailable"/></h5>
-                        <div class="text-extra-big">503</div>
-                        <p class="text-style-2"><fmt:message key="offline"/><br>
-                            <fmt:message key="come.back"/></p>
-                        <div class="offset-top-35 offset-sm-top-50">
-                            <div class="group-xl"><a href="" class="btn btn-primary-variant-1 btn-mod-1"><fmt:message key="back.home"/></a><a href="contacts" class="btn btn-white-outline btn-mod-2"><fmt:message key="contact.us"/></a></div>
-                        </div>
-                    </div>
+
+    <section class="home-slider owl-carousel">
+      <div class="slider-item" style="background-image: url('static/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-10 col-sm-12 ftco-animate text-center">
+                <p class="text-style-2"><fmt:message key="temporary.unavailable"/></p>
+              <h1 class="mb-3">ERROR 503</h1>
+                <p class="text-style-2"><fmt:message key="offline"/><br>
+                    <fmt:message key="come.back"/></p>
+                <div class="offset-top-35 offset-sm-top-50">
+                    <div class="group-xl"><a href="" class="btn btn-primary-variant-1 btn-mod-1"><fmt:message key="back.home"/></a>
+                        <a href="contact" class="btn btn-white-outline btn-mod-2"><fmt:message key="contact.us"/></a></div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="page-foot">
-        <div class="shell text-center">
-            <p class="rights">&#169;&nbsp;<span id="copyright-year"></span><fmt:message key="all.rights"/>
-                <a href="privacy"><fmt:message key="privacy.policy.terms"/></a> </p>
+          </div>
         </div>
-    </footer>
-</div>
-<c:import url="../templ/form-output-global.jsp"/>
+      </div>
+    </section>
+
+    <c:import url="../templ/loader.jsp"/>
 </body>
-<!-- End Google Tag Manager -->
 </html>

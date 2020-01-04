@@ -18,9 +18,9 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center">
             <div class="col-md-10 col-sm-12 ftco-animate text-center">
-
-              <h1 class="mb-3">Our Website Is Under Construction</h1>
-
+                <p class="text-style-2"><fmt:message key="not.found"/></p>
+              <h1 class="mb-3">ERROR</h1>
+                <p class="text-style-2"><fmt:message key="have.mistyped"/></p>
                 <div class="offset-top-35 offset-sm-top-50">
                     <div class="group-xl"><a href="" class="btn btn-primary-variant-1 btn-mod-1"><fmt:message key="back.home"/></a>
                         <a href="contact" class="btn btn-white-outline btn-mod-2"><fmt:message key="contact.us"/></a></div>

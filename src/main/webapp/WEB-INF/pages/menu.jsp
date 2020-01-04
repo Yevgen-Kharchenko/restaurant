@@ -20,8 +20,8 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center">
             <div class="col-md-10 col-sm-12 ftco-animate text-center">
-              <p class="breadcrumbs"><span class="mr-2"><a href="index">Home</a></span> <span>Menu</span></p>
-              <h1 class="mb-3">Discover Our Exclusive Menu</h1>
+              <p class="breadcrumbs"><span class="mr-2"><a href=""><fmt:message key="home"/></a></span> <span><fmt:message key="menu"/></span></p>
+              <h1 class="mb-3"><fmt:message key="discover"/></h1>
             </div>
           </div>
         </div>
@@ -36,20 +36,20 @@
               <form action="" method="post" class="d-block d-lg-flex">
                 <div class="fields d-block d-lg-flex">
 
-                  <div class="textfield-name one-third"><input type="text" class="form-control" placeholder="Name"></div>
+                  <div class="textfield-name one-third"><input type="text" class="form-control" placeholder="<fmt:message key="name"/>"></div>
 
-                  <div class="textfield-phone one-third"><input type="text" class="form-control" placeholder="Phone"></div>
+                  <div class="textfield-phone one-third"><input type="text" class="form-control" placeholder="<fmt:message key="phone"/>"></div>
 
                   <div class="book-date one-third"><input type="text" id="book_date" class="form-control" placeholder="M/D/YYYY"></div>
 
                   <div class="book-time one-third">
-                    <input type="text" id="book_time" class="form-control" placeholder="Time">
+                    <input type="text" id="book_time" class="form-control" placeholder="<fmt:message key="time"/>">
                   </div>
 
                   <div class="select-wrap one-third">
                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                     <select name="" id="" class="form-control">
-                      <option value="">Person</option>
+                      <option value=""><fmt:message key="person"/></option>
                       <option value="">1</option>
                       <option value="">2</option>
                       <option value="">3</option>
@@ -57,7 +57,7 @@
                     </select>
                   </div>
                 </div>
-                <input type="submit" class="search-submit btn btn-primary" value="Book a table">  
+                <input type="submit" class="search-submit btn btn-primary" value="<fmt:message key="book2"/>">
               </form>
             </div>
           </div>
@@ -69,17 +69,17 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Our Menu</span>
-            <h2>Discover Our Exclusive Menu</h2>
+            <span class="subheading"><fmt:message key="our.menu"/></span>
+            <h2><fmt:message key="discover"/></h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 dish-menu">
 
             <div class="nav nav-pills justify-content-center ftco-animate" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-meat"></span> Main</a>
-              <a class="nav-link py-3 px-4" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="flaticon-cutlery"></span> Dessert</a>
-              <a class="nav-link py-3 px-4" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="flaticon-cheers"></span> Drinks</a>
+              <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-meat"></span><fmt:message key="main"/></a>
+              <a class="nav-link py-3 px-4" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="flaticon-cutlery"></span><fmt:message key="dessert"/></a>
+              <a class="nav-link py-3 px-4" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="flaticon-cheers"></span><fmt:message key="drinks"/></a>
             </div>
 
             <div class="tab-content py-5" id="v-pills-tabContent">
@@ -478,7 +478,6 @@
       </div>
     </section>
 
-    <c:import url="templ/instagram-part.jsp"/>
     <c:import url="templ/footer-part.jsp"/>
     <c:import url="templ/loader.jsp"/>
 </body>

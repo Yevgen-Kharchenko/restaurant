@@ -20,8 +20,8 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center">
             <div class="col-md-10 col-sm-12 ftco-animate text-center">
-              <p class="breadcrumbs"><span class="mr-2"><a href="index">Home</a></span> <span>Blog</span></p>
-              <h1 class="mb-3">Blog</h1>
+              <p class="breadcrumbs"><span class="mr-2"><a href=""><fmt:message key="home"/></a></span> <span><fmt:message key="blog"/></span></p>
+              <h1 class="mb-3"><fmt:message key="blog"/></h1>
             </div>
           </div>
         </div>
@@ -37,12 +37,12 @@
               </a>
               <div class="text p-4">
                 <div class="meta">
-                  <div><a href="#">July 9, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
+                  <div><a href="#"><fmt:message key="july"/></a></div>
+                  <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
-                  <a href="#" class="float-left read">Read more</a>
+                  <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                 </p>
               </div>
@@ -54,12 +54,12 @@
               </a>
               <div class="text p-4">
                 <div class="meta">
-                  <div><a href="#">July 9, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
+                  <div><a href="#"><fmt:message key="july"/></a></div>
+                  <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
-                  <a href="#" class="float-left read">Read more</a>
+                  <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                 </p>
               </div>
@@ -71,12 +71,12 @@
               </a>
               <div class="text p-4">
                 <div class="meta">
-                  <div><a href="#">July 9, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
+                  <div><a href="#"><fmt:message key="july"/>/a></div>
+                  <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
-                  <a href="#" class="float-left read">Read more</a>
+                  <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                 </p>
               </div>
@@ -88,12 +88,12 @@
               </a>
               <div class="text p-4">
                 <div class="meta">
-                  <div><a href="#">July 9, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
+                  <div><a href="#"><fmt:message key="july"/></a></div>
+                  <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
-                  <a href="#" class="float-left read">Read more</a>
+                  <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                 </p>
               </div>
@@ -105,12 +105,12 @@
               </a>
               <div class="text p-4">
                 <div class="meta">
-                  <div><a href="#">July 9, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
+                  <div><a href="#"><fmt:message key="july"/></a></div>
+                  <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
-                  <a href="#" class="float-left read">Read more</a>
+                  <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                 </p>
               </div>
@@ -122,12 +122,12 @@
               </a>
               <div class="text p-4">
                 <div class="meta">
-                  <div><a href="#">July 9, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
+                  <div><a href="#"><fmt:message key="july"/></a></div>
+                  <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
-                  <a href="#" class="float-left read">Read more</a>
+                  <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                 </p>
               </div>
@@ -139,12 +139,12 @@
               </a>
               <div class="text p-4">
                 <div class="meta">
-                  <div><a href="#">July 9, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
+                  <div><a href="#"><fmt:message key="july"/></a></div>
+                  <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
-                  <a href="#" class="float-left read">Read more</a>
+                  <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                 </p>
               </div>
@@ -156,12 +156,12 @@
               </a>
               <div class="text p-4">
                 <div class="meta">
-                  <div><a href="#">July 9, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
+                  <div><a href="#"><fmt:message key="july"/></a></div>
+                  <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
-                  <a href="#" class="float-left read">Read more</a>
+                  <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                 </p>
               </div>
@@ -187,7 +187,6 @@
       </div>
     </section>
 
-    <c:import url="templ/instagram-part.jsp"/>
     <c:import url="templ/footer-part.jsp"/>
     <c:import url="templ/loader.jsp"/>
 </body>

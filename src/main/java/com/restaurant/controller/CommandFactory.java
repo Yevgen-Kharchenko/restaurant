@@ -2,7 +2,12 @@ package com.restaurant.controller;
 
 import com.restaurant.controller.command.Command;
 import com.restaurant.controller.command.admin.HomeCommand;
+import com.restaurant.controller.command.admin.LanguageCommand;
+import com.restaurant.controller.command.error.ErrorCommand;
 import com.restaurant.controller.command.error.NotFoundCommand;
+import com.restaurant.controller.command.info.*;
+import com.restaurant.controller.command.logic.MenuCommand;
+import com.restaurant.controller.command.logic.ReservationCommand;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +19,15 @@ public class CommandFactory {
 
     static {
         getCommandMap.put("/", new HomeCommand());
+        getCommandMap.put("/about", new AboutUsCommand());
+        getCommandMap.put("/blog", new BlogCommand());
+        getCommandMap.put("/contact", new ContactCommand());
+        getCommandMap.put("/blog-single", new BlogSingleCommand());
+        getCommandMap.put("/menu", new MenuCommand());
+        getCommandMap.put("/reservation", new ReservationCommand());
+        getCommandMap.put("/specialties", new SpecialtiesCommand());
+        getCommandMap.put("/error", new ErrorCommand());
+        getCommandMap.put("/language", new LanguageCommand());
 
 
         postCommandMap.put("/", new HomeCommand());
