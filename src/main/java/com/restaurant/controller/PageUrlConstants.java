@@ -12,10 +12,10 @@ public class PageUrlConstants {
     public static final String UNDER_CONSTRUCTION_PAGE = "errors/under-construction";
     public static final String SERVICES_PAGE = "services";
     public static final String CONTACT_PAGE = "contact";
-    public static final String LOGIN_PAGE = "login-register";
+    public static final String LOGIN_PAGE = "login";
     public static final String BLOG_PAGE = "blog";
     public static final String BLOG_SINGLE_PAGE = "blog-single";
-    public static final String GALLERY_PAGE = "gallery-masonry";
+    public static final String REGISTER_PAGE = "register";
     public static final String ABOUT_US_PAGE = "about";
     public static final String RESERVATION_PAGE = "reservation";
     public static final String FEEDBACK_PAGE = "feedback";

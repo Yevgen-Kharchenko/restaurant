@@ -28,7 +28,7 @@
                         </a>
                     </c:when>
                     <c:otherwise>
-                        <a href="login-register" class="nav-link">
+                        <a href="login" class="nav-link">
                             <fmt:message key="login"/>
                         </a>
                     </c:otherwise>

@@ -81,7 +81,7 @@
                     </select>
                   </div>
                 </div>
-                <input type="submit" class="search-submit btn btn-primary" value="<fmt:message key="book2"/>">
+                <input type="submit" class="search-submit btn btn-primary" value="<fmt:message key="reservation"/>">
               </form>
             </div>
           </div>
@@ -240,7 +240,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(static/images/dish-12.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(static/images/octopus.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Octopus with Vegetables</h3>

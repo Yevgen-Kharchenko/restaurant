@@ -10,8 +10,7 @@ import lombok.Setter;
 @Setter
 public class User {
     private int id;
-    private String firstName;
-    private String lastName;
+    private String name;
     private String phone;
     private String login;
     private String password;
@@ -21,8 +20,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", Name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +

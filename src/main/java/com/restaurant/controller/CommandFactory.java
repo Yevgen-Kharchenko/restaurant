@@ -1,8 +1,7 @@
 package com.restaurant.controller;
 
 import com.restaurant.controller.command.Command;
-import com.restaurant.controller.command.admin.HomeCommand;
-import com.restaurant.controller.command.admin.LanguageCommand;
+import com.restaurant.controller.command.admin.*;
 import com.restaurant.controller.command.error.ErrorCommand;
 import com.restaurant.controller.command.error.NotFoundCommand;
 import com.restaurant.controller.command.info.*;
@@ -28,6 +27,9 @@ public class CommandFactory {
         getCommandMap.put("/specialties", new SpecialtiesCommand());
         getCommandMap.put("/error", new ErrorCommand());
         getCommandMap.put("/language", new LanguageCommand());
+        getCommandMap.put("/login", new LoginCommand());
+        getCommandMap.put("/register", new RegisterCommand());
+        getCommandMap.put("/logout", new LogoutCommand());
 
 
         postCommandMap.put("/", new HomeCommand());
