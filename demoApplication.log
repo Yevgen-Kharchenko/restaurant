@@ -1,0 +1,1293 @@
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /h2-console
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /h2-console
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/h2-console
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /h2-console. New Path: /app/h2-console
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /h2-console
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /register
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /register
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/register
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /register. New Path: /app/register
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.DispatcherServlet  - Path: /register
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /specialties
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /specialties
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/specialties
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /specialties. New Path: /app/specialties
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.DispatcherServlet  - Path: /specialties
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /contact
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /contact
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/contact
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /contact. New Path: /app/contact
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.DispatcherServlet  - Path: /contact
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/login
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /register. New Path: /app/register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.DispatcherServlet  - Path: /register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /octopus.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /octopus.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/octopus.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/octopus.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /reservation
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /reservation
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/reservation
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /reservation. New Path: /app/reservation
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.DispatcherServlet  - Path: /reservation
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/login
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/login
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/login
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Path: /login
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/login
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-1] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1879833591
+[http-bio-8880-exec-1] INFO  com.restaurant.service.UserService  - Get user by login:User{id=1, Name='Сергій', phone='11234567', login='admin@g.com', password='admin', role=ADMIN}
+[http-bio-8880-exec-1] INFO  com.restaurant.service.UserService  - user validate
+[http-bio-8880-exec-1] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1879833591
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.command.admin.LoginCommand  - get user by loginUser{id=1, Name='Сергій', phone='11234567', login='admin@g.com', password='admin', role=ADMIN}
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Redirect to: /restaurant/
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /octopus.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /octopus.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/octopus.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/octopus.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /logout
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /logout
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/logout
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /logout. New Path: /app/logout
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.DispatcherServlet  - Path: /logout
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.DispatcherServlet  - Redirect to: /restaurant/
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/login
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /register. New Path: /app/register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.DispatcherServlet  - Path: /register
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /register
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /register
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/register
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /register. New Path: /app/register
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /register
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /register
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /register
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/register
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /register. New Path: /app/register
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Path: /register
+[http-bio-8880-exec-2] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1884666068
+[http-bio-8880-exec-2] DEBUG com.restaurant.repository.UserDao  - Create user: + User{id=0, Name='null', phone='null', login='oratay@meta.ua', password='admin', role=GUEST}
+[http-bio-8880-exec-2] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1884666068
+[http-bio-8880-exec-2] DEBUG com.restaurant.controller.command.admin.RegisterCommand  - registration user: + User{id=0, Name='null', phone='null', login='oratay@meta.ua', password='admin', role=GUEST}
+[http-bio-8880-exec-2] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1884666068
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.command.admin.RegisterCommand  - registration user setAttribute: + User{id=7, Name='null', phone='null', login='oratay@meta.ua', password='admin', role=GUEST}
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Redirect to: /restaurant/
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /logout
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /logout
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/logout
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /logout. New Path: /app/logout
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /logout
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Redirect to: /restaurant/
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/login
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /register
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /register
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/register
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /register. New Path: /app/register
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.DispatcherServlet  - Path: /register
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /register
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /register
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/register
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /register. New Path: /app/register
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.DispatcherServlet  - Path: /register
+[http-bio-8880-exec-6] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1099177061
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /register
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /register
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/register
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /register. New Path: /app/register
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.DispatcherServlet  - Path: /register
+[http-bio-8880-exec-7] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1099177061
+[http-bio-8880-exec-7] DEBUG com.restaurant.repository.UserDao  - Create user: + User{id=0, Name='Евгений Харченко', phone='null', login='oratay.tov@gmail.com', password='123', role=GUEST}
+[http-bio-8880-exec-7] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1099177061
+[http-bio-8880-exec-7] DEBUG com.restaurant.controller.command.admin.RegisterCommand  - registration user: + User{id=0, Name='Евгений Харченко', phone='null', login='oratay.tov@gmail.com', password='123', role=GUEST}
+[http-bio-8880-exec-7] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1099177061
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.command.admin.RegisterCommand  - registration user setAttribute: + User{id=8, Name='Евгений Харченко', phone='null', login='oratay.tov@gmail.com', password='123', role=GUEST}
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.DispatcherServlet  - Redirect to: /restaurant/
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/login
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/login
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-4] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1726263609
+[http-bio-8880-exec-4] INFO  com.restaurant.service.UserService  - Get user by login:User{id=1, Name='Сергій', phone='11234567', login='admin@g.com', password='admin', role=ADMIN}
+[http-bio-8880-exec-4] INFO  com.restaurant.service.UserService  - user validate
+[http-bio-8880-exec-4] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1726263609
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.command.admin.LoginCommand  - get user by loginUser{id=1, Name='Сергій', phone='11234567', login='admin@g.com', password='admin', role=ADMIN}
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.DispatcherServlet  - Redirect to: /restaurant/
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /logout
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /logout
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/logout
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /logout. New Path: /app/logout
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.DispatcherServlet  - Path: /logout
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.DispatcherServlet  - Redirect to: /restaurant/
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/login
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /register. New Path: /app/register
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.DispatcherServlet  - Path: /register
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /register
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /register
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/register
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /register. New Path: /app/register
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Path: /register
+[http-bio-8880-exec-2] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1726263609
+[http-bio-8880-exec-2] DEBUG com.restaurant.repository.UserDao  - Create user: + User{id=0, Name='qwerty', phone='null', login='qwerty@g.com', password='123', role=GUEST}
+[http-bio-8880-exec-2] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1726263609
+[http-bio-8880-exec-2] DEBUG com.restaurant.controller.command.admin.RegisterCommand  - registration user: + User{id=0, Name='qwerty', phone='null', login='qwerty@g.com', password='123', role=GUEST}
+[http-bio-8880-exec-2] DEBUG com.restaurant.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J 1726263609
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.command.admin.RegisterCommand  - registration user setAttribute: + User{id=9, Name='qwerty', phone='null', login='qwerty@g.com', password='123', role=GUEST}
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Redirect to: /restaurant/
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /language
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /language
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/language
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /language. New Path: /app/language
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.DispatcherServlet  - Path: /language
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.DispatcherServlet  - Redirect to: /restaurant/
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.DispatcherServlet  - Path: /
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /image_9.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /image_9.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/image_9.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/image_9.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /open-iconic-bootstrap.min.css
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /open-iconic-bootstrap.min.css
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/open-iconic-bootstrap.min.css
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/open-iconic-bootstrap.min.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /owl.theme.default.min.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /owl.theme.default.min.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/owl.theme.default.min.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/owl.theme.default.min.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /magnific-popup.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /magnific-popup.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/magnific-popup.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/magnific-popup.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /animate.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /animate.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/animate.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/animate.css
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /ionicons.min.css
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /ionicons.min.css
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/ionicons.min.css
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/ionicons.min.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /owl.carousel.min.css
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /owl.carousel.min.css
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/owl.carousel.min.css
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/owl.carousel.min.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap-datepicker.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap-datepicker.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/bootstrap-datepicker.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/bootstrap-datepicker.css
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /jquery.timepicker.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /jquery.timepicker.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/jquery.timepicker.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/jquery.timepicker.css
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /icomoon.css
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /icomoon.css
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/icomoon.css
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/icomoon.css
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /flaticon.css
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /flaticon.css
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/flaticon.css
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/flaticon.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /jquery-migrate-3.0.1.min.js
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /jquery-migrate-3.0.1.min.js
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/jquery-migrate-3.0.1.min.js
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/jquery-migrate-3.0.1.min.js
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /jquery.easing.1.3.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /jquery.easing.1.3.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/jquery.easing.1.3.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/jquery.easing.1.3.js
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /jquery.waypoints.min.js
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /jquery.waypoints.min.js
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/jquery.waypoints.min.js
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/jquery.waypoints.min.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /jquery.stellar.min.js
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /jquery.stellar.min.js
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/jquery.stellar.min.js
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/jquery.stellar.min.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /jquery.animateNumber.min.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /jquery.animateNumber.min.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/jquery.animateNumber.min.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/jquery.animateNumber.min.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /jquery.magnific-popup.min.js
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /jquery.magnific-popup.min.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/jquery.magnific-popup.min.js
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/jquery.magnific-popup.min.js
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /owl.carousel.min.js
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /owl.carousel.min.js
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/owl.carousel.min.js
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/owl.carousel.min.js
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /google-map.js
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /google-map.js
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/google-map.js
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/google-map.js
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /jquery.min.js
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /jquery.min.js
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/jquery.min.js
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/jquery.min.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /main.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /main.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/main.js
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/main.js
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap-datepicker.js
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap-datepicker.js
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap-datepicker.js
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap-datepicker.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /jquery.timepicker.min.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /jquery.timepicker.min.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/jquery.timepicker.min.js
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/jquery.timepicker.min.js
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dish-4.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dish-4.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dish-4.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dish-4.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dish-3.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dish-3.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dish-3.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dish-3.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dish-6.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dish-6.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dish-6.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dish-6.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dish-5.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dish-5.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dish-5.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dish-5.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /octopus.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /octopus.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/octopus.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/octopus.jpg
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dish-7.jpg
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dish-7.jpg
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dish-7.jpg
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dish-7.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dish-10.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dish-10.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dish-10.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dish-10.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dish-9.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dish-9.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dish-9.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dish-9.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dish-8.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dish-8.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dish-8.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dish-8.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dish-11.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dish-11.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dish-11.jpg
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dish-11.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /icomoon.ttf
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /icomoon.ttf
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/fonts/icomoon/icomoon.ttf
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/fonts/icomoon/icomoon.ttf
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /ionicons.woff2
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /Flaticon.woff
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /ionicons.woff2
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /Flaticon.woff
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/fonts/ionicons/fonts/ionicons.woff2
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/fonts/flaticon/font/Flaticon.woff
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/fonts/ionicons/fonts/ionicons.woff2
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/fonts/flaticon/font/Flaticon.woff
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bg_1.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bg_1.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/bg_1.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/bg_1.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dessert-6.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dessert-3.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dessert-3.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dessert-6.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dessert-3.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dessert-6.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dessert-1.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dessert-2.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dessert-1.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dessert-3.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dessert-1.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dessert-2.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dessert-6.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dessert-2.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dessert-2.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dessert-1.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dessert-4.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dessert-4.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dessert-4.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dessert-4.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dessert-5.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dessert-5.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dessert-5.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dessert-5.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dessert-8.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dessert-7.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dessert-8.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dessert-7.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dessert-8.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dessert-7.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dessert-8.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dessert-7.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dessert-9.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /drink-2.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dessert-9.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /drink-2.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dessert-9.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/drink-2.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /drink-1.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dessert-9.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /drink-1.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/drink-2.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/drink-1.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/drink-1.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /drink-3.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /drink-3.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/drink-3.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/drink-3.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /drink-7.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /drink-7.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/drink-7.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/drink-7.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /drink-8.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /drink-8.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/drink-8.jpg
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/drink-8.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /drink-4.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /drink-4.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/drink-4.jpg
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/drink-4.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /drink-9.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /drink-9.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/drink-9.jpg
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/drink-9.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /drink-6.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /drink-6.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/drink-6.jpg
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/drink-6.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /dessert-10.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /dessert-10.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/dessert-10.jpg
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/dessert-10.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /drink-5.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /drink-5.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/drink-5.jpg
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/drink-5.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /drink-10.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /drink-10.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/images/drink-10.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/images/drink-10.jpg
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[localhost-startStop-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-2] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /open-iconic.woff
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /open-iconic.woff
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/fonts/open-iconic/open-iconic.woff
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/fonts/open-iconic/open-iconic.woff
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-5] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-1] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-8] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-7] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-9] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-6] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /menu
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /menu
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/menu
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Non static resource: /menu. New Path: /app/menu
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.DispatcherServlet  - Path: /menu
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/style.css
+[http-bio-8880-exec-10] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/style.css
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/popper.min.js.map
+[http-bio-8880-exec-4] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/popper.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/bootstrap.min.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/js/aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/js/aos.js.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Path: /aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.AuthenticationFilter  - Page is not secured: /aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Do service, URI: /restaurant/static/css/aos.css.map
+[http-bio-8880-exec-3] INFO  com.restaurant.controller.filter.StaticResourceFilter  - Static resource: /static/css/aos.css.map

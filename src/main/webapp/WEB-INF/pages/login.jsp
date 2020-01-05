@@ -26,10 +26,10 @@
 			<div class="login-body">
 				<div class="login p-4 mx-auto">
 					<h1 class="mb-3"><fmt:message key="login.now"/></h5>
-					<form action="#" method="post">
+					<form action="login" method="post">
 						<div class="form-group">
 							<label><fmt:message key="your.name"/></label>
-							<input type="text" class="form-control" name="name" placeholder="" required="">
+							<input type="text" class="form-control" name="login" placeholder="" required="">
 						</div>
 						<div class="form-group">
 							<label class="mb-2"><fmt:message key="password"/></label>

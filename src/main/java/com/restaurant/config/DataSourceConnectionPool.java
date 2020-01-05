@@ -17,7 +17,7 @@ public class DataSourceConnectionPool implements ConnectionFactory {
     static {
         try {
             Context initContext = new InitialContext();
-            dataSource = (DataSource) initContext.lookup("java:comp/env/jdbc/repair_agency");
+            dataSource = (DataSource) initContext.lookup("java:comp/env/jdbc/restaurant");
         } catch (NamingException e) {
             LOG.error("Could not find DataSource JNDI", e);
         }

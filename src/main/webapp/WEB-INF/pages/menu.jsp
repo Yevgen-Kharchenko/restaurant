@@ -86,18 +86,28 @@
               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                 <div class="row">
                   <div class="col-lg-6">
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(static/images/dish-3.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Grilled Beef with potatoes</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">$29</span>
-                        </div>
-                      </div>
-                    </div>
+				  
+				 <div id="checkboxes">
+				  <input type="checkbox" id="cb1"/>
+					<label for="cb1" class="menus d-flex ftco-animate">
+						<div class="menu-img" style="background-image: url(static/images/dish-3.jpg);"></div>
+						<div class="text d-flex">
+							<div class="one-half">
+								<h3>Grilled Beef with potatoes</h3>
+								<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+							</div>
+							<div class="one-forth">
+								<form action="handler.php">
+									<p><input type="number" name="t" value="1" min="1" max="10" step="1"></p>
+								</form>
+							</div>
+							<div class="one-forth">
+								<span class="price">$29</span>
+							</div>           
+						</div>
+					</label>
+				</div>
+					
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/dish-4.jpg);"></div>
                       <div class="text d-flex">
@@ -110,6 +120,7 @@
                         </div>
                       </div>
                     </div>
+					
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/dish-5.jpg);"></div>
                       <div class="text d-flex">

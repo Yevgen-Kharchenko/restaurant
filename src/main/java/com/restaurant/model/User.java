@@ -5,16 +5,27 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-@AllArgsConstructor
+
 @Getter
 @Setter
+@AllArgsConstructor
 public class User {
-    private int id;
+    private long id;
     private String name;
     private String phone;
     private String login;
     private String password;
     private Role role;
+
+    public User(String name, String phone, String login, String password, Role role) {
+    }
+
+    public User(String name, String login, String password, Role role) {
+        this.name = name;
+        this.login = login;
+        this.password = password;
+        this.role = role;
+    }
 
     @Override
     public String toString() {

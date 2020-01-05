@@ -3,7 +3,7 @@
 <Context>
     
     <Resource
-            name="jdbc/repair_agency"
+            name="jdbc/restaurant"
             auth="Container"
             type="javax.sql.DataSource"
             maxActive="100"
@@ -13,5 +13,6 @@
             url="jdbc:mysql://localhost:3306/restaurant?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8"
             username="root"
             password="Flvsyd[sl2"
+
     />
 </Context>

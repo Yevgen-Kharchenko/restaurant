@@ -240,6 +240,16 @@ input[type="checkbox"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
+  
+  #checkboxes input[type=checkbox]{
+    display: none;
+}
+
+ #checkboxes input[type=checkbox]:checked + .menus{
+    background: #ffb400;
+}
+
+
 
 input[type="date"],
 input[type="time"],
@@ -7779,7 +7789,8 @@ h1, h2, h3, h4, h5,
       .dish-menu .menus .text .one-half p {
         margin-bottom: 0; }
     .dish-menu .menus .text .one-forth {
-      width: 80px;
+      padding-top: 20px;
+	  width: 80px;
       text-align: right; }
       .dish-menu .menus .text .one-forth .price {
         font-size: 30px;

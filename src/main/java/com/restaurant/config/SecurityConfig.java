@@ -12,9 +12,9 @@ public class SecurityConfig {
 
     static {
         securityPages.put(Role.ADMIN, Arrays.asList("/admin", "/user", "/manager", "/master", "/feedback", "/order", "/order-comment", "/user-profile", "/users"));
-        securityPages.put(Role.CUSTOMER, Arrays.asList("/user", "/feedback", "/order", "/order-comment"));
-        securityPages.put(Role.MANAGER, Arrays.asList("/manager", "/master", "/order-comment"));
-        securityPages.put(Role.MASTER, Arrays.asList("/master", "/order-comment"));
+        securityPages.put(Role.GUEST, Arrays.asList("/user", "/feedback", "/order", "/order-comment"));
+        securityPages.put(Role.CHEF, Arrays.asList("/manager", "/master", "/order-comment"));
+
     }
 
     public static boolean isSecurePage(String page) {
