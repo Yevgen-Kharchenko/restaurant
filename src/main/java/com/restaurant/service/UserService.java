@@ -6,15 +6,16 @@ import com.restaurant.model.enums.DaoType;
 import com.restaurant.model.enums.Role;
 import com.restaurant.repository.DaoFactory;
 import com.restaurant.repository.EntityDao;
-import lombok.AllArgsConstructor;
+import com.restaurant.repository.impl.UserDaoImpl;
 import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-@AllArgsConstructor
+
 public class UserService {
     private EntityDao<User> userDao;
+
     private static final Logger LOG = Logger.getLogger(UserService.class);
 
     public UserService() {
@@ -29,7 +30,7 @@ public class UserService {
      * @return
      */
     public boolean validateUser(String login, String password) {
-        User user = userDao.getByField(login, false);
+        User user = userDao.getByLogin(login);
         LOG.info("Get user by login:" + user);
         if (user != null) {
             if (user.getPassword().equals(password)) {
@@ -76,7 +77,7 @@ public class UserService {
      * @return
      */
     public User getUser(long id) {
-        return userDao.getById(id, false);
+        return userDao.getById(id);
     }
 
     /**
@@ -86,7 +87,7 @@ public class UserService {
      * @return
      */
     public User getUserByLogin(String login) {
-        return userDao.getByField(login, false);
+        return userDao.getByLogin(login);
     }
 
     /**
@@ -98,7 +99,7 @@ public class UserService {
      * @return
      */
     public User registrationUser(String name,String login, String password) {
-        User newUser = new User(name, login, password, Role.GUEST);
+        User newUser = User.builder().name(name).login(login).password(password).role(Role.GUEST).build();
         userDao.create(newUser);
         return newUser;
     }
@@ -150,7 +151,7 @@ public class UserService {
      */
     private List<UserDTO> mapToUserDTO(List<User> all) {
         return all.stream().map(users -> {
-            User userProfile = userDao.getById(users.getId(), false);
+            User userProfile = userDao.getById(users.getId());
             UserDTO userDTO = new UserDTO();
 
             userDTO.setId(userProfile.getId());

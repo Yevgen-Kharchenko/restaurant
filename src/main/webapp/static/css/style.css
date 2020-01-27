@@ -366,6 +366,13 @@ hr {
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
+.custom-img{
+margin-top: 10px;
+margin-right: 10px;
+width: 100px;
+height: 100px;
+}
+
 small,
 .small {
   font-size: 80%;

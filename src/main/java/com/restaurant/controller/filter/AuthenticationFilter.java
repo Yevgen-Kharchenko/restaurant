@@ -37,7 +37,7 @@ public class AuthenticationFilter implements Filter {
         User user = (User) session.getAttribute("user");
         if (user == null) {
             LOG.info("User not logged");
-            httpServletResponse.sendRedirect(contextPath + "/login-register");
+            httpServletResponse.sendRedirect(contextPath + "/login");
             return;
 
         }

@@ -5,8 +5,7 @@ import com.restaurant.controller.command.admin.*;
 import com.restaurant.controller.command.error.ErrorCommand;
 import com.restaurant.controller.command.error.NotFoundCommand;
 import com.restaurant.controller.command.info.*;
-import com.restaurant.controller.command.logic.MenuCommand;
-import com.restaurant.controller.command.logic.ReservationCommand;
+import com.restaurant.controller.command.logic.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,11 +17,13 @@ public class CommandFactory {
 
     static {
         getCommandMap.put("/", new HomeCommand());
+        getCommandMap.put("/index", new AdminCommand());
         getCommandMap.put("/about", new AboutUsCommand());
         getCommandMap.put("/blog", new BlogCommand());
         getCommandMap.put("/contact", new ContactCommand());
         getCommandMap.put("/blog-single", new BlogSingleCommand());
         getCommandMap.put("/menu", new MenuCommand());
+        getCommandMap.put("/edit-menu", new EditMenuCommand());
         getCommandMap.put("/reservation", new ReservationCommand());
         getCommandMap.put("/specialties", new SpecialtiesCommand());
         getCommandMap.put("/error", new ErrorCommand());
@@ -30,11 +31,16 @@ public class CommandFactory {
         getCommandMap.put("/login", new LoginCommand());
         getCommandMap.put("/register", new RegisterCommand());
         getCommandMap.put("/logout", new LogoutCommand());
+        getCommandMap.put("/dish", new DishCommand());
+        getCommandMap.put("/dish-delete", new DishDeleteCommand());
 
 
         postCommandMap.put("/", new HomeCommand());
         postCommandMap.put("/login", new LoginCommand());
         postCommandMap.put("/register", new RegisterCommand());
+        postCommandMap.put("/menu", new MenuCommand());
+        postCommandMap.put("/edit-menu", new EditMenuCommand());
+        postCommandMap.put("/dish", new DishCommand());
     }
 
     private CommandFactory() {

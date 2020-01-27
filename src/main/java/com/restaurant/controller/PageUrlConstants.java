@@ -5,7 +5,7 @@ public class PageUrlConstants {
     public static final String HOME_PAGE = "index";
     public static final String USER_PAGE = "user";
     public static final String ORDER_PAGE = "order";
-    public static final String ADMIN_PAGE = "admin";
+    public static final String ADMIN_PAGE = "admin/index";
     public static final String MANAGER_PAGE = "manager";
     public static final String MASTER_PAGE = "master";
     public static final String NOT_FOUND_PAGE = "errors/404-error";
@@ -23,6 +23,8 @@ public class PageUrlConstants {
     public static final String TEAM_PROFILE_PAGE = "team-member-profile";
     public static final String PROFILE_PAGE = "profile";
     public static final String MENU_PAGE = "menu";
+    public static final String EDIT_MENU_PAGE = "edit-menu";
+    public static final String DISH_PAGE = "dish";
     public static final String FORBIDDEN_PAGE = "errors/403-error";
     public static final String ERROR_PAGE = "errors/error";
     public static final String USER_PROFILE_PAGE = "user-profile";

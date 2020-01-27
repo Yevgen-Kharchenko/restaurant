@@ -25,7 +25,7 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
     protected static final String COLUMN_ID = "id";
 
     @Override
-    public List<T> getAll(boolean full) {
+    public List<T> getAll() {
         return null;
     }
 
@@ -70,7 +70,7 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
     }
 
     @Override
-    public T getById(long id, boolean full) {
+    public T getById(long id) {
         return null;
     }
 
@@ -92,7 +92,7 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
         return result;
     }
 
-    public T getByField(String login, boolean full) {
+    public T getByField(String login) {
         return null;
     }
 
@@ -114,7 +114,7 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
         return result;
     }
 
-    public T getByDate(LocalDateTime date, boolean full) {
+    public T getByDate(LocalDateTime date) {
         return null;
     }
 
@@ -175,7 +175,7 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
         return false;
     }
 
-    public List<T> getAllByField(String field, boolean full) {
+    public List<T> getAllByField(String field) {
         return null;
     }
 

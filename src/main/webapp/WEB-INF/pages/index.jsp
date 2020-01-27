@@ -125,9 +125,11 @@
             </div>
 
             <div class="tab-content py-5" id="v-pills-tabContent">
+
               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                 <div class="row">
                   <div class="col-lg-6">
+
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/dish-3.jpg);"></div>
                       <div class="text d-flex">
@@ -140,6 +142,7 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/dish-4.jpg);"></div>
                       <div class="text d-flex">
@@ -152,6 +155,7 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/dish-5.jpg);"></div>
                       <div class="text d-flex">
@@ -164,6 +168,7 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/dish-6.jpg);"></div>
                       <div class="text d-flex">
@@ -176,6 +181,7 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/dish-7.jpg);"></div>
                       <div class="text d-flex">
@@ -188,9 +194,11 @@
                         </div>
                       </div>
                     </div>
+
                   </div>
 
                   <div class="col-lg-6">
+				  
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/dish-8.jpg);"></div>
                       <div class="text d-flex">
@@ -203,6 +211,7 @@
                         </div>
                       </div>
                     </div>
+					
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/dish-9.jpg);"></div>
                       <div class="text d-flex">
@@ -215,6 +224,7 @@
                         </div>
                       </div>
                     </div>
+					
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/dish-10.jpg);"></div>
                       <div class="text d-flex">
@@ -227,6 +237,7 @@
                         </div>
                       </div>
                     </div>
+					
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/dish-11.jpg);"></div>
                       <div class="text d-flex">
@@ -239,6 +250,7 @@
                         </div>
                       </div>
                     </div>
+					
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(static/images/octopus.jpg);"></div>
                       <div class="text d-flex">
@@ -251,6 +263,7 @@
                         </div>
                       </div>
                     </div>
+					
                   </div>
                 </div>
               </div><!-- END -->

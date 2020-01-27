@@ -1,17 +1,19 @@
-package com.restaurant.repository;
+package com.restaurant.repository.impl;
 
 import com.restaurant.model.enums.Role;
 import com.restaurant.config.ConnectionFactory;
 import com.restaurant.model.User;
+import com.restaurant.repository.AbstractDao;
+import com.restaurant.repository.EntityMapper;
 import org.apache.log4j.Logger;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class UserDao extends AbstractDao<User> {
-    private static final Logger LOG = Logger.getLogger(UserDao.class);
+public class UserDaoImpl extends AbstractDao<User>  {
+    private static final Logger LOG = Logger.getLogger(UserDaoImpl.class);
 
-    public UserDao(ConnectionFactory connectionFactory) {
+    public UserDaoImpl(ConnectionFactory connectionFactory) {
         super(connectionFactory);
     }
 
@@ -43,20 +45,20 @@ public class UserDao extends AbstractDao<User> {
             + "WHERE " + COLUMN_ID + " = ?";
 
 
-    public User getById(long id, boolean full) {
+    public User getById(long id) {
         return getById("SELECT * FROM `user` WHERE id = ?",
                 ps -> ps.setLong(1, id),
                 getMapper());
     }
 
-    public User getByField(String login, boolean full) {
+    public User getByLogin(String login) {
         return getByLogin("SELECT * FROM `user` WHERE login = ?",
                 ps -> ps.setString(1, login),
                 getMapper());
     }
 
     @Override
-    public User getByDate(LocalDateTime date, boolean full) {
+    public User getByDate(LocalDateTime date) {
         return null;
     }
 
@@ -118,7 +120,7 @@ public class UserDao extends AbstractDao<User> {
     }
 
     @Override
-    public List<User> getAllById(long id, boolean full) {
+    public List<User> getAllById(long id) {
         return null;
     }
 

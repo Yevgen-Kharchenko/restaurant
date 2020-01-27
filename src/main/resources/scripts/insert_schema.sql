@@ -8,14 +8,44 @@ insert into `user` (`name`, `phone`,`login`, `password`, `role`) values
 ('Федір', '11234572','user3@g.com', 'password', 'GUEST'),
 ('Дженіфер', '11234573','user4@g.com', 'password', 'GUEST');
 
-insert into repairs_types (`title`) values ('MOBILE_PHONE'), ('TV'), ('COMPUTER'), ('VACUUM_CLEANER'),
-							('TABLET'), ('REFRIGERATOR'), ('MICROWAVE'), ('MONITOR'),
-							('OTHER'), ('STOVE'), ('WASHER'), ('RANGE_HOOD'), ('ICE_MAKER');
+insert into `dish_menu` (`dishType`, `name_UK`, `name_EN`, `ingredients_UK`, `ingredients_EN`,`price`)values
+		 ('MAIN','Яловичина на грилі з картоплею', 'Grilled Beef with potatoes', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',10.0),
+		 ('MAIN','Фруктове ванільне морозиво', 'Fruit Vanilla Ice Cream', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',11.0),
+		 ('MAIN','Азіатська свиняча свинина', 'Asian Hoisin Pork', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',12.0),
+		 ('MAIN','Пряний смажений рис і бекон', 'Spicy Fried Rice & Bacon', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',13.0),
+		 ('MAIN','Манго чилі Чатні', 'Mango Chili Chutney', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',14.0),
+		 ('MAIN','Китайські млинці смачні крес-салати', 'Savory Watercress Chinese Pancakes', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',15.0),
+		 ('MAIN','Суп з овочами та м`ясом', 'Soup With Vegetables And Meat', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',16.0),
+		 ('MAIN','Локшина Удон з овочами', 'Udon Noodles With Vegetables', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',17.0),
+		 ('MAIN','Запечений омар з гарніром', 'Baked Lobster With A Garnish', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',18.0),
+		 ('MAIN','Восьминіг з овочами', 'Octopus with Vegetables', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',19.0),
 
-insert into `order` (`date`, `price`, `repairsTypesId`, `userId`, `status`)
-		values ('2019-08-20 10:00:00',100.0,1,4,'CLOSED'), ('2019-08-23 10:00:00',150.0,2,5,'COMPLETED'), ('2019-08-25 10:00:00',200.0,3,6,'IN_PROGRESS'),
-		('2019-09-02 10:00:00',250.0,4,7,'CANCELED'), ('2019-09-12 10:00:01',300.0,5,4,'IN_PROGRESS'), ('2019-09-22 10:00:02',350.0,6,5,'OFFER'),
-		('2019-09-30 10:00:03',400.0,7,6,'CLOSED'), ('2019-10-02 10:00:04',0,8,7,'NEW'), ('2019-10-02 11:00:05',0,9,4,'NEW');
+		 ('DESSERT','Яловичина на грилі з картоплею', 'Grilled Beef with potatoes', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',20.0),
+		 ('DESSERT','Восьминіг з овочами', 'Octopus with Vegetables', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',21.0),
+		 ('DESSERT','Восьминіг з овочами', 'Octopus with Vegetables', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',22.0),
+		 ('DESSERT','Восьминіг з овочами', 'Octopus with Vegetables', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',23.0),
+		 ('DESSERT','Восьминіг з овочами', 'Octopus with Vegetables', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',24.0),
+		 ('DESSERT','Тирамісу', 'Tiramisu', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',25.0),
+		 ('DESSERT','Шоколадний крем', 'Chocolate Cream', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',26.0),
+		 ('DESSERT','Пиріг для піци', 'Pizza Pie', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',27.0),
+		 ('DESSERT','Сицилійська Рікотта', 'Sicilian Ricotta', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',28.0),
+		 ('DESSERT','Манго FLOat', 'Mango FLoat', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',29.0),
+
+         ('DRINKS','Лимонний сік', 'Lemon Juice', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',7.5),
+		 ('DRINKS','Сік Гуави', 'Guava Juice', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',6.4),
+		 ('DRINKS','Спрайт', 'Sprite', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',5.9),
+		 ('DRINKS','Кола', 'Cola', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',4.2),
+		 ('DRINKS','Вино', 'Wine', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',9.9),
+		 ('DRINKS','Пиво', 'Beer', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',10.1),
+		 ('DRINKS','Сік манго', 'Mango Juice', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',3.3),
+		 ('DRINKS','Яблучний сік', 'Apple Juice', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',8.6),
+		 ('DRINKS','Полуничний сік', 'Strawberry Juice', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',7.7),
+		 ('DRINKS','Помаранчевий сік', 'Orange Juice', 'М`ясо, Картопля, Рис, Помідори', 'Meat, Potatoes, Rice, Tomatoes',20.8);
+
+insert into `order` (`date`, `total`, `userId`, `status`)
+		values ('2019-08-20 10:00:00',100.0,4,'CLOSED'), ('2019-08-23 10:00:00',150.0,5,'COMPLETED'), ('2019-08-25 10:00:00',200.0,6,'IN_PROGRESS'),
+		('2019-09-02 10:00:00',250.0,6,'CANCELED'), ('2019-09-12 10:00:01',300.0,4,'IN_PROGRESS'), ('2019-09-22 10:00:02',350.0,5,'OFFER'),
+		('2019-09-30 10:00:03',400.0,6,'CLOSED'), ('2019-10-02 10:00:04',0,6,'NEW'), ('2019-10-02 11:00:05',0,4,'NEW');
 		
 insert into `feedback` (`date`, `feedback`, `userId`)
 		values ('2019-08-30 19:30:00','Дуже задоволений сервiсом та якiстю! Буду рекомендувати знайомим та звертатися повторно!',5),
