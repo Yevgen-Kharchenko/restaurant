@@ -4,10 +4,13 @@ import com.restaurant.model.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 
-@Setter
 @Getter
+@Setter
+@AllArgsConstructor
+@ToString
 public class UserDTO {
     private long id;
     private String name;

@@ -4,6 +4,7 @@ import com.restaurant.controller.command.Command;
 import com.restaurant.controller.command.admin.*;
 import com.restaurant.controller.command.error.ErrorCommand;
 import com.restaurant.controller.command.error.NotFoundCommand;
+import com.restaurant.controller.command.error.UnderConstructionCommand;
 import com.restaurant.controller.command.info.*;
 import com.restaurant.controller.command.logic.*;
 
@@ -17,7 +18,16 @@ public class CommandFactory {
 
     static {
         getCommandMap.put("/", new HomeCommand());
+        getCommandMap.put("/under-construction", new UnderConstructionCommand());
         getCommandMap.put("/index", new AdminCommand());
+        getCommandMap.put("/order-list", new OrderListCommand());
+        getCommandMap.put("/ui-elements", new ElementCommand());
+        getCommandMap.put("/chart", new ChartCommand());
+        getCommandMap.put("/chef", new ChefCommand());
+        getCommandMap.put("/tab-panel", new TabPanelCommand());
+        getCommandMap.put("/table", new TableCommand());
+        getCommandMap.put("/form", new FormCommand());
+        getCommandMap.put("/empty", new EmptyCommand());
         getCommandMap.put("/about", new AboutUsCommand());
         getCommandMap.put("/blog", new BlogCommand());
         getCommandMap.put("/contact", new ContactCommand());

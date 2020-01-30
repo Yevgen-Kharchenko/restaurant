@@ -33,6 +33,15 @@ status enum("NEW", "OFFER", "APPROVED",
 primary key(id),
 foreign key (userId) references user(id));
 
+create table order_dish (
+id bigint auto_increment,
+orderId bigint,
+dishId bigint,
+quantity int,
+primary key (id),
+foreign key (orderId) references `order`(id),
+foreign key (dishId) references dish_menu(id));
+
 create table comments(
 id int auto_increment,
 `date` datetime,

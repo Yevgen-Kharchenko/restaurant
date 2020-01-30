@@ -2,10 +2,8 @@ package com.restaurant.service;
 
 import com.restaurant.controller.view.UserDTO;
 import com.restaurant.model.User;
-import com.restaurant.model.enums.DaoType;
 import com.restaurant.model.enums.Role;
 import com.restaurant.repository.DaoFactory;
-import com.restaurant.repository.EntityDao;
 import com.restaurant.repository.impl.UserDaoImpl;
 import org.apache.log4j.Logger;
 
@@ -14,12 +12,12 @@ import java.util.stream.Collectors;
 
 
 public class UserService {
-    private EntityDao<User> userDao;
 
     private static final Logger LOG = Logger.getLogger(UserService.class);
+    private UserDaoImpl userDao;
 
     public UserService() {
-        this.userDao = DaoFactory.getEntityDao(DaoType.USER);
+        this.userDao = DaoFactory.getUserDao();
     }
 
     /**
@@ -168,8 +166,8 @@ public class UserService {
      *
      * @param id
      */
-    public void deleteUser(int id) {
-        User deleteUser = getUser(id);
-        userDao.remove(deleteUser);
+    public void deleteUser(long id) {
+        User deletedUser = getUser(id);
+        userDao.remove(deletedUser);
     }
 }

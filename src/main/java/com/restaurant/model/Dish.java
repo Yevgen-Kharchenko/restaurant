@@ -1,19 +1,15 @@
 package com.restaurant.model;
 
 import com.restaurant.model.enums.DishType;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import java.io.File;
 import java.sql.Blob;
 
 @ToString
 @Getter
 @Setter
-
-
 public class Dish {
     private long id;
     private DishType dishType;

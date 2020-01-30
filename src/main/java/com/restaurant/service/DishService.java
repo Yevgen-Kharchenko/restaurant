@@ -2,23 +2,20 @@ package com.restaurant.service;
 
 import com.restaurant.controller.view.DishDTO;
 import com.restaurant.model.Dish;
-import com.restaurant.model.User;
-import com.restaurant.model.enums.DaoType;
 import com.restaurant.model.enums.DishType;
 import com.restaurant.repository.DaoFactory;
-import com.restaurant.repository.EntityDao;
+import com.restaurant.repository.impl.DishDaoImpl;
 import org.apache.log4j.Logger;
 
-import java.sql.Blob;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class DishService {
     private static final Logger LOG = Logger.getLogger(DishService.class);
-    private EntityDao<Dish> dishDao;
+    private DishDaoImpl dishDao;
 
     public DishService() {
-        this.dishDao = DaoFactory.getEntityDao(DaoType.DISH);
+        this.dishDao = DaoFactory.getDishDao();
     }
 
     public Dish getDish(long id) {

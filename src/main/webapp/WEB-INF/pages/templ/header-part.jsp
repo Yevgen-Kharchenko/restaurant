@@ -32,6 +32,30 @@
             <li class="nav-item"><a href="contact" class="nav-link"><fmt:message key="contact"/></a></li>
             <li class="nav-item">
                 <c:choose>
+
+                    <c:when test="${user.role=='ADMIN'}">
+                         <a href="admin/index"class="nav-link">
+                         <fmt:message key="admin"/>
+                         </a>
+                    </c:when>
+                    <c:when test="${user.role=='CHEF'}">
+                        <a href="admin/chef" class="nav-link">
+                        <fmt:message key="admin"/>
+                         </a>
+                    </c:when>
+                    <c:when test="${user.role=='GUEST'}">
+                         <a href="user"class="nav-link">
+                         <fmt:message key="account"/>
+                         </a>
+                    </c:when>
+                    <c:otherwise>
+                         <a href=""></a>
+                    </c:otherwise>
+                </c:choose>
+            </li>
+            <li class="nav-item">
+                <c:choose>
+
                     <c:when test="${not empty user}">
                         <a href="logout" class="nav-link">
                             <fmt:message key="logout"/>

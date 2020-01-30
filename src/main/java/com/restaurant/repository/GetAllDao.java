@@ -3,21 +3,9 @@ package com.restaurant.repository;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public interface EntityDao<T> {
-
-    boolean create(T entity);
-
-    boolean update(T entity);
-
-    boolean remove(T entity);
+public interface GetAllDao<T> {
 
     List<T> getAll();
-
-    T getById(long id);
-
-    T getByLogin(String login);
-
-    T getByDate(LocalDateTime date);
 
     List<T> getAllById(long id);
 

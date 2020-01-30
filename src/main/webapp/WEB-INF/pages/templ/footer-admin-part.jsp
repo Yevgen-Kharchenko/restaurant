@@ -28,7 +28,14 @@
 <script src="static/assets/js/easypiechart-data.js"></script>
 
 <script src="static/assets/js/Lightweight-Chart/jquery.chart.js"></script>
-
+        <!-- DATA TABLE SCRIPTS -->
+<script src="static/assets/js/dataTables/jquery.dataTables.js"></script>
+<script src="static/assets/js/dataTables/dataTables.bootstrap.js"></script>
+<script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+    </script>
         <!-- Custom Js -->
 <script src="static/assets/js/custom-scripts.js"></script>
 

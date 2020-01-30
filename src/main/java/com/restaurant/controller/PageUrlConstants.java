@@ -5,8 +5,15 @@ public class PageUrlConstants {
     public static final String HOME_PAGE = "index";
     public static final String USER_PAGE = "user";
     public static final String ORDER_PAGE = "order";
+    public static final String ORDER_LIST_PAGE = "admin/order-list";
     public static final String ADMIN_PAGE = "admin/index";
-    public static final String MANAGER_PAGE = "manager";
+    public static final String ELEMENT_PAGE = "admin/ui-elements";
+    public static final String CHART_PAGE = "admin/chart";
+    public static final String TAB_PANEL_PAGE = "admin/tab-panel";
+    public static final String FORM_PAGE = "admin/form";
+    public static final String TABLE_PAGE = "admin/table";
+    public static final String EMPTY_PAGE = "admin/empty";
+    public static final String CHEF_PAGE = "admin/chef";
     public static final String MASTER_PAGE = "master";
     public static final String NOT_FOUND_PAGE = "errors/404-error";
     public static final String UNDER_CONSTRUCTION_PAGE = "errors/under-construction";

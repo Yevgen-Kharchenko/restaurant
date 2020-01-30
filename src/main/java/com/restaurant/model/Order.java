@@ -6,18 +6,19 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @ToString
 @Getter
 @Setter
 public class Order {
     private long id;
-    private LocalDateTime date;
+    private Date date;
     private double total;
     private long userId;
     private Status status;
 
-    public Order(long id, LocalDateTime date, double total,
+    public Order(long id, Date date, double total,
                  long userId, Status status) {
         this.id = id;
         this.date = date;
@@ -29,7 +30,7 @@ public class Order {
     public Order() {
     }
 
-    public Order(LocalDateTime date, long userId, Status status) {
+    public Order(Date date, long userId, Status status) {
         this.date = date;
         this.userId = userId;
         this.status = status;
