@@ -1,15 +1,13 @@
 package com.restaurant.controller.view;
 
 import com.restaurant.model.enums.DishType;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.sql.Blob;
 
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
 @ToString
 public class DishDTO {
@@ -18,10 +16,8 @@ public class DishDTO {
     private String ingredients;
     private double price;
     private int quantity;
+    private double cost;
     private DishType dishType;
     private Blob images;
 
-    public DishDTO() {
-
-    }
 }

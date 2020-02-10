@@ -67,6 +67,8 @@
 
     <section class="ftco-section bg-light">
       <div class="container">
+        <form action="menu" method="post">
+
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
             <span class="subheading"><fmt:message key="our.menu"/></span>
@@ -90,8 +92,8 @@
                   
                     <c:forEach items="${dishMainList}" var="dishMain">
 					<div class="col-lg-6">
-				     <input type="checkbox" id="${dishMain.id}"/>
-					<label for="${dishMain.id}" class="menus d-flex ftco-animate">
+				     <input type="checkbox" id="dish_${dishMain.id}" onmousedown="this.form.dish${dishMain.id}.disabled=this.checked"/>
+					<label for="dish_${dishMain.id}" class="menus d-flex ftco-animate" onmousedown="this.form.dish${dishMain.id}.disabled=this.checked">
                       <div class="menu-img" style="background-image: url(static/images/dish-${dishMain.id}.jpg);"></div>
 						<div class="text d-flex">
 							<div class="one-half">
@@ -99,9 +101,9 @@
                               <p><span>${dishMain.ingredients}</span></p>
 							</div>
 							<div class="one-forth">
-								<form action="">
-									<p><input type="number" name="t" value="1" min="1" max="10" step="1"/></p>
-								</form>
+
+									<p><input type="number" id="dish${dishMain.id}" name="${dishMain.id}" value="1" min="1" max="10" step="1" disabled/></p>
+
 							</div>
 							<div class="one-forth">
 								<span class="price">$${dishMain.price}</span>
@@ -119,8 +121,8 @@
                   
                     <c:forEach items="${dishDessertList}" var="dishDessert">
 					<div class="col-lg-6">
-                        <input type="checkbox" id="${dishDessert.id}"/>
-                        <label for="${dishDessert.id}" class="menus d-flex ftco-animate">
+                        <input type="checkbox" id="dish_${dishDessert.id}" onmousedown="this.form.dish${dishDessert.id}.disabled=this.checked"/>
+                        <label for="dish_${dishDessert.id}" class="menus d-flex ftco-animate" onmousedown="this.form.dish${dishDessert.id}.disabled=this.checked">
                           <div class="menu-img" style="background-image: url(static/images/dish-${dishDessert.id}.jpg);"></div>
                           <div class="text d-flex">
                             <div class="one-half">
@@ -128,9 +130,9 @@
                               <p><span>${dishDessert.ingredients}</span></p>
                             </div>
                             <div class="one-forth">
-                              <form action="">
-                                <p><input type="number" name="t" value="1" min="1" max="10" step="1"/></p>
-                              </form>
+
+                                <p><input type="number" id="dish${dishDessert.id}" name="${dishDessert.id}" value="1" min="1" max="10" step="1" disabled/></p>
+
                             </div>
                             <div class="one-forth">
                               <span class="price">$${dishDessert.price}</span>
@@ -148,18 +150,19 @@
                   
                     <c:forEach items="${dishDrinksList}" var="dishDrinks">
 					<div class="col-lg-6">
-                        <input type="checkbox" id="${dishDrinks.id}"/>
-                        <label for="${dishDrinks.id}" class="menus d-flex ftco-animate">
+                        <input type="checkbox" id="dish_${dishDrinks.id}" onmousedown="this.form.dish${dishDrinks.id}.disabled=this.checked"/>
+                        <label for="dish_${dishDrinks.id}" class="menus d-flex ftco-animate" onmousedown="this.form.dish${dishDrinks.id}.disabled=this.checked">
                           <div class="menu-img" style="background-image: url(static/images/dish-${dishDrinks.id}.jpg);"></div>
                           <div class="text d-flex">
                             <div class="one-half">
                               <h3>${dishDrinks.name}</h3>
                               <p><span>${dishDrinks.ingredients}</span></p>
                             </div>
+
                             <div class="one-forth">
-                              <form action="">
-                                <p><input type="number" name="t" value="1" min="1" max="10" step="1"/></p>
-                              </form>
+
+                                <p><input type="number" id="dish${dishDrinks.id}" name="${dishDrinks.id}" value="1" min="1" max="10" step="1" disabled /></p>
+
                             </div>
                             <div class="one-forth">
                               <span class="price">$${dishDrinks.price}</span>
@@ -177,10 +180,13 @@
         </div>
       <div class="col-sm-12 pt-4 text-center ftco-animate">
                 <p><fmt:message key="even"/></p>
-                <span><a href="reservation" class="btn btn-primary btn-outline-primary p-3"><fmt:message key="make.res"/></a></span>
+        <button type="submit" class="btn btn-primary btn-outline-primary p-3">
+          <fmt:message key="make.res"/></button>
               </div>
-</div>
+        </form>
+      </div>
     </section>
+
 
     <c:import url="templ/footer-part.jsp"/>
     <c:import url="templ/loader.jsp"/>

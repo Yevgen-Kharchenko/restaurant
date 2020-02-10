@@ -1,7 +1,6 @@
 package com.restaurant.repository.impl;
 
 import com.restaurant.config.ConnectionFactory;
-import com.restaurant.controller.view.OrderDTO;
 import com.restaurant.model.Order;
 import com.restaurant.model.enums.Status;
 import com.restaurant.repository.AbstractDao;
@@ -10,7 +9,7 @@ import com.restaurant.repository.GetAllDao;
 import com.restaurant.repository.OrderDao;
 import org.apache.log4j.Logger;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.List;
 
 public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao, GetAllDao<Order> {
@@ -25,7 +24,7 @@ public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao, GetAll
     private static final String COLUMN_USER_ID = "userId";
     private static final String COLUMN_STATUS = "status";
     private static final String SELECT_ALL_ORDER = "SELECT * FROM `order`";
-    private static final String SELECT_ALL_ORDER_BY_USER_ID = "SELECT * FROM `order` WHERE userId = ?";
+    private static final String SELECT_ORDER_BY_ID = "SELECT * FROM `order` WHERE id = ?";
     private static final String SELECT_ALL_ORDER_PAGINATED = "SELECT * FROM `order` LIMIT ?,?";
     private static final String SELECT_ALL_FOR_CHEF = "SELECT order.id, date, total, order_dish.id," +
             " quantity, name_UK, name_EN FROM `order` " +
@@ -60,7 +59,7 @@ public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao, GetAll
     }
 
     @Override
-    public List<Order> getAllById(long id) {
+    public List<Order> getAllByFieldId(long id) {
         return getAllByField(SELECT_ALL_ORDER + "WHERE " + COLUMN_USER_ID + "= ?",
                 ps -> ps.setLong(1, id),
                 getMapper());
@@ -86,7 +85,7 @@ public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao, GetAll
 
     @Override
     public Order getById(long id) {
-        return getByField(SELECT_ALL_ORDER_BY_USER_ID,
+        return getByField(SELECT_ORDER_BY_ID,
                 ps -> ps.setLong(1, id),
                 getMapper());
     }
@@ -95,7 +94,7 @@ public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao, GetAll
     public Order create(Order entity) {
         LOG.debug("Create order: + " + entity);
         long id = super.create(INSERT_INTO_ORDER, ps -> {
-            ps.setDate(1, (Date) entity.getDate());
+            ps.setTimestamp(1, Timestamp.valueOf(entity.getDate()));
             ps.setDouble(2, entity.getTotal());
             ps.setLong(3, entity.getUserId());
             ps.setString(4, entity.getStatus().toString());
@@ -108,7 +107,7 @@ public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao, GetAll
     public boolean update(Order entity) {
         LOG.debug("Update order: " + entity);
         return update(UPDATE_ORDER, ps -> {
-            ps.setDate(1, (Date) entity.getDate());
+            ps.setTimestamp(1, Timestamp.valueOf(entity.getDate()));
             ps.setDouble(2, entity.getTotal());
             ps.setLong(3, entity.getUserId());
             ps.setString(4, entity.getStatus().toString());
@@ -125,15 +124,7 @@ public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao, GetAll
 
     private EntityMapper<Order> getMapper() {
         return resultSet -> new Order(resultSet.getLong(COLUMN_ID),
-                resultSet.getDate(COLUMN_DATE),
-                resultSet.getDouble(COLUMN_TOTAL),
-                resultSet.getLong(COLUMN_USER_ID),
-                Status.valueOf(resultSet.getString(COLUMN_STATUS)));
-    }
-
-    private EntityMapper<OrderDTO> getFullMapper() {
-        return resultSet -> new OrderDTO(resultSet.getLong(COLUMN_ID),
-                resultSet.getDate(COLUMN_DATE),
+                resultSet.getTimestamp(COLUMN_DATE).toLocalDateTime(),
                 resultSet.getDouble(COLUMN_TOTAL),
                 resultSet.getLong(COLUMN_USER_ID),
                 Status.valueOf(resultSet.getString(COLUMN_STATUS)));

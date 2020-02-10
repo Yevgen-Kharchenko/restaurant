@@ -26,19 +26,22 @@ public abstract class AbstractDao<T> implements CrudDao<T> {
 
     public List<T> getAll(String query, StatementMapper<T> statementMapper, EntityMapper<T> mapper) {
         List<T> result = new ArrayList<>();
-
-        try (Connection conn = getConnection();
-             PreparedStatement preparedStatement = conn.prepareStatement(query)) {
-            statementMapper.map(preparedStatement);
+        Connection conn = getConnection();
+        try (PreparedStatement preparedStatement = conn.prepareStatement(query)) {
+            if (statementMapper != null) {
+                statementMapper.map(preparedStatement);
+            }
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 while (resultSet.next()) {
                     T entity = mapper.map(resultSet);
-
                     result.add(entity);
                 }
             }
         } catch (SQLException e) {
             LOG.error("Exception while getting all entities", e);
+            throw new RuntimeException(e);
+        } finally {
+            closeAutocommitConnection(conn);
         }
 
         return result;
@@ -108,9 +111,8 @@ public abstract class AbstractDao<T> implements CrudDao<T> {
         Connection conn = getConnection();
         try (PreparedStatement preparedStatement = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
             statementMapper.map(preparedStatement);
-            conn.setAutoCommit(false);
 
-            int result = preparedStatement.executeUpdate();
+            long result = preparedStatement.executeUpdate();
             if (result != 1) {
                 LOG.error("Could not create entity.");
                 return -1;

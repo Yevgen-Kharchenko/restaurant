@@ -7,6 +7,7 @@ public class ServiceFactory {
     private static UserService userService = new UserService();
     private static DishService dishService = new DishService();
     private static OrderService orderService = new OrderService();
+    private static InvoiceService invoiceService = new InvoiceService();
 
     public static UserService getUserService() {
         return userService;
@@ -18,6 +19,10 @@ public class ServiceFactory {
 
     public static OrderService getOrderService() {
         return orderService;
+    }
+
+    public static InvoiceService getInvoiceService() {
+        return invoiceService;
     }
 
 }

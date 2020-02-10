@@ -69,7 +69,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao, GetAllDao
     }
 
     @Override
-    public List<User> getAllById(long id) {
+    public List<User> getAllByFieldId(long id) {
         return getAllByField(SELECT_ALL_USERS + "WHERE id = ?",
                 ps -> ps.setLong(1, id),
                 getMapper());
@@ -77,7 +77,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao, GetAllDao
 
     @Override
     public List<User> getAllByField(String field) {
-        return getAllByField(SELECT_ALL_USERS + "WHERE id = ?",
+        return getAllByField(SELECT_ALL_USERS + "WHERE "+COLUMN_ROLE+" = ?",
                 ps -> ps.setString(1, field),
                 getMapper());
     }
@@ -134,7 +134,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao, GetAllDao
     }
 
     private EntityMapper<User> getMapper() {
-        return resultSet -> new User(resultSet.getInt(COLUMN_ID),
+        return resultSet -> new User(resultSet.getLong(COLUMN_ID),
                 resultSet.getString(COLUMN_NAME),
                 resultSet.getString(COLUMN_PHONE),
                 resultSet.getString(COLUMN_LOGIN),

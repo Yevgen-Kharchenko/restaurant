@@ -14,17 +14,7 @@
     <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="" class="nav-link"><fmt:message key="home"/></a></li>
-            <li class="nav-item">
-                <c:choose>
-                    <c:when test="${user.role=='ADMIN'}">
-                <a href="edit-menu" class="nav-link"><fmt:message key="edit.menu"/></a>
-                    </c:when>
-                    <c:otherwise>
-                <a href="menu" class="nav-link"><fmt:message key="menu"/></a>
-                    </c:otherwise>
-                </c:choose>
-                </li>
-
+            <li class="nav-item"><a href="menu" class="nav-link"><fmt:message key="order"/></a></li>
             <li class="nav-item"><a href="specialties" class="nav-link"><fmt:message key="specialties"/></a></li>
             <li class="nav-item"><a href="reservation" class="nav-link"><fmt:message key="reservation"/></a></li>
             <li class="nav-item"><a href="blog" class="nav-link"><fmt:message key="blog"/></a></li>
@@ -44,8 +34,8 @@
                          </a>
                     </c:when>
                     <c:when test="${user.role=='GUEST'}">
-                         <a href="user"class="nav-link">
-                         <fmt:message key="account"/>
+                         <a href="my-orders"class="nav-link">
+                         <fmt:message key="orders"/>
                          </a>
                     </c:when>
                     <c:otherwise>

@@ -4,7 +4,7 @@ public class PageUrlConstants {
 
     public static final String HOME_PAGE = "index";
     public static final String USER_PAGE = "user";
-    public static final String ORDER_PAGE = "order";
+    public static final String ORDER_PAGE = "admin/order";
     public static final String ORDER_LIST_PAGE = "admin/order-list";
     public static final String ADMIN_PAGE = "admin/index";
     public static final String ELEMENT_PAGE = "admin/ui-elements";
@@ -14,7 +14,7 @@ public class PageUrlConstants {
     public static final String TABLE_PAGE = "admin/table";
     public static final String EMPTY_PAGE = "admin/empty";
     public static final String CHEF_PAGE = "admin/chef";
-    public static final String MASTER_PAGE = "master";
+    public static final String MY_ORDER_PAGE = "my-orders";
     public static final String NOT_FOUND_PAGE = "errors/404-error";
     public static final String UNDER_CONSTRUCTION_PAGE = "errors/under-construction";
     public static final String SERVICES_PAGE = "services";
@@ -27,7 +27,7 @@ public class PageUrlConstants {
     public static final String RESERVATION_PAGE = "reservation";
     public static final String FEEDBACK_PAGE = "feedback";
     public static final String SPECIALTIES_PAGE = "specialties";
-    public static final String TEAM_PROFILE_PAGE = "team-member-profile";
+    public static final String INVOICE_PAGE = "invoice";
     public static final String PROFILE_PAGE = "profile";
     public static final String MENU_PAGE = "menu";
     public static final String EDIT_MENU_PAGE = "edit-menu";

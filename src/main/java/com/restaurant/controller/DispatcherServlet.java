@@ -35,6 +35,7 @@ public class DispatcherServlet extends HttpServlet {
 
         if (page.isRedirect()) {
             resp.sendRedirect(req.getContextPath() + page.getUrl());
+//            resp.sendRedirect( page.getUrl());
             LOG.info("Redirect to: " + (req.getContextPath() + page.getUrl()));
         } else {
             req.getRequestDispatcher(resolvePath(page.getUrl())).forward(req, resp);
@@ -51,6 +52,7 @@ public class DispatcherServlet extends HttpServlet {
         int lastPath = requestUri.lastIndexOf('/');
         String path = requestUri.substring(lastPath);
         LOG.info("Path: " + path);
+        req.setAttribute("path", path);
         return path;
     }
 }

@@ -43,14 +43,25 @@ public class CommandFactory {
         getCommandMap.put("/logout", new LogoutCommand());
         getCommandMap.put("/dish", new DishCommand());
         getCommandMap.put("/dish-delete", new DishDeleteCommand());
+        getCommandMap.put("/order", new OrderCommand());
+        getCommandMap.put("/order-dish-delete", new DishOrderDeleteCommand());
+        getCommandMap.put("/add-order-dish", new AddOrderDishCommand());
+        getCommandMap.put("/update-order-dish-quantity", new UpdateOrderDishCommand());
+        getCommandMap.put("/my-orders", new MyOrderCommand());
+        getCommandMap.put("/invoice", new InvoiceCommand());
+
 
 
         postCommandMap.put("/", new HomeCommand());
+        postCommandMap.put("/invoice", new InvoiceCommand());
         postCommandMap.put("/login", new LoginCommand());
         postCommandMap.put("/register", new RegisterCommand());
         postCommandMap.put("/menu", new MenuCommand());
         postCommandMap.put("/edit-menu", new EditMenuCommand());
         postCommandMap.put("/dish", new DishCommand());
+        postCommandMap.put("/status", new StatusCommand());
+        postCommandMap.put("/order", new OrderCommand());
+
     }
 
     private CommandFactory() {

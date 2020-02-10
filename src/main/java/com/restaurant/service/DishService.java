@@ -22,7 +22,7 @@ public class DishService {
         return dishDao.getById(id);
     }
 
-    public List<DishDTO> getAllByField(String local, DishType dishType) {
+    public List<DishDTO> getAllByField(DishType dishType, String local) {
         List<Dish> all = dishDao.getAllByField(dishType.toString());
         LOG.info("List<Dish> all = " + all.toString());
         return mapToDishDTO(all, local);
@@ -39,14 +39,21 @@ public class DishService {
     }
 
     public Dish createDish(DishType dishType, String nameUK, String nameEN, String ingredientsUK, String ingredientsEN, double price) {
-        Dish createdDish = new Dish(dishType, nameUK, nameEN, ingredientsUK, ingredientsEN, price);
+        Dish createdDish = Dish.builder()
+                .dishType(dishType)
+                .nameUK(nameUK)
+                .nameEN(nameEN)
+                .ingredientsUK(ingredientsUK)
+                .ingredientsEN(ingredientsEN)
+                .price(price)
+                .build();
         dishDao.create(createdDish);
         return createdDish;
     }
 
     public Dish updateDish(long id, DishType dishType, String nameUK, String nameEN, String ingredientsUK, String ingredientsEN, double price) {
         Dish updatedDish = dishDao.getById(id);
-        LOG.info("updeted dish = "+ updatedDish);
+        LOG.info("updeted dish = " + updatedDish);
         updatedDish.setDishType(dishType);
         updatedDish.setNameUK(nameUK);
         updatedDish.setNameEN(nameEN);
@@ -76,6 +83,7 @@ public class DishService {
                 dishDTO.setIngredients(dish.getIngredientsEN());
             }
             dishDTO.setPrice(dish.getPrice());
+            dishDTO.setQuantity(1);
             dishDTO.setImages(dish.getImages());
             return dishDTO;
         }).collect(Collectors.toList());

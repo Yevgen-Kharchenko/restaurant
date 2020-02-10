@@ -28,7 +28,7 @@ id bigint auto_increment,
 total DECIMAL(5,2) default 0,
 userId bigint,
 status enum("NEW", "OFFER", "APPROVED",
-	"CANCELED", "IN_PROGRESS",
+	"CANCELED", "IN_PROGRESS", "PAYMENT",
     "COMPLETED", "CLOSED"),
 primary key(id),
 foreign key (userId) references user(id));
@@ -41,6 +41,16 @@ quantity int,
 primary key (id),
 foreign key (orderId) references `order`(id),
 foreign key (dishId) references dish_menu(id));
+
+create table `invoice`(
+id bigint auto_increment,
+`date` datetime,
+orderId bigint,
+status enum("NEW", "CANCELED", "PAID"),
+primary key(id),
+foreign key (orderId) references `order`(id));
+
+
 
 create table comments(
 id int auto_increment,

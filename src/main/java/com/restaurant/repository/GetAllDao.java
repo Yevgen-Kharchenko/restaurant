@@ -7,7 +7,7 @@ public interface GetAllDao<T> {
 
     List<T> getAll();
 
-    List<T> getAllById(long id);
+    List<T> getAllByFieldId(long id);
 
     List<T> getAllByField(String field);
 

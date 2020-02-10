@@ -32,6 +32,16 @@
 </li>
 <li><a href="logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
 </li>
+<li>
+    <c:choose>
+        <c:when test="${locale=='en'}">
+            <a href="language?locale=uk_UA">UA</a>
+        </c:when>
+        <c:otherwise>
+            <a href="language?locale=en">EN</a>
+        </c:otherwise>
+    </c:choose>
+</li>
 </ul>
 <ul id="dropdown2" class="dropdown-content w250">
 <li>
@@ -212,7 +222,7 @@
             <a class="waves-effect waves-dark" href="admin/chef"><i class="fa fa-qrcode"></i>Orders for Chef</a>
         </li>
         <li>
-            <a class="waves-effect waves-dark" href="admin/chef"><i class="fa fa-edit"></i>Edit Menu</a>
+            <a class="waves-effect waves-dark" href="admin/edit-menu"><i class="fa fa-edit"></i>Edit Menu</a>
         </li>
         <li>
             <a href="admin/ui-elements" class="waves-effect waves-dark"><i class="fa fa-desktop"></i> UI Elements</a>

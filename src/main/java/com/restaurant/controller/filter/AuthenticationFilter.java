@@ -24,6 +24,7 @@ public class AuthenticationFilter implements Filter {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         HttpServletResponse httpServletResponse = (HttpServletResponse) response;
 
+
         String path = getPath(httpServletRequest);
 
         if (!SecurityConfig.isSecurePage(path)) {

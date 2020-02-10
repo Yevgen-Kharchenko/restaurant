@@ -14,9 +14,9 @@ public class LanguageCommand implements Command {
     @Override
     public Page perform(HttpServletRequest request) {
         String locale = request.getParameter(LOCALE);
-
+        String originUrl = request.getHeader("referer");
         request.getSession().setAttribute(LOCALE, locale);
 
-        return new Page(REDIRECT_HOME_PAGE, true);
+        return new Page(originUrl, true);
     }
 }

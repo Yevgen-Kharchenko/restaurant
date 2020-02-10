@@ -97,7 +97,12 @@ public class UserService {
      * @return
      */
     public User registrationUser(String name,String login, String password) {
-        User newUser = User.builder().name(name).login(login).password(password).role(Role.GUEST).build();
+        User newUser = User.builder()
+                .name(name)
+                .login(login)
+                .password(password)
+                .role(Role.GUEST)
+                .build();
         userDao.create(newUser);
         return newUser;
     }
@@ -113,11 +118,22 @@ public class UserService {
      * @param role
      * @return
      */
+
+
     public User updateUser(int id, String name, String phone, String login, String password, Role role) {
-        User updatedUser = new User(id, name, phone, login, password, role);
+        User updatedUser = User.builder()
+                .id(id)
+                .name(name)
+                .phone(phone)
+                .login(login)
+                .password(password)
+                .role(Role.GUEST)
+                .build();
         userDao.update(updatedUser);
         return updatedUser;
     }
+
+
 
     /**
      * Gets List UserDTO from DB

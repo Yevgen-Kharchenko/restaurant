@@ -10,7 +10,9 @@ import static com.restaurant.controller.PageUrlConstants.REDIRECT_HOME_PAGE;
 public class LogoutCommand implements Command {
     @Override
     public Page perform(HttpServletRequest request) {
+        String originUrl = request.getHeader("referer");
         request.getSession().invalidate();
-        return new Page(REDIRECT_HOME_PAGE, true);
+
+        return new Page(originUrl, true);
     }
 }

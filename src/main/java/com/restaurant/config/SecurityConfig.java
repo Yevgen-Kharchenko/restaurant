@@ -12,11 +12,11 @@ public class SecurityConfig {
 
     static {
         securityPages.put(Role.ADMIN, Arrays.asList("/edit-menu", "/dish", "/chef", "/master",
-                "/index", "/order", "/order-comment", "/user-profile",
+                "/index", "/order", "/user-profile","/my-orders",
                 "/users", "/ui-element", "/chart", "/tab-panel",
-                "/table", "/form", "/empty","/order-list"));
-        securityPages.put(Role.GUEST, Arrays.asList("/user", "/feedback", "/order", "/order-comment"));
-        securityPages.put(Role.CHEF, Arrays.asList("/manager", "/chef", "/order-comment"));
+                "/table", "/form", "/empty","/order-list", "/menu","/invoice"));
+        securityPages.put(Role.GUEST, Arrays.asList("/my-orders", "/menu","/invoice"));
+        securityPages.put(Role.CHEF, Arrays.asList("/chef"));
 
     }
 

@@ -18,13 +18,13 @@ public class DishDaoImpl extends AbstractDao<Dish> implements GetAllDao<Dish> {
         super(connectionFactory);
     }
 
-    private static final String COLUMN_DISH_TYPE = "dishType";
-    private static final String COLUMN_NAME_UK = "name_UK";
-    private static final String COLUMN_NAME_EN = "name_EN";
-    private static final String COLUMN_INGREDIENTS_UK = "ingredients_UK";
-    private static final String COLUMN_INGREDIENTS_EN = "ingredients_EN";
-    private static final String COLUMN_PRICE = "price";
-    private static final String COLUMN_PHOTO = "photo";
+    public static final String COLUMN_DISH_TYPE = "dishType";
+    public static final String COLUMN_NAME_UK = "name_UK";
+    public static final String COLUMN_NAME_EN = "name_EN";
+    public static final String COLUMN_INGREDIENTS_UK = "ingredients_UK";
+    public static final String COLUMN_INGREDIENTS_EN = "ingredients_EN";
+    public static final String COLUMN_PRICE = "price";
+    public static final String COLUMN_PHOTO = "photo";
     private static final String SELECT_ALL_DISH_MENU = "SELECT * FROM `dish_menu`";
     private static final String SELECT_ALL_DISH_PAGINATED = "SELECT * FROM `dish_menu` LIMIT ?,?";
 
@@ -57,7 +57,7 @@ public class DishDaoImpl extends AbstractDao<Dish> implements GetAllDao<Dish> {
     }
 
     @Override
-    public List<Dish> getAllById(long id) {
+    public List<Dish> getAllByFieldId(long id) {
         return getAllByField(SELECT_ALL_DISH_MENU + "WHERE id = ?",
                 ps -> ps.setLong(1, id),
                 getMapper());

@@ -152,6 +152,44 @@
                                     </div>
                                 </li>
                                 <li>
+                                    <div class="collapsible-header"><i class="material-icons">credit_card</i>PAYMENT</div>
+                                    <div class="collapsible-body">
+                                        <div class="card">
+
+                                            <div class="card-content">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped table-bordered table-hover">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Date</th>
+                                                            <th>Name</th>
+                                                            <th>Phone</th>
+                                                            <th>Price</th>
+                                                            <th>Edit</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <c:forEach items="${ordersPayment}" var="ordersPayment">
+                                                            <tr>
+                                                                <td>${ordersPayment.id}</td>
+                                                                <td>${ordersPayment.date}</td>
+                                                                <td>${ordersPayment.customer.name}</td>
+                                                                <td>${ordersPayment.customer.phone}</td>
+                                                                <td>${ordersPayment.total}</td>
+                                                                <td>
+                                                                    <a href="admin/order?orderId=${ordersPayment.id}"><i class="material-icons">mode_edit</i></a>
+                                                                </td>
+                                                            </tr>
+                                                        </c:forEach>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
                                     <div class="collapsible-header"><i class="material-icons">done</i>CLOSED</div>
                                     <div class="collapsible-body">
                                         <div class="card">

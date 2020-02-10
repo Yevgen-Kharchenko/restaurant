@@ -1,15 +1,12 @@
 package com.restaurant.controller.view;
 
 import com.restaurant.model.enums.Role;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 
 @Getter
 @Setter
-@AllArgsConstructor
+@NoArgsConstructor
 @ToString
 public class UserDTO {
     private long id;
@@ -19,7 +16,4 @@ public class UserDTO {
     private String password;
     private Role role;
 
-    public UserDTO() {
-
-    }
 }

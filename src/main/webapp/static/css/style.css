@@ -241,7 +241,7 @@ input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0; }
   
-  #checkboxes input[type=checkbox]{
+   #checkboxes input[type=checkbox]{
     display: none;
 }
 
@@ -249,9 +249,6 @@ input[type="checkbox"] {
     background: #ffb400;
 }
 
-
-
-input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {

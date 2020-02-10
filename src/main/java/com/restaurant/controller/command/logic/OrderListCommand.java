@@ -27,6 +27,7 @@ public class OrderListCommand implements Command {
         request.setAttribute("ordersNew", orderService.getAllByStatus(Status.NEW));
         request.setAttribute("ordersInProgress", orderService.getAllByStatus(Status.IN_PROGRESS));
         request.setAttribute("ordersCompleted", orderService.getAllByStatus(Status.COMPLETED));
+        request.setAttribute("ordersPayment", orderService.getAllByStatus(Status.PAYMENT));
         request.setAttribute("ordersCanceled", orderService.getAllByStatus(Status.CANCELED));
         request.setAttribute("ordersClosed", orderService.getAllByStatus(Status.CLOSED));
 
