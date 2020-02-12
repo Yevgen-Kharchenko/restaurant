@@ -36,14 +36,25 @@
 							<input type="email" class="form-control" name="login" placeholder="" required="">
 						</div>
 						<div class="form-group">
+							<label><fmt:message key="phone"/></label>
+							<input type="text" class="form-control" name="phone"  placeholder=""
+								   required="">
+						</div>
+						<div class="row">
+						<div class="col-md-6">
+						<div class="form-group">
 							<label class="mb-2"><fmt:message key="password"/></label>
 							<input type="password" class="form-control" name="password" id="password1" placeholder=""
 								required="">
 						</div>
+						</div>
+						<div class="col-md-6">
 						<div class="form-group">
 							<label><fmt:message key="confirm"/></label>
 							<input type="password" class="form-control" name="confirmPassword" id="password2" placeholder=""
 								required="">
+						</div>
+						</div>
 						</div>
 						<button type="submit" class="btn submit mb-4"><fmt:message key="register"/></button>
 

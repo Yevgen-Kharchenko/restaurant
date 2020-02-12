@@ -231,7 +231,7 @@
                                                      <input type="hidden" name="orderId" value="${order.id}" />
                                                      <button type="submit" class="waves-effect btn-success btn">
                                                          <i class="material-icons left">credit_card</i>
-                                                         <fmt:message key="payment"/></button>
+                                                         <fmt:message key="invoice2"/></button>
                                                      </form>
                                                  </div>
 

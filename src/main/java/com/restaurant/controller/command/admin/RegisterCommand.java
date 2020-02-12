@@ -10,8 +10,7 @@ import org.apache.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import static com.restaurant.controller.PageUrlConstants.REGISTER_PAGE;
-import static com.restaurant.controller.PageUrlConstants.REDIRECT_HOME_PAGE;
+import static com.restaurant.controller.PageUrlConstants.*;
 
 public class RegisterCommand extends UniCommand {
 
@@ -48,6 +47,6 @@ public class RegisterCommand extends UniCommand {
             return new Page(REDIRECT_HOME_PAGE, true);
         }
         request.setAttribute("notification", "Not valid login or password");
-        return new Page(REGISTER_PAGE, false);
+        return new Page(HOME_PAGE, false);
     }
 }

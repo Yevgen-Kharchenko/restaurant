@@ -14,12 +14,13 @@
     <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="" class="nav-link"><fmt:message key="home"/></a></li>
-            <li class="nav-item"><a href="menu" class="nav-link"><fmt:message key="order"/></a></li>
+            <li class="nav-item"><a href="menu" class="nav-link"><fmt:message key="menu"/></a></li>
             <li class="nav-item"><a href="specialties" class="nav-link"><fmt:message key="specialties"/></a></li>
             <li class="nav-item"><a href="reservation" class="nav-link"><fmt:message key="reservation"/></a></li>
             <li class="nav-item"><a href="blog" class="nav-link"><fmt:message key="blog"/></a></li>
             <li class="nav-item"><a href="about" class="nav-link"><fmt:message key="about.us"/></a></li>
             <li class="nav-item"><a href="contact" class="nav-link"><fmt:message key="contact"/></a></li>
+            <li class="nav-item"><a href="my-orders" class="nav-link"><fmt:message key="orders"/></a></li>
             <li class="nav-item">
                 <c:choose>
 
@@ -31,11 +32,6 @@
                     <c:when test="${user.role=='CHEF'}">
                         <a href="admin/chef" class="nav-link">
                         <fmt:message key="admin"/>
-                         </a>
-                    </c:when>
-                    <c:when test="${user.role=='GUEST'}">
-                         <a href="my-orders"class="nav-link">
-                         <fmt:message key="orders"/>
                          </a>
                     </c:when>
                     <c:otherwise>

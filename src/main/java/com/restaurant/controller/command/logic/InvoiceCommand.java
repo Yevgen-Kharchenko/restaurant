@@ -1,29 +1,27 @@
 package com.restaurant.controller.command.logic;
 
-import com.restaurant.controller.command.Command;
 import com.restaurant.controller.command.UniCommand;
 import com.restaurant.controller.data.Page;
-import com.restaurant.model.enums.DishType;
 import com.restaurant.service.InvoiceService;
 import com.restaurant.service.OrderService;
 import com.restaurant.service.ServiceFactory;
-import com.restaurant.service.UserService;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 
 import static com.restaurant.controller.PageUrlConstants.*;
-import static com.restaurant.controller.PageUrlConstants.ORDER_PAGE;
 
 public class InvoiceCommand extends UniCommand {
     private static final Logger LOG = Logger.getLogger(InvoiceCommand.class);
 
     private InvoiceService invoiceService;
+    private OrderService orderService;
     public static final String ID = "orderId";
     public static final String LOCALE = "locale";
 
 
     public InvoiceCommand() {
+        this.orderService = ServiceFactory.getOrderService();
         this.invoiceService = ServiceFactory.getInvoiceService();
 
     }
@@ -40,6 +38,9 @@ public class InvoiceCommand extends UniCommand {
     @Override
     protected Page performPost(HttpServletRequest request) {
 
+        String invoiceStatus = request.getParameter("invoiceStatus");
+        String invoiceId = request.getParameter("invoiceId");
+        invoiceService.changeInvoiceStatus(invoiceStatus, invoiceId);
 
         return new Page("/" + INVOICE_PAGE, false);
     }

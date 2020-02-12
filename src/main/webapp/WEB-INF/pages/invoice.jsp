@@ -86,15 +86,33 @@
 
  <tr>
      <th colspan="3"></th>
-     <td><div class="center">
+     <td>
+         <c:choose>
+         <c:when test="${invoice.status=='NEW'}">
+         <div class="center">
          <div class="form-group">
              <form method="post" action="invoice">
-                 <input type="hidden" name="status" value="PAY" />
-                 <input type="hidden" name="orderId" value="${myOrders.id}" />
+                 <input type="hidden" name="invoiceStatus" value="PAID" />
+                 <input type="hidden" name="invoiceId" value="${invoice.id}" />
                  <input type="submit" value="<fmt:message key="pay"/>" class="btn btn-primary py-3 px-5"style="background-color:green">
              </form>
          </div>
+         <div class="form-group">
+             <form method="post" action="invoice">
+                 <input type="hidden" name="invoiceStatus" value="CANCELED" />
+                 <input type="hidden" name="invoiceId" value="${invoice.id}" />
+                 <input type="submit" value="<fmt:message key="cancel"/>" class="btn btn-primary py-3 px-5"style="background-color:red">
+             </form>
+         </div>
      </div>
+         </c:when>
+         <c:when test="${invoice.status=='PAID'}">
+                 <h2>Paid invoice</h2>
+         </c:when>
+             <c:otherwise>
+                 <h2>Canceled invoice</h2>
+             </c:otherwise>
+         </c:choose>
      </td>
  </tr>
  </tfoot>

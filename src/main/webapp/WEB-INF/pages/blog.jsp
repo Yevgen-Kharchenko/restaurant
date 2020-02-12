@@ -40,7 +40,7 @@
                   <div><a href="#"><fmt:message key="july"/></a></div>
                   <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
+                <h3 class="heading"><a href="blog-single"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
                   <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
@@ -57,7 +57,7 @@
                   <div><a href="#"><fmt:message key="july"/></a></div>
                   <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
+                <h3 class="heading"><a href="blog-single"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
                   <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
@@ -74,7 +74,7 @@
                   <div><a href="#"><fmt:message key="july"/>/a></div>
                   <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
+                <h3 class="heading"><a href="blog-single"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
                   <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
@@ -91,7 +91,7 @@
                   <div><a href="#"><fmt:message key="july"/></a></div>
                   <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
+                <h3 class="heading"><a href="blog-single"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
                   <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
@@ -108,7 +108,7 @@
                   <div><a href="#"><fmt:message key="july"/></a></div>
                   <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
+                <h3 class="heading"><a href="blog-single"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
                   <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
@@ -125,7 +125,7 @@
                   <div><a href="#"><fmt:message key="july"/></a></div>
                   <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
+                <h3 class="heading"><a href="blog-single"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
                   <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
@@ -142,7 +142,7 @@
                   <div><a href="#"><fmt:message key="july"/></a></div>
                   <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
+                <h3 class="heading"><a href="blog-single"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
                   <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
@@ -159,7 +159,7 @@
                   <div><a href="#"><fmt:message key="july"/></a></div>
                   <div><a href="#"><fmt:message key="admin"/></a></div>
                 </div>
-                <h3 class="heading"><a href="#"><fmt:message key="even"/></a></h3>
+                <h3 class="heading"><a href="blog-single"><fmt:message key="even"/></a></h3>
                 <p class="clearfix">
                   <a href="#" class="float-left read"><fmt:message key="more"/></a>
                   <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
