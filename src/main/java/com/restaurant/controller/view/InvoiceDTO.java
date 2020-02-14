@@ -16,7 +16,7 @@ import java.util.List;
 @AllArgsConstructor
 public class InvoiceDTO {
     private long id;
-    private LocalDateTime date;
+    private String date;
     private InvoiceStatus status;
     OrderDTO orderDTO;
 

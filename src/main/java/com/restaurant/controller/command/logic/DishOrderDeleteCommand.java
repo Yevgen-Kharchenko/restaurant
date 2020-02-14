@@ -25,6 +25,6 @@ public class DishOrderDeleteCommand implements Command {
         long orderId = Long.parseLong(request.getParameter(ORDER_ID));
         long dishId = Long.parseLong(request.getParameter(DISH_ID));
         orderService.deleteOrderDish(dishId,orderId);
-        return new PageResponse("/"+ORDER_PAGE+"?orderId="+orderId,true);
+        return new PageResponse(ORDER_PAGE+"?orderId="+orderId,true);
     }
 }

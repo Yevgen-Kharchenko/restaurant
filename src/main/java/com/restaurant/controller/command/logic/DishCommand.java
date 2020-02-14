@@ -55,6 +55,6 @@ public class DishCommand extends UniCommand {
             dishService.updateDish(id, dishType, nameUK, nameEN, ingredientsUK, ingredientsEN, price);
         }
 
-        return new PageResponse("/" + EDIT_MENU_PAGE, true);
+        return new PageResponse(EDIT_MENU_PAGE, true);
     }
 }

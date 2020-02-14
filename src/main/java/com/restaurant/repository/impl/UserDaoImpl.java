@@ -48,13 +48,11 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao, GetAllDao
 
     @Override
     public boolean isUserExists(String login) {
-        return false;
+        String query = "SELECT 1 FROM `user` WHERE " + COLUMN_LOGIN + " = ?";
+        return super.checkIfDataExists(query,
+                ps -> ps.setString(1, login));
     }
 
-    @Override
-    public boolean isEmailExist(String email) {
-        return false;
-    }
 
     @Override
     public User getByLogin(String login) {

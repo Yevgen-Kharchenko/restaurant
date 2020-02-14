@@ -27,6 +27,7 @@
 				<div class="login p-4 mx-auto">
 					<h1 class="mb-3"><fmt:message key="login.now"/></h5>
 					<form action="login" method="post">
+						<h6 style = "color:red">${notification}</h6>
 						<div class="form-group">
 							<label><fmt:message key="your.name"/></label>
 							<input type="text" class="form-control" name="login" placeholder="" required="">

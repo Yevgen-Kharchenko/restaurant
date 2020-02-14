@@ -28,6 +28,6 @@ public class AddOrderDishCommand implements Command {
         long dishId = Long.parseLong(request.getParameter(DISH_ID));
         LOG.info("Create new orderDish");
         orderService.addOrderDish(dishId, orderId,1);
-        return new PageResponse("/" + ORDER_PAGE + "?orderId=" + orderId, true);
+        return new PageResponse( ORDER_PAGE + "?orderId=" + orderId, true);
     }
 }

@@ -23,6 +23,6 @@ public class DishDeleteCommand implements Command {
     public PageResponse execute(HttpServletRequest request) {
         int id = Integer.parseInt(request.getParameter(ID));
         dishService.deleteDish(id);
-        return new PageResponse("/"+EDIT_MENU_PAGE, true);
+        return new PageResponse(EDIT_MENU_PAGE, true);
     }
 }

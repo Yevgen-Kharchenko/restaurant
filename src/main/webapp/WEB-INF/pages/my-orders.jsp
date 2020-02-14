@@ -78,14 +78,24 @@
                         <td class="center">
                             <div class="form-group">
                                 <form method="post" action="status">
-                                <input type="hidden" name="status" value="CLOSED" />
+                                <input type="hidden" name="status" value="PAYMENT" />
                                 <input type="hidden" name="orderId" value="${myOrders.id}" />
-                                <input type="submit" value="<fmt:message key="payment"/>" class="btn btn-primary py-3 px-5" style="background-color:green">
+                                <input type="submit" value="<fmt:message key="invoice2"/>" class="btn btn-primary py-3 px-5" style="background-color:green">
                                 </form>
                             </div>
                         </td>
 
                         </c:when>
+                            <c:when test="${myOrders.status=='PAYMENT'}">
+                                <td class="center">
+                                <div class="form-group">
+                                <div >
+                                    <a href="invoice?orderId=${myOrders.id}" class="btn btn-primary py-3 px-5" style="background-color:green">
+                                        <fmt:message key="invoice"/> </a>
+                                </div>
+                                </div>
+                                </td>
+                            </c:when>
                         <c:when test="${myOrders.status=='NEW'}">
 
                             <td class="center">

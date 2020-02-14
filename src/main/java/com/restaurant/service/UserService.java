@@ -30,11 +30,8 @@ public class UserService {
     public boolean validateUser(String login, String password) {
         User user = userDao.getByLogin(login);
         LOG.info("Get user by login:" + user);
-        if (user != null) {
-            if (user.getPassword().equals(password)) {
-                LOG.info("user validate");
-                return true;
-            }
+        if (user != null && Passwords.verifyHash(password, user.getPassword())) {
+            return true;
         }
         return false;
     }
@@ -46,14 +43,7 @@ public class UserService {
      * @return
      */
     public boolean validateLogin(String login) {
-        List<User> all = userDao.getAll();
-        for (User user : all) {
-            if (user.getLogin().equals(login)) {
-                System.out.println("Not validate login: " + user.getLogin());
-                return false;
-            }
-        }
-        return true;
+        return !userDao.isUserExists(login);
     }
 
     /**
@@ -97,11 +87,12 @@ public class UserService {
      * @return
      */
     public User registrationUser(String name,String login, String phone, String password) {
+        String hashedPass = Passwords.hash(password.trim());
         User newUser = User.builder()
                 .name(name)
                 .login(login)
                 .phone(phone)
-                .password(password)
+                .password(hashedPass)
                 .role(Role.GUEST)
                 .build();
         userDao.create(newUser);

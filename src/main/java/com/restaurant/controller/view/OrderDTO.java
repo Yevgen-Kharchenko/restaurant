@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Getter
@@ -17,10 +18,10 @@ import java.util.List;
 
 public class OrderDTO {
     private long id;
-    private LocalDateTime date;
+    private String date;
     private double total;
     private User customer;
     private Status status;
     List<DishDTO> orderDish;
 
-}
+    }

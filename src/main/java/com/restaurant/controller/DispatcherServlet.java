@@ -48,7 +48,7 @@ public class DispatcherServlet extends HttpServlet {
                     resp.sendRedirect(url);
 
                 } else {
-                    String modifiedPath = "/WEB-INF/pages/" + pageResponse.getUrl() + ".jsp";
+                    String modifiedPath = "/WEB-INF/pages/" + pageResponse.getUrl()+".jsp";
                     LOG.info("Request forward into modified path: " + modifiedPath);
                     req.getRequestDispatcher(modifiedPath).forward(req, resp);
                 }

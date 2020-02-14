@@ -30,6 +30,6 @@ public class UpdateOrderDishCommand implements Command {
         long orderId = Long.parseLong(request.getParameter(ORDER_ID));
         LOG.info("update orderDish qty");
         orderService.UpdateOrderDish(dishId, quantity, orderId);
-        return new PageResponse("/" + ORDER_PAGE + "?orderId=" + orderId, true);
+        return new PageResponse(ORDER_PAGE + "?orderId=" + orderId, true);
     }
 }

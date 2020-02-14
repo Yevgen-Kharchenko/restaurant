@@ -12,9 +12,10 @@ public class SecurityConfig {
 
     static {
         securityPages.put(Role.ADMIN, Arrays.asList("/edit-menu", "/dish", "/chef", "/master",
-                "/index", "/order", "/user-profile","/my-orders",
+                 "/order", "/user-profile","/my-orders",
                 "/users", "/ui-element", "/chart", "/tab-panel",
-                "/table", "/form", "/empty","/order-list", "/menu","/invoice"));
+                "/table", "/form", "/empty","/order-list",
+                "/menu","/invoice","/admin"));
         securityPages.put(Role.GUEST, Arrays.asList("/my-orders", "/menu","/invoice"));
         securityPages.put(Role.CHEF, Arrays.asList("/chef"));
 

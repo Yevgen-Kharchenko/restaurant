@@ -25,8 +25,10 @@
 		<div class="container py-xl-5 py-3">
 			<div class="login-body">
 				<div class="login p-4 mx-auto">
+
 					<h1 class="mb-3"><fmt:message key="register2"/></h5>
 					<form action="register" method="post">
+						<h6 style = "color:red">${notification}</h6>
 						<div class="form-group">
 							<label><fmt:message key="your.name"/></label>
 							<input type="text" class="form-control" name="name" placeholder="" required="">

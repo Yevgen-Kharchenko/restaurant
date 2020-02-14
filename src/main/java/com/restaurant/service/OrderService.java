@@ -14,6 +14,7 @@ import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -46,7 +47,7 @@ public class OrderService {
         return all.stream().map(orders -> {
             OrderDTO orderDTO = new OrderDTO();
             orderDTO.setId(orders.getId());
-            orderDTO.setDate(orders.getDate());
+            orderDTO.setDate(orders.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")));
             orderDTO.setTotal(orders.getTotal());
             orderDTO.setCustomer(userDao.getById(orders.getUserId()));
             orderDTO.setStatus(orders.getStatus());
@@ -86,7 +87,7 @@ public class OrderService {
         return all.stream().map(orders -> {
             OrderDTO orderDTO = new OrderDTO();
             orderDTO.setId(orders.getId());
-            orderDTO.setDate(orders.getDate());
+            orderDTO.setDate(orders.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")));
             orderDTO.setTotal(orders.getTotal());
             orderDTO.setCustomer(userDao.getById(orders.getUserId()));
             orderDTO.setStatus(orders.getStatus());
@@ -100,7 +101,7 @@ public class OrderService {
         return all.stream().map(orders -> {
             OrderDTO orderDTO = new OrderDTO();
             orderDTO.setId(orders.getId());
-            orderDTO.setDate(orders.getDate());
+            orderDTO.setDate(orders.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")));
             orderDTO.setOrderDish(getListDishDTO(local, orders.getId()));
             return orderDTO;
         }).collect(Collectors.toList());
@@ -135,7 +136,7 @@ public class OrderService {
         Order order = orderDao.getById(id);
         OrderDTO orderDTO = new OrderDTO();
         orderDTO.setId(order.getId());
-        orderDTO.setDate(order.getDate());
+        orderDTO.setDate(order.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")));
         orderDTO.setTotal(order.getTotal());
         orderDTO.setCustomer(userDao.getById(order.getUserId()));
         orderDTO.setStatus(order.getStatus());

@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.restaurant.controller.PageUrlConstants.*;
+import static com.restaurant.controller.PageUrlConstants.INVOICE_PAGE;
 
 public class InvoiceCommand extends UniCommand {
     private static final Logger LOG = Logger.getLogger(InvoiceCommand.class);
@@ -37,11 +37,11 @@ public class InvoiceCommand extends UniCommand {
 
     @Override
     protected PageResponse performPost(HttpServletRequest request) {
-
+        long orderId = Long.parseLong(request.getParameter(ID));
         String invoiceStatus = request.getParameter("invoiceStatus");
         String invoiceId = request.getParameter("invoiceId");
         invoiceService.changeInvoiceStatus(invoiceStatus, invoiceId);
 
-        return new PageResponse("/" + INVOICE_PAGE, false);
+        return new PageResponse(INVOICE_PAGE + "?orderId=" + orderId,true);
     }
 }

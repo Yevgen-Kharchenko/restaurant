@@ -94,6 +94,7 @@
              <form method="post" action="invoice">
                  <input type="hidden" name="invoiceStatus" value="PAID" />
                  <input type="hidden" name="invoiceId" value="${invoice.id}" />
+                 <input type="hidden" name="orderId" value="${invoice.orderDTO.id}" />
                  <input type="submit" value="<fmt:message key="pay"/>" class="btn btn-primary py-3 px-5"style="background-color:green">
              </form>
          </div>
@@ -101,6 +102,7 @@
              <form method="post" action="invoice">
                  <input type="hidden" name="invoiceStatus" value="CANCELED" />
                  <input type="hidden" name="invoiceId" value="${invoice.id}" />
+                 <input type="hidden" name="orderId" value="${invoice.orderDTO.id}" />
                  <input type="submit" value="<fmt:message key="cancel"/>" class="btn btn-primary py-3 px-5"style="background-color:red">
              </form>
          </div>

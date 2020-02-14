@@ -64,6 +64,6 @@ public class MenuCommand extends UniCommand {
         double amount = orderService.getTotalAmount(orderId);
         orderService.updateAmountInOrderRepository(amount, orderId);
 
-        return new PageResponse("/" + MENU_PAGE, true);
+        return new PageResponse(MENU_PAGE, true);
     }
 }

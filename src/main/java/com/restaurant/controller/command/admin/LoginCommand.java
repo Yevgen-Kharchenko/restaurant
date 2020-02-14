@@ -43,7 +43,7 @@ public class LoginCommand extends UniCommand {
             } else if (user.getRole() == Role.CHEF) {
                 return new PageResponse( CHEF_PAGE, true);
             } else {
-                return new PageResponse(REDIRECT_HOME_PAGE, true);
+                return new PageResponse(HOME_PAGE, true);
             }
         }
         request.setAttribute("notification", "Login or password invalid!");

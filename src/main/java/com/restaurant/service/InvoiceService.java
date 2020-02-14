@@ -8,6 +8,7 @@ import com.restaurant.repository.impl.InvoiceDaoImpl;
 import org.apache.log4j.Logger;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -37,7 +38,8 @@ public class InvoiceService {
         List<Invoice> AllInvoice = invoiceDao.getAllByFieldId(id);
         return  AllInvoice.stream().map(invoice ->{
             InvoiceDTO invoiceDTO = new InvoiceDTO(invoice.getId(),
-                    invoice.getDate(),invoice.getInvoiceStatus(),
+                    invoice.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")),
+                    invoice.getInvoiceStatus(),
                     orderService.getById(invoice.getOrderId(),local));
             return invoiceDTO;
         }).collect(Collectors.toList());

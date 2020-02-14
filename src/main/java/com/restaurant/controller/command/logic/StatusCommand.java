@@ -29,7 +29,7 @@ public class StatusCommand extends UniCommand {
 
         String status = request.getParameter("status");
         String orderId = request.getParameter("orderId");
-
+        String originUrl = request.getHeader("referer");
         LOG.info("Post status: " + status);
         if (status.equals("REPEAT")) {
             orderService.repeatOrder(orderId);
@@ -41,6 +41,6 @@ public class StatusCommand extends UniCommand {
             request.setAttribute("notification", "Order status changed!");
             LOG.info("status : " + status);
         }
-        return new PageResponse(CHEF_PAGE,true);
+        return new PageResponse(originUrl,true);
     }
 }

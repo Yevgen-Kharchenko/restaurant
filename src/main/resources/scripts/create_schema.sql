@@ -49,24 +49,3 @@ orderId bigint,
 status enum("NEW", "CANCELED", "PAID"),
 primary key(id),
 foreign key (orderId) references `order`(id));
-
-
-
-create table comments(
-id int auto_increment,
-`date` datetime,
-`comment` varchar(1000) not null,
-userId int,
-orderId int,
-primary key (id),
-foreign key (userId) references user(id),
-foreign key (orderId) references `order`(id));
-
-create table feedback(
-id int auto_increment,
-`date` datetime,
-feedback varchar(2000) not null,
-userId int,
-primary key (id),
-foreign key (userId) references user(id)
-);

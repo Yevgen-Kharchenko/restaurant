@@ -32,6 +32,16 @@
 </li>
 <li><a href="logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
 </li>
+<li>
+    <c:choose>
+        <c:when test="${locale=='en'}">
+            <a href="language?locale=uk_UA">UA</a>
+        </c:when>
+        <c:otherwise>
+            <a href="language?locale=en">EN</a>
+        </c:otherwise>
+    </c:choose>
+</li>
 </ul>
 <ul id="dropdown2" class="dropdown-content w250">
 <li>

@@ -40,6 +40,6 @@ public class OrderCommand extends UniCommand {
     protected PageResponse performPost(HttpServletRequest request) {
 
 
-        return new PageResponse("/" + ORDER_PAGE, false);
+        return new PageResponse(ORDER_PAGE, false);
     }
 }

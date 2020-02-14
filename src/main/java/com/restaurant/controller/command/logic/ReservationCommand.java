@@ -21,6 +21,6 @@ public class ReservationCommand extends UniCommand {
     protected PageResponse performPost(HttpServletRequest request) {
 
 
-        return new PageResponse("/", true);
+        return new PageResponse(RESERVATION_PAGE, true);
     }
 }

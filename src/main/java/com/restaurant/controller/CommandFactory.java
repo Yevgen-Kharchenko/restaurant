@@ -3,6 +3,7 @@ package com.restaurant.controller;
 import com.restaurant.controller.command.Command;
 import com.restaurant.controller.command.admin.*;
 import com.restaurant.controller.command.error.ErrorCommand;
+import com.restaurant.controller.command.error.ForbiddenCommand;
 import com.restaurant.controller.command.error.NotFoundCommand;
 import com.restaurant.controller.command.error.UnderConstructionCommand;
 import com.restaurant.controller.command.info.*;
@@ -51,10 +52,9 @@ public class CommandFactory {
         getCommandMap.put("update-order-dish-quantity", new UpdateOrderDishCommand());
         getCommandMap.put("my-orders", new MyOrderCommand());
         getCommandMap.put("invoice", new InvoiceCommand());
+        getCommandMap.put("403-error", new ForbiddenCommand());
+        getCommandMap.put("404-error", defaultCommand);
 
-
-
-//        postCommandMap.put("/", new HomeCommand());
         postCommandMap.put("invoice", new InvoiceCommand());
         postCommandMap.put("login", new LoginCommand());
         postCommandMap.put("register", new RegisterCommand());
