@@ -1,8 +1,7 @@
 package com.restaurant.controller.command.logic;
 
 import com.restaurant.controller.command.UniCommand;
-import com.restaurant.controller.data.Page;
-import com.restaurant.model.User;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.model.enums.DishType;
 import com.restaurant.service.DishService;
 import com.restaurant.service.OrderService;
@@ -10,8 +9,6 @@ import com.restaurant.service.ServiceFactory;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import java.time.LocalDateTime;
 
 import static com.restaurant.controller.PageUrlConstants.ORDER_PAGE;
 
@@ -28,7 +25,7 @@ public class OrderCommand extends UniCommand {
     }
 
     @Override
-    protected Page performGet(HttpServletRequest request) {
+    protected PageResponse performGet(HttpServletRequest request) {
         long orderId = Long.parseLong(request.getParameter(ID));
         String local = (String) request.getSession().getAttribute(LOCALE);
         request.setAttribute("order", orderService.getById(orderId, local));
@@ -36,13 +33,13 @@ public class OrderCommand extends UniCommand {
         request.setAttribute("dessert", dishService.getAllByField(DishType.DESSERT, local));
         request.setAttribute("drinks", dishService.getAllByField(DishType.DRINKS, local));
 
-        return new Page(ORDER_PAGE);
+        return new PageResponse(ORDER_PAGE);
     }
 
     @Override
-    protected Page performPost(HttpServletRequest request) {
+    protected PageResponse performPost(HttpServletRequest request) {
 
 
-        return new Page("/" + ORDER_PAGE, false);
+        return new PageResponse("/" + ORDER_PAGE, false);
     }
 }

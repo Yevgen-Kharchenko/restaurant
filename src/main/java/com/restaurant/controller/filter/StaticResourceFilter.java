@@ -29,10 +29,12 @@ public class StaticResourceFilter implements Filter {
             chain.doFilter(request, response);
             return;
         }
+        if (path.equals("/")) {
+            path = "/index";
+        }
 
         String pathToForward = APP_PATH + path;
         LOG.info("Non static resource: " + path + ". New Path: " + pathToForward);
-
         httpServletRequest.getRequestDispatcher(pathToForward).forward(request, response);
 
     }

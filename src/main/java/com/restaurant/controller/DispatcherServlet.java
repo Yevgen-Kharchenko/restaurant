@@ -1,7 +1,10 @@
 package com.restaurant.controller;
 
 import com.restaurant.controller.command.Command;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.CommandResponse;
+import com.restaurant.controller.data.ErrorResponse;
+import com.restaurant.controller.data.PageResponse;
+import com.restaurant.controller.data.SuccessResponse;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -10,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet(value = "/app/*")
 public class DispatcherServlet extends HttpServlet {
@@ -17,42 +21,73 @@ public class DispatcherServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        LOG.info("doGET");
         processRequest(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        LOG.info("doPost");
         processRequest(req, resp);
     }
 
     private void processRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         String path = getPath(req);
-
+        LOG.info("Will get command py path: " + path);
         Command command = CommandFactory.getCommand(path, req.getMethod());
+        LOG.info("Extracted command " + command + command.getClass());
 
-        Page page = command.perform(req);
+        CommandResponse commandResponse = command.execute(req);
 
-        if (page.isRedirect()) {
-            resp.sendRedirect(req.getContextPath() + page.getUrl());
-//            resp.sendRedirect( page.getUrl());
-            LOG.info("Redirect to: " + (req.getContextPath() + page.getUrl()));
-        } else {
-            req.getRequestDispatcher(resolvePath(page.getUrl())).forward(req, resp);
+        switch (commandResponse.getResponseType()) {
+            case PAGE: {
+                PageResponse pageResponse = (PageResponse) commandResponse;
+                if (pageResponse.isRedirect()) {
+                    String url = pageResponse.getUrl();
+                    LOG.info("Request redirect into new url: " + url);
+                    resp.sendRedirect(url);
+
+                } else {
+                    String modifiedPath = "/WEB-INF/pages/" + pageResponse.getUrl() + ".jsp";
+                    LOG.info("Request forward into modified path: " + modifiedPath);
+                    req.getRequestDispatcher(modifiedPath).forward(req, resp);
+                }
+                break;
+            }
+            case PAYLOAD: {
+                SuccessResponse successResponse = (SuccessResponse) commandResponse;
+                PrintWriter out = resp.getWriter();
+                resp.setCharacterEncoding("UTF-8");
+                out.print(successResponse.getPayload());
+                out.flush();
+                break;
+            }
+            case ERROR: {
+                ErrorResponse errorResponse = (ErrorResponse) commandResponse;
+                resp.setStatus(errorResponse.getHttpStatus());
+                PrintWriter out = resp.getWriter();
+                resp.setCharacterEncoding("UTF-8");
+                out.print(errorResponse.getErrorMsg());
+                out.flush();
+                break;
+            }
+            default:
+                throw new IllegalStateException("Unknown command response type");
         }
     }
 
-    private String resolvePath(String path) {
-        return "/WEB-INF/pages/" + path + ".jsp";
-    }
 
     private String getPath(HttpServletRequest req) {
-
         String requestUri = req.getRequestURI();
-        int lastPath = requestUri.lastIndexOf('/');
+        int lastPath = requestUri.lastIndexOf("app/") + 4;
         String path = requestUri.substring(lastPath);
+
+        if (path.contains("/")) {
+            int nextPath = path.lastIndexOf('/');
+            path = path.substring(0, nextPath);
+        }
         LOG.info("Path: " + path);
-        req.setAttribute("path", path);
         return path;
     }
 }
+

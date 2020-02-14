@@ -213,32 +213,32 @@
     <ul class="nav" id="main-menu">
 
         <li>
-            <a class="active-menu waves-effect waves-dark" href="admin/index"><i class="fa fa-dashboard"></i> Dashboard</a>
+            <a class="active-menu waves-effect waves-dark" href="admin"><i class="fa fa-dashboard"></i> Dashboard</a>
         </li>
         <li>
-            <a class="waves-effect waves-dark" href="admin/order-list"><i class="fa fa-table"></i> Orders</a>
+            <a class="waves-effect waves-dark" href="order-list"><i class="fa fa-table"></i> Orders</a>
         </li>
         <li>
-            <a class="waves-effect waves-dark" href="admin/chef"><i class="fa fa-qrcode"></i>Orders for Chef</a>
+            <a class="waves-effect waves-dark" href="chef"><i class="fa fa-qrcode"></i>Orders for Chef</a>
         </li>
         <li>
-            <a class="waves-effect waves-dark" href="admin/edit-menu"><i class="fa fa-edit"></i>Edit Menu</a>
+            <a class="waves-effect waves-dark" href="edit-menu"><i class="fa fa-edit"></i>Edit Menu</a>
         </li>
         <li>
-            <a href="admin/ui-elements" class="waves-effect waves-dark"><i class="fa fa-desktop"></i> UI Elements</a>
+            <a href="ui-elements" class="waves-effect waves-dark"><i class="fa fa-desktop"></i> UI Elements</a>
         </li>
         <li>
-            <a href="admin/chart" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i> Charts</a>
+            <a href="chart" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i> Charts</a>
         </li>
         <li>
-            <a href="admin/tab-panel" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
+            <a href="tab-panel" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
         </li>
 
         <li>
-            <a href="admin/table" class="waves-effect waves-dark"><i class="fa fa-table"></i> Responsive Tables</a>
+            <a href="table" class="waves-effect waves-dark"><i class="fa fa-table"></i> Responsive Tables</a>
         </li>
         <li>
-            <a href="admin/form" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Forms </a>
+            <a href="form" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Forms </a>
         </li>
 
 
@@ -270,7 +270,7 @@
             </ul>
         </li>
         <li>
-            <a href="admin/empty" class="waves-effect waves-dark"><i class="fa fa-fw fa-file"></i> Empty Page</a>
+            <a href="empty" class="waves-effect waves-dark"><i class="fa fa-fw fa-file"></i> Empty Page</a>
         </li>
     </ul>
 

@@ -17,7 +17,7 @@ public class LocalizationFilter implements Filter {
     private String defaultBundle;
 
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
+    public void init(FilterConfig filterConfig) {
 
         this.defaultLocale = filterConfig.getInitParameter(LOCALE);
         this.defaultBundle = filterConfig.getInitParameter(BUNDLE);
@@ -28,7 +28,6 @@ public class LocalizationFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
-        HttpServletResponse httpServletResponse = (HttpServletResponse) response;
         HttpSession session = httpServletRequest.getSession();
 
         setLocale(session);

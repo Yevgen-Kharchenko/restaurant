@@ -1,10 +1,9 @@
 package com.restaurant.controller.command.logic;
 
 import com.restaurant.controller.command.Command;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.service.OrderService;
 import com.restaurant.service.ServiceFactory;
-import com.restaurant.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -22,10 +21,10 @@ public class DishOrderDeleteCommand implements Command {
     public static final String DISH_ID = "orderDishId";
 
     @Override
-    public Page perform(HttpServletRequest request) {
+    public PageResponse execute(HttpServletRequest request) {
         long orderId = Long.parseLong(request.getParameter(ORDER_ID));
         long dishId = Long.parseLong(request.getParameter(DISH_ID));
         orderService.deleteOrderDish(dishId,orderId);
-        return new Page("/"+ORDER_PAGE+"?orderId="+orderId,true);
+        return new PageResponse("/"+ORDER_PAGE+"?orderId="+orderId,true);
     }
 }

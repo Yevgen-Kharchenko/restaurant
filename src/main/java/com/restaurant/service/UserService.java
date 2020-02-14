@@ -96,10 +96,11 @@ public class UserService {
      * @param password
      * @return
      */
-    public User registrationUser(String name,String login, String password) {
+    public User registrationUser(String name,String login, String phone, String password) {
         User newUser = User.builder()
                 .name(name)
                 .login(login)
+                .phone(phone)
                 .password(password)
                 .role(Role.GUEST)
                 .build();

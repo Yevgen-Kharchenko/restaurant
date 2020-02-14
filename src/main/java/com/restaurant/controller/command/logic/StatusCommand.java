@@ -1,7 +1,7 @@
 package com.restaurant.controller.command.logic;
 
 import com.restaurant.controller.command.UniCommand;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.service.InvoiceService;
 import com.restaurant.service.OrderService;
 import com.restaurant.service.ServiceFactory;
@@ -20,12 +20,12 @@ public class StatusCommand extends UniCommand {
     }
 
     @Override
-    protected Page performGet(HttpServletRequest request) {
-        return new Page(CHEF_PAGE);
+    protected PageResponse performGet(HttpServletRequest request) {
+        return new PageResponse(CHEF_PAGE,true);
     }
 
     @Override
-    protected Page performPost(HttpServletRequest request) {
+    protected PageResponse performPost(HttpServletRequest request) {
 
         String status = request.getParameter("status");
         String orderId = request.getParameter("orderId");
@@ -41,6 +41,6 @@ public class StatusCommand extends UniCommand {
             request.setAttribute("notification", "Order status changed!");
             LOG.info("status : " + status);
         }
-        return new Page(CHEF_PAGE,true);
+        return new PageResponse(CHEF_PAGE,true);
     }
 }

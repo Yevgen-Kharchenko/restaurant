@@ -1,12 +1,10 @@
 package com.restaurant.controller.command.logic;
 
 import com.restaurant.controller.command.Command;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.model.User;
-import com.restaurant.service.DishService;
 import com.restaurant.service.OrderService;
 import com.restaurant.service.ServiceFactory;
-import com.restaurant.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -25,11 +23,11 @@ public class MyOrderCommand implements Command {
     }
 
     @Override
-    public Page perform(HttpServletRequest request) {
+    public PageResponse execute(HttpServletRequest request) {
         String local = (String) request.getSession().getAttribute(LOCALE);
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
         request.setAttribute("myOrders", orderService.getAllForUser(local, user.getId()));
-        return new Page(MY_ORDER_PAGE);
+        return new PageResponse(MY_ORDER_PAGE);
     }
 }

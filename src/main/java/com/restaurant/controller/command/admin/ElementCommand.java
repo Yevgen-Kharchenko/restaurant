@@ -1,7 +1,7 @@
 package com.restaurant.controller.command.admin;
 
 import com.restaurant.controller.command.Command;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.service.ServiceFactory;
 import com.restaurant.service.UserService;
 
@@ -20,8 +20,8 @@ public class ElementCommand implements Command {
     }
 
     @Override
-    public Page perform(HttpServletRequest request) {
+    public PageResponse execute(HttpServletRequest request) {
 
-        return new Page(ELEMENT_PAGE);
+        return new PageResponse(ELEMENT_PAGE);
     }
 }

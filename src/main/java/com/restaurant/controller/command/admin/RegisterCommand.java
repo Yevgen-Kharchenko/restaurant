@@ -1,7 +1,7 @@
 package com.restaurant.controller.command.admin;
 
 import com.restaurant.controller.command.UniCommand;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.model.User;
 import com.restaurant.service.ServiceFactory;
 import com.restaurant.service.UserService;
@@ -22,14 +22,15 @@ public class RegisterCommand extends UniCommand {
     }
 
     @Override
-    protected Page performGet(HttpServletRequest request) {
-        return new Page(REGISTER_PAGE);
+    protected PageResponse performGet(HttpServletRequest request) {
+        return new PageResponse(REGISTER_PAGE);
     }
 
     @Override
-    protected Page performPost(HttpServletRequest request) {
+    protected PageResponse performPost(HttpServletRequest request) {
         String name = request.getParameter("name");
         String login = request.getParameter("login");
+        String phone = request.getParameter("phone");
         String password = request.getParameter("password");
         String confirmPassword = request.getParameter("confirmPassword");
         System.out.println("Registration name: " + name +
@@ -38,15 +39,15 @@ public class RegisterCommand extends UniCommand {
         HttpSession session = request.getSession();
 
         if (userService.validateLogin(login) && userService.validatePassword(password, confirmPassword)) {
-            User newUser = userService.registrationUser(name, login, password);
+            User newUser = userService.registrationUser(name, login, phone, password);
             LOG.debug("registration user: + " + newUser);
 
             User user = userService.getUserByLogin(login);
             session.setAttribute("user", user);
             LOG.info("registration user setAttribute: + " + user);
-            return new Page(REDIRECT_HOME_PAGE, true);
+            return new PageResponse(REDIRECT_HOME_PAGE, true);
         }
         request.setAttribute("notification", "Not valid login or password");
-        return new Page(HOME_PAGE, false);
+        return new PageResponse(HOME_PAGE, false);
     }
 }

@@ -1,13 +1,13 @@
 package com.restaurant.controller.command;
 
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 
 import javax.servlet.http.HttpServletRequest;
 
 public abstract class UniCommand implements Command {
 
     @Override
-    public Page perform(HttpServletRequest request) {
+    public PageResponse execute(HttpServletRequest request) {
 
         String type = request.getMethod();
 
@@ -16,7 +16,7 @@ public abstract class UniCommand implements Command {
                 : performPost(request);
     }
 
-    protected abstract Page performGet(HttpServletRequest request);
+    protected abstract PageResponse performGet(HttpServletRequest request);
 
-    protected abstract Page performPost(HttpServletRequest request);
+    protected abstract PageResponse performPost(HttpServletRequest request);
 }

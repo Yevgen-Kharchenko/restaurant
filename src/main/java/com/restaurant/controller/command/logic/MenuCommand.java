@@ -1,7 +1,7 @@
 package com.restaurant.controller.command.logic;
 
 import com.restaurant.controller.command.UniCommand;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.model.User;
 import com.restaurant.model.enums.DishType;
 import com.restaurant.service.DishService;
@@ -11,8 +11,6 @@ import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.Map;
 
 import static com.restaurant.controller.PageUrlConstants.MENU_PAGE;
@@ -31,7 +29,7 @@ public class MenuCommand extends UniCommand {
 
 
     @Override
-    protected Page performGet(HttpServletRequest request) {
+    protected PageResponse performGet(HttpServletRequest request) {
         String local = (String) request.getSession().getAttribute(LOCALE);
         LOG.info("LOCAL= " + local);
         request.setAttribute("dishMainList", dishService.getAllByField(DishType.MAIN, local));
@@ -40,11 +38,11 @@ public class MenuCommand extends UniCommand {
         LOG.info("setAttribute  dishDessertList" + (dishService.getAllByField(DishType.DESSERT, local)).toString());
         request.setAttribute("dishDrinksList", dishService.getAllByField(DishType.DRINKS, local));
         LOG.info("setAttribute  dishDrinksList" + (dishService.getAllByField(DishType.DRINKS, local)).size());
-        return new Page(MENU_PAGE);
+        return new PageResponse(MENU_PAGE);
     }
 
     @Override
-    protected Page performPost(HttpServletRequest request) {
+    protected PageResponse performPost(HttpServletRequest request) {
         HttpSession session = request.getSession();
 
 
@@ -66,6 +64,6 @@ public class MenuCommand extends UniCommand {
         double amount = orderService.getTotalAmount(orderId);
         orderService.updateAmountInOrderRepository(amount, orderId);
 
-        return new Page("/" + MENU_PAGE, true);
+        return new PageResponse("/" + MENU_PAGE, true);
     }
 }

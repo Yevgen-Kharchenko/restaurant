@@ -1,7 +1,7 @@
 package com.restaurant.controller.command.logic;
 
 import com.restaurant.controller.command.UniCommand;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.model.Dish;
 import com.restaurant.model.enums.DishType;
 import com.restaurant.service.DishService;
@@ -26,18 +26,18 @@ public class DishCommand extends UniCommand {
     public static final String ID = "id";
 
     @Override
-    protected Page performGet(HttpServletRequest request) {
+    protected PageResponse performGet(HttpServletRequest request) {
         long id = tryParse(request.getParameter(ID));
         if (id != 0) {
             Dish dish = dishService.getDish(id);
             request.setAttribute("dish", dish);
             LOG.info("set dish: " + dish);
         }
-        return new Page(DISH_PAGE);
+        return new PageResponse(DISH_PAGE);
     }
 
     @Override
-    protected Page performPost(HttpServletRequest request) {
+    protected PageResponse performPost(HttpServletRequest request) {
         LOG.info("dish post command");
         DishType dishType = DishType.valueOf(request.getParameter("dishType"));
         String nameUK = request.getParameter("nameUK");
@@ -55,6 +55,6 @@ public class DishCommand extends UniCommand {
             dishService.updateDish(id, dishType, nameUK, nameEN, ingredientsUK, ingredientsEN, price);
         }
 
-        return new Page("/" + EDIT_MENU_PAGE, true);
+        return new PageResponse("/" + EDIT_MENU_PAGE, true);
     }
 }

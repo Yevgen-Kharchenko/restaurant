@@ -25,12 +25,12 @@
                 <c:choose>
 
                     <c:when test="${user.role=='ADMIN'}">
-                         <a href="admin/index"class="nav-link">
+                         <a href="admin"class="nav-link">
                          <fmt:message key="admin"/>
                          </a>
                     </c:when>
                     <c:when test="${user.role=='CHEF'}">
-                        <a href="admin/chef" class="nav-link">
+                        <a href="chef" class="nav-link">
                         <fmt:message key="admin"/>
                          </a>
                     </c:when>

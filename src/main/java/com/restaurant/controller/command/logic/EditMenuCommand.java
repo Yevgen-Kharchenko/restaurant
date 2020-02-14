@@ -1,7 +1,7 @@
 package com.restaurant.controller.command.logic;
 
 import com.restaurant.controller.command.UniCommand;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.service.DishService;
 import com.restaurant.service.ServiceFactory;
 import org.apache.log4j.Logger;
@@ -24,7 +24,7 @@ public class EditMenuCommand extends UniCommand {
 
 
     @Override
-    protected Page performGet(HttpServletRequest request) {
+    protected PageResponse performGet(HttpServletRequest request) {
         String pageStr = request.getParameter("page");
         String sizeStr = request.getParameter("size");
         String local = (String) request.getSession().getAttribute(LOCALE);
@@ -47,13 +47,13 @@ public class EditMenuCommand extends UniCommand {
         LOG.info("DishSize= " + dishService.getAll(local).size());
         LOG.info("dishPages= " + (int) Math.ceil((double) dishService.getAll(local).size() / (double) size));
 
-        return new Page(EDIT_MENU_PAGE);
+        return new PageResponse(EDIT_MENU_PAGE);
     }
 
     @Override
-    protected Page performPost(HttpServletRequest request) {
+    protected PageResponse performPost(HttpServletRequest request) {
 
 
-        return new Page("/", true);
+        return new PageResponse("/", true);
     }
 }

@@ -1,13 +1,8 @@
 package com.restaurant.controller.command.logic;
 
 import com.restaurant.controller.command.Command;
-import com.restaurant.controller.data.Page;
-import com.restaurant.model.enums.Status;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.service.OrderService;
-import com.restaurant.service.ServiceFactory;
-import com.restaurant.service.UserService;
-import com.restaurant.controller.command.Command;
-import com.restaurant.controller.data.Page;
 import com.restaurant.service.ServiceFactory;
 import com.restaurant.service.UserService;
 
@@ -28,7 +23,7 @@ public class AdminCommand implements Command {
     }
 
     @Override
-    public Page perform(HttpServletRequest request) {
+    public PageResponse execute(HttpServletRequest request) {
 //        request.setAttribute("ordersNew", orderService.getAllByStatus(Status.NEW));
 //        request.setAttribute("ordersOffer", orderService.getAllByStatus(Status.OFFER));
 //        request.setAttribute("ordersInProgress", orderService.getAllByStatus(Status.IN_PROGRESS));
@@ -36,6 +31,6 @@ public class AdminCommand implements Command {
 //        request.setAttribute("ordersCanceled", orderService.getAllByStatus(Status.CANCELED));
 //        request.setAttribute("ordersCl", orderService.getAllByStatus(Status.CLOSED));
 
-        return new Page(ADMIN_PAGE);
+        return new PageResponse(ADMIN_PAGE);
     }
 }

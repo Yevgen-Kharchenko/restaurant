@@ -6,11 +6,13 @@ import com.restaurant.model.enums.Role;
 import org.apache.log4j.Logger;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+@WebFilter("/*")
 public class AuthenticationFilter implements Filter {
     private static final Logger LOG = Logger.getLogger(AuthenticationFilter.class);
 
@@ -57,9 +59,6 @@ public class AuthenticationFilter implements Filter {
         return !SecurityConfig.hasPermission(path, role);
     }
 
-    private boolean isNotSecuredPage(String path) {
-        return !SecurityConfig.isSecurePage(path);
-    }
 
     @Override
     public void destroy() {
@@ -67,9 +66,13 @@ public class AuthenticationFilter implements Filter {
 
     private String getPath(HttpServletRequest req) {
         String requestUri = req.getRequestURI();
-        int lastPath = requestUri.lastIndexOf('/');
+        int lastPath = requestUri.lastIndexOf("restaurant/")+11;
         String path = requestUri.substring(lastPath);
-        LOG.info("Path: " + path);
-        return path;
+        if (path.contains("/")){
+            int nextPath = path.lastIndexOf('/');
+            path=path.substring(0,nextPath);
+        }
+        LOG.info("Path: " + (path.isEmpty() ? "context path" : path));
+        return "/"+ path;
     }
 }

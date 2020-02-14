@@ -1,7 +1,7 @@
 package com.restaurant.controller.command.admin;
 
 import com.restaurant.controller.command.UniCommand;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.model.User;
 import com.restaurant.model.enums.Role;
 import com.restaurant.service.ServiceFactory;
@@ -22,12 +22,12 @@ public class LoginCommand extends UniCommand {
     }
 
     @Override
-    protected Page performGet(HttpServletRequest request) {
-        return new Page(LOGIN_PAGE);
+    protected PageResponse performGet(HttpServletRequest request) {
+        return new PageResponse(LOGIN_PAGE);
     }
 
     @Override
-    protected Page performPost(HttpServletRequest request) {
+    protected PageResponse performPost(HttpServletRequest request) {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         System.out.println("login: " + login + ", password: " + password);
@@ -39,15 +39,15 @@ public class LoginCommand extends UniCommand {
             LOG.info("get user by login" + user);
             session.setAttribute("user", user);
             if (user.getRole() == Role.ADMIN) {
-                return new Page("/" + ADMIN_PAGE, true);
+                return new PageResponse( ADMIN_PAGE, true);
             } else if (user.getRole() == Role.CHEF) {
-                return new Page("/" + CHEF_PAGE, true);
+                return new PageResponse( CHEF_PAGE, true);
             } else {
-                return new Page(REDIRECT_HOME_PAGE, true);
+                return new PageResponse(REDIRECT_HOME_PAGE, true);
             }
         }
         request.setAttribute("notification", "Login or password invalid!");
-        return new Page(LOGIN_PAGE, false);
+        return new PageResponse(LOGIN_PAGE, false);
 
     }
 }

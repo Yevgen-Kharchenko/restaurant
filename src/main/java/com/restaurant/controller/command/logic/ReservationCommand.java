@@ -1,7 +1,8 @@
 package com.restaurant.controller.command.logic;
 
+import com.restaurant.controller.PageUrlConstants;
 import com.restaurant.controller.command.UniCommand;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,14 +13,14 @@ public class ReservationCommand extends UniCommand {
     private static final Logger LOG = Logger.getLogger(ReservationCommand.class);
 
     @Override
-    protected Page performGet(HttpServletRequest request) {
-        return new Page(RESERVATION_PAGE);
+    protected PageResponse performGet(HttpServletRequest request) {
+        return new PageResponse(RESERVATION_PAGE);
     }
 
     @Override
-    protected Page performPost(HttpServletRequest request) {
+    protected PageResponse performPost(HttpServletRequest request) {
 
 
-        return new Page("/", true);
+        return new PageResponse("/", true);
     }
 }

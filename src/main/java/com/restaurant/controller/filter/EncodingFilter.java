@@ -1,9 +1,12 @@
 package com.restaurant.controller.filter;
 
+import org.apache.log4j.Logger;
+
 import javax.servlet.*;
 import java.io.IOException;
 
 public class EncodingFilter implements Filter {
+    private static final Logger LOG = Logger.getLogger(EncodingFilter.class);
     private static final String ENCODING_UTF_8 = "UTF-8";
     private static final String DEFAULT_CONTENT_TYPE = "text/html; charset=UTF-8";
     private static final String REQUEST_ENCODING = "requestEncoding";
@@ -20,6 +23,7 @@ public class EncodingFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
+        LOG.info("Execution EncodingFilter.");
         if (request.getCharacterEncoding() == null) {
             request.setCharacterEncoding(defaultEncoding);
         }

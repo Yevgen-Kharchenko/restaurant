@@ -27,18 +27,19 @@ public class SecurityConfig {
     }
 
     public static boolean hasPermission(String page, Role role) {
-        return securityPages.getOrDefault(role, Collections.EMPTY_LIST)
-                .stream()
-                .anyMatch(securePage -> securePage.equals(page));
+//        return securityPages.getOrDefault(role, Collections.EMPTY_LIST)
+//                .stream()
+//                .anyMatch(securePage -> securePage.equals(page));
+        return securityPages.containsKey(role) && securityPages.get(role).contains(page);
     }
 
-    public static boolean hasPermission(HttpServletRequest request, Role role) {
-        User currentUser = getCurrentUser(request);
-        return currentUser != null && currentUser.getRole().equals(role);
-    }
+//    public static boolean hasPermission(HttpServletRequest request, Role role) {
+//        User currentUser = getCurrentUser(request);
+//        return currentUser != null && currentUser.getRole().equals(role);
+//    }
 
-    public static User getCurrentUser(HttpServletRequest request) {
-        return (User) request.getSession().getAttribute("user");
-    }
+//    public static User getCurrentUser(HttpServletRequest request) {
+//        return (User) request.getSession().getAttribute("user");
+//    }
 
 }

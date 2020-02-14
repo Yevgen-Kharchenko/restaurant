@@ -1,7 +1,7 @@
 package com.restaurant.controller.command.logic;
 
 import com.restaurant.controller.command.UniCommand;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.service.InvoiceService;
 import com.restaurant.service.OrderService;
 import com.restaurant.service.ServiceFactory;
@@ -27,21 +27,21 @@ public class InvoiceCommand extends UniCommand {
     }
 
     @Override
-    protected Page performGet(HttpServletRequest request) {
+    protected PageResponse performGet(HttpServletRequest request) {
         long orderId = Long.parseLong(request.getParameter(ID));
         String local = (String) request.getSession().getAttribute(LOCALE);
         request.setAttribute("invoice", invoiceService.getById(orderId, local));
 
-        return new Page(INVOICE_PAGE);
+        return new PageResponse(INVOICE_PAGE);
     }
 
     @Override
-    protected Page performPost(HttpServletRequest request) {
+    protected PageResponse performPost(HttpServletRequest request) {
 
         String invoiceStatus = request.getParameter("invoiceStatus");
         String invoiceId = request.getParameter("invoiceId");
         invoiceService.changeInvoiceStatus(invoiceStatus, invoiceId);
 
-        return new Page("/" + INVOICE_PAGE, false);
+        return new PageResponse("/" + INVOICE_PAGE, false);
     }
 }

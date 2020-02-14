@@ -1,9 +1,8 @@
 package com.restaurant.controller.command.logic;
 
 import com.restaurant.controller.command.Command;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.service.ServiceFactory;
-import com.restaurant.service.UserService;
 import com.restaurant.service.DishService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -21,9 +20,9 @@ public class DishDeleteCommand implements Command {
     public static final String ID = "id";
 
     @Override
-    public Page perform(HttpServletRequest request) {
+    public PageResponse execute(HttpServletRequest request) {
         int id = Integer.parseInt(request.getParameter(ID));
         dishService.deleteDish(id);
-        return new Page("/"+EDIT_MENU_PAGE, true);
+        return new PageResponse("/"+EDIT_MENU_PAGE, true);
     }
 }

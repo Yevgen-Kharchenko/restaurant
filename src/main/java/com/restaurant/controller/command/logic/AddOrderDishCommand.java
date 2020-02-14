@@ -1,7 +1,7 @@
 package com.restaurant.controller.command.logic;
 
 import com.restaurant.controller.command.Command;
-import com.restaurant.controller.data.Page;
+import com.restaurant.controller.data.PageResponse;
 import com.restaurant.service.OrderService;
 import com.restaurant.service.ServiceFactory;
 import org.apache.log4j.Logger;
@@ -23,11 +23,11 @@ public class AddOrderDishCommand implements Command {
     public static final String DISH_ID = "dishId";
 
     @Override
-    public Page perform(HttpServletRequest request) {
+    public PageResponse execute(HttpServletRequest request) {
         long orderId = Long.parseLong(request.getParameter(ORDER_ID));
         long dishId = Long.parseLong(request.getParameter(DISH_ID));
         LOG.info("Create new orderDish");
         orderService.addOrderDish(dishId, orderId,1);
-        return new Page("/" + ORDER_PAGE + "?orderId=" + orderId, true);
+        return new PageResponse("/" + ORDER_PAGE + "?orderId=" + orderId, true);
     }
 }
