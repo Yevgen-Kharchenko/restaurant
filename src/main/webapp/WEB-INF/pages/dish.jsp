@@ -72,7 +72,7 @@
 						</div>
 						<div class="col-lg-6">
 							<label class="mb-2"><fmt:message key="images"/></label>
-							<input type="text" value="${dish.id}"class="form-control" name="images" >
+							<input type="file" value="${dish.id}"class="form-control" name="images" >
 						</div>
 
 									<div class="col-lg-4">

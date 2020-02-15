@@ -1,12 +1,12 @@
 package com.restaurant.service;
 
+import com.restaurant.config.transaction.TransactionHandler;
 import com.restaurant.controller.view.DishDTO;
 import com.restaurant.controller.view.OrderDTO;
 import com.restaurant.model.Order;
 import com.restaurant.model.OrderDish;
 import com.restaurant.model.enums.Status;
 import com.restaurant.repository.DaoFactory;
-import com.restaurant.repository.impl.DishDaoImpl;
 import com.restaurant.repository.impl.OrderDaoImpl;
 import com.restaurant.repository.impl.OrderDishDaoImpl;
 import com.restaurant.repository.impl.UserDaoImpl;
@@ -18,8 +18,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.google.common.primitives.Ints.tryParse;
-
 @AllArgsConstructor
 public class OrderService {
     private static final Logger LOG = Logger.getLogger(OrderService.class);
@@ -27,12 +25,13 @@ public class OrderService {
     private OrderDaoImpl orderDao;
     private UserDaoImpl userDao;
     private OrderDishDaoImpl orderDishDao;
+//    private TransactionHandler transactionHandler;
 
     public OrderService() {
         this.userDao = DaoFactory.getUserDao();
         this.orderDao = DaoFactory.getOrderDao();
         this.orderDishDao = DaoFactory.getOrderDishDao();
-
+//        this.transactionHandler = transactionHandler;
     }
 
 
@@ -121,7 +120,7 @@ public class OrderService {
             }
             dishDTO.setPrice(orderDish.getPrice());
             dishDTO.setQuantity(orderDish.getQuantity());
-            dishDTO.setCost(orderDish.getPrice()*orderDish.getQuantity());
+            dishDTO.setCost(orderDish.getPrice() * orderDish.getQuantity());
             return dishDTO;
         }).collect(Collectors.toList());
     }
@@ -152,18 +151,21 @@ public class OrderService {
      * @param orderId
      */
     public void changeStatus(String status, String orderId) {
-        Long id = Long.parseLong(orderId);
-
-        Order order = orderDao.getById(id);
-        order.setStatus(Status.valueOf(status));
-        LOG.info("new order: " + order);
-        orderDao.update(order);
+//        transactionHandler.runInTransaction(() -> {
+            Long id = Long.parseLong(orderId);
+            Order order = orderDao.getById(id);
+            order.setStatus(Status.valueOf(status));
+            LOG.info("new order: " + order);
+            orderDao.update(order);
+//        });
     }
 
     public void deleteOrderDish(long dishId, long orderId) {
-        orderDishDao.remove(orderDishDao.getById(dishId));
-        double amount = getTotalAmount(orderId);
-        updateAmountInOrderRepository(amount, orderId);
+//        transactionHandler.runInTransaction(() -> {
+            orderDishDao.remove(orderDishDao.getById(dishId));
+            double amount = getTotalAmount(orderId);
+            updateAmountInOrderRepository(amount, orderId);
+//        });
     }
 
     public void updateAmountInOrderRepository(double amount, long orderId) {
@@ -188,39 +190,47 @@ public class OrderService {
 
     public void addOrderDish(long dishId, long orderId, int quantity) {
         LOG.info("addOrderDish");
-        OrderDish orderDish = OrderDish.builder()
-                .dishId(dishId)
-                .orderId(orderId)
-                .quantity(quantity)
-                .build();
-        LOG.info("orderDish=" + orderDish.toString());
-        orderDishDao.create(orderDish);
-        LOG.info("create(orderDish)");
-        double amount = getTotalAmount(orderId);
-        updateAmountInOrderRepository(amount, orderId);
+//        transactionHandler.runInTransaction(() -> {
+            OrderDish orderDish = OrderDish.builder()
+                    .dishId(dishId)
+                    .orderId(orderId)
+                    .quantity(quantity)
+                    .build();
+            LOG.info("orderDish=" + orderDish.toString());
+            orderDishDao.create(orderDish);
+            LOG.info("create(orderDish)");
+            double amount = getTotalAmount(orderId);
+            updateAmountInOrderRepository(amount, orderId);
+//        });
     }
 
     public void UpdateOrderDish(long dishId, int quantity, long orderId) {
-        OrderDish orderDish = orderDishDao.getById(dishId);
-        orderDish.setQuantity(quantity);
-        orderDishDao.update(orderDish);
-        double amount = getTotalAmount(orderId);
-        updateAmountInOrderRepository(amount, orderId);
+//        transactionHandler.runInTransaction(() -> {
+            OrderDish orderDish = orderDishDao.getById(dishId);
+            orderDish.setQuantity(quantity);
+            orderDishDao.update(orderDish);
+            double amount = getTotalAmount(orderId);
+            updateAmountInOrderRepository(amount, orderId);
+//        });
     }
 
     public void repeatOrder(String orderId) {
-        long id = Long.parseLong(orderId);
-        Order order = orderDao.getById(id);
-        long newOrderId = createOrder(order.getUserId());
-        List<OrderDish> newOrderDish = orderDishDao.getAllByFieldId(id);
-        long dishId;
-        int quantity;
-        for (OrderDish orderDish : newOrderDish) {
-            dishId = orderDish.getDishId();
-            quantity = orderDish.getQuantity();
-            addOrderDish(dishId, newOrderId, quantity);
-        }
-        double amount = getTotalAmount(newOrderId);
-        updateAmountInOrderRepository(amount, newOrderId);
+//        transactionHandler.runInTransaction(() -> {
+            long id = Long.parseLong(orderId);
+            Order order = orderDao.getById(id);
+            long newOrderId = createOrder(order.getUserId());
+            List<OrderDish> newOrderDish = orderDishDao.getAllByFieldId(id);
+            long dishId;
+            int quantity;
+
+            for (OrderDish orderDish : newOrderDish) {
+                dishId = orderDish.getDishId();
+                quantity = orderDish.getQuantity();
+                addOrderDish(dishId, newOrderId, quantity);
+            }
+
+            double amount = getTotalAmount(newOrderId);
+            updateAmountInOrderRepository(amount, newOrderId);
+//        });
     }
 }

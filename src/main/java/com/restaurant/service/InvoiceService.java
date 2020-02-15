@@ -1,5 +1,6 @@
 package com.restaurant.service;
 
+import com.restaurant.config.transaction.TransactionHandler;
 import com.restaurant.controller.view.InvoiceDTO;
 import com.restaurant.model.Invoice;
 import com.restaurant.model.enums.InvoiceStatus;
@@ -16,50 +17,58 @@ public class InvoiceService {
     private static final Logger LOG = Logger.getLogger(InvoiceService.class);
     private InvoiceDaoImpl invoiceDao;
     private OrderService orderService;
+//    private TransactionHandler transactionHandler;
 
     public InvoiceService() {
         this.invoiceDao = DaoFactory.getInvoiceDao();
         this.orderService = new OrderService();
+//        this.transactionHandler = transactionHandler;
+
     }
 
+
+
     public void createInvoice(String id) {
-        long orderId = Long.parseLong(id);
-        LocalDateTime date = LocalDateTime.now().withNano(0);
-        Invoice invoice = Invoice.builder()
-                .date(date)
-                .orderId(orderId)
-                .invoiceStatus(InvoiceStatus.NEW)
-                .build();
-        invoice = invoiceDao.create(invoice);
-        LOG.info("invoice create : " + invoice.toString());
+//        transactionHandler.runInTransaction(() -> {
+            long orderId = Long.parseLong(id);
+            LocalDateTime date = LocalDateTime.now().withNano(0);
+            Invoice invoice = Invoice.builder()
+                    .date(date)
+                    .orderId(orderId)
+                    .invoiceStatus(InvoiceStatus.NEW)
+                    .build();
+            invoice = invoiceDao.create(invoice);
+            LOG.info("invoice create : " + invoice.toString());
+//        });
     }
 
     public List<InvoiceDTO> getById(long id, String local) {
         List<Invoice> AllInvoice = invoiceDao.getAllByFieldId(id);
-        return  AllInvoice.stream().map(invoice ->{
+        return AllInvoice.stream().map(invoice -> {
             InvoiceDTO invoiceDTO = new InvoiceDTO(invoice.getId(),
                     invoice.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")),
                     invoice.getInvoiceStatus(),
-                    orderService.getById(invoice.getOrderId(),local));
+                    orderService.getById(invoice.getOrderId(), local));
             return invoiceDTO;
         }).collect(Collectors.toList());
 
     }
 
     public void changeInvoiceStatus(String invoiceStatus, String invoiceId) {
-        Long id = Long.parseLong(invoiceId);
+//        transactionHandler.runInTransaction(() -> {
 
-        Invoice invoice = invoiceDao.getById(id);
+            long id = Long.parseLong(invoiceId);
+            Invoice invoice = invoiceDao.getById(id);
 
-        if (invoiceStatus.equals("PAID")) {
-            orderService.changeStatus("CLOSED", String.valueOf(invoice.getOrderId()));
-            invoice.setInvoiceStatus(InvoiceStatus.PAID);
-            invoiceDao.update(invoice);
-        }else {
-            orderService.changeStatus("COMPLETED", String.valueOf(invoice.getOrderId()));
-            invoice.setInvoiceStatus(InvoiceStatus.CANCELED);
-            invoiceDao.update(invoice);
-        }
-
+            if (invoiceStatus.equals("PAID")) {
+                orderService.changeStatus("CLOSED", String.valueOf(invoice.getOrderId()));
+                invoice.setInvoiceStatus(InvoiceStatus.PAID);
+                invoiceDao.update(invoice);
+            } else {
+                orderService.changeStatus("COMPLETED", String.valueOf(invoice.getOrderId()));
+                invoice.setInvoiceStatus(InvoiceStatus.CANCELED);
+                invoiceDao.update(invoice);
+            }
+//        });
     }
 }

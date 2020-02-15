@@ -39,8 +39,8 @@ public class DispatcherServlet extends HttpServlet {
 
         CommandResponse commandResponse = command.execute(req);
 
-        switch (commandResponse.getResponseType()) {
-            case PAGE: {
+//        switch (commandResponse.getResponseType()) {
+//            case PAGE: {
                 PageResponse pageResponse = (PageResponse) commandResponse;
                 if (pageResponse.isRedirect()) {
                     String url = pageResponse.getUrl();
@@ -52,28 +52,28 @@ public class DispatcherServlet extends HttpServlet {
                     LOG.info("Request forward into modified path: " + modifiedPath);
                     req.getRequestDispatcher(modifiedPath).forward(req, resp);
                 }
-                break;
-            }
-            case PAYLOAD: {
-                SuccessResponse successResponse = (SuccessResponse) commandResponse;
-                PrintWriter out = resp.getWriter();
-                resp.setCharacterEncoding("UTF-8");
-                out.print(successResponse.getPayload());
-                out.flush();
-                break;
-            }
-            case ERROR: {
-                ErrorResponse errorResponse = (ErrorResponse) commandResponse;
-                resp.setStatus(errorResponse.getHttpStatus());
-                PrintWriter out = resp.getWriter();
-                resp.setCharacterEncoding("UTF-8");
-                out.print(errorResponse.getErrorMsg());
-                out.flush();
-                break;
-            }
-            default:
-                throw new IllegalStateException("Unknown command response type");
-        }
+//                break;
+//            }
+//            case PAYLOAD: {
+//                SuccessResponse successResponse = (SuccessResponse) commandResponse;
+//                PrintWriter out = resp.getWriter();
+//                resp.setCharacterEncoding("UTF-8");
+//                out.print(successResponse.getPayload());
+//                out.flush();
+//                break;
+//            }
+//            case ERROR: {
+//                ErrorResponse errorResponse = (ErrorResponse) commandResponse;
+//                resp.setStatus(errorResponse.getHttpStatus());
+//                PrintWriter out = resp.getWriter();
+//                resp.setCharacterEncoding("UTF-8");
+//                out.print(errorResponse.getErrorMsg());
+//                out.flush();
+//                break;
+//            }
+//            default:
+//                throw new IllegalStateException("Unknown command response type");
+
     }
 
 

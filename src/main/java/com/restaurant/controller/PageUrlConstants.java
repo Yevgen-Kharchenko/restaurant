@@ -15,7 +15,7 @@ public class PageUrlConstants {
     public static final String CHEF_PAGE = "chef";
     public static final String MY_ORDER_PAGE = "my-orders";
     public static final String NOT_FOUND_PAGE = "errors/404-error";
-    public static final String UNDER_CONSTRUCTION_PAGE = "errors/under-construction";
+    public static final String UNDER_CONSTRUCTION_PAGE = "under-construction";
     public static final String CONTACT_PAGE = "contact";
     public static final String LOGIN_PAGE = "login";
     public static final String BLOG_PAGE = "blog";

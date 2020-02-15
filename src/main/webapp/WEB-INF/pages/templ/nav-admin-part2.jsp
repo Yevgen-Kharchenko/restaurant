@@ -26,9 +26,9 @@
 </nav>
         <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
-<li><a href="errors/under-construction"><i class="fa fa-user fa-fw"></i> My Profile</a>
+<li><a href="under-construction"><i class="fa fa-user fa-fw"></i> My Profile</a>
 </li>
-<li><a href="errors/under-construction"><i class="fa fa-gear fa-fw"></i> Settings</a>
+<li><a href="under-construction"><i class="fa fa-gear fa-fw"></i> Settings</a>
 </li>
 <li><a href="logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
 </li>
@@ -45,7 +45,7 @@
 </ul>
 <ul id="dropdown2" class="dropdown-content w250">
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <i class="fa fa-comment fa-fw"></i> New Comment
             <span class="pull-right text-muted small">4 min</span>
@@ -54,7 +54,7 @@
 </li>
 <li class="divider"></li>
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <i class="fa fa-twitter fa-fw"></i> 3 New Followers
             <span class="pull-right text-muted small">12 min</span>
@@ -63,7 +63,7 @@
 </li>
 <li class="divider"></li>
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <i class="fa fa-envelope fa-fw"></i> Message Sent
             <span class="pull-right text-muted small">4 min</span>
@@ -72,7 +72,7 @@
 </li>
 <li class="divider"></li>
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <i class="fa fa-tasks fa-fw"></i> New Task
             <span class="pull-right text-muted small">4 min</span>
@@ -81,7 +81,7 @@
 </li>
 <li class="divider"></li>
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <i class="fa fa-upload fa-fw"></i> Server Rebooted
             <span class="pull-right text-muted small">4 min</span>
@@ -90,7 +90,7 @@
 </li>
 <li class="divider"></li>
 <li>
-    <a class="text-center" href="errors/under-construction">
+    <a class="text-center" href="under-construction">
         <strong>See All Alerts</strong>
         <i class="fa fa-angle-right"></i>
     </a>
@@ -98,7 +98,7 @@
 </ul>
 <ul id="dropdown3" class="dropdown-content dropdown-tasks w250">
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <p>
                 <strong>Task 1</strong>
@@ -114,7 +114,7 @@
 </li>
 <li class="divider"></li>
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <p>
                 <strong>Task 2</strong>
@@ -130,7 +130,7 @@
 </li>
 <li class="divider"></li>
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <p>
                 <strong>Task 3</strong>
@@ -146,7 +146,7 @@
 </li>
 <li class="divider"></li>
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <p>
                 <strong>Task 4</strong>
@@ -165,7 +165,7 @@
 </ul>
 <ul id="dropdown4" class="dropdown-content dropdown-tasks w250">
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <strong>John Doe</strong>
             <span class="pull-right text-muted">
@@ -177,7 +177,7 @@
 </li>
 <li class="divider"></li>
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <strong>John Smith</strong>
             <span class="pull-right text-muted">
@@ -189,7 +189,7 @@
 </li>
 <li class="divider"></li>
 <li>
-    <a href="errors/under-construction">
+    <a href="under-construction">
         <div>
             <strong>John Smith</strong>
             <span class="pull-right text-muted">
@@ -201,7 +201,7 @@
 </li>
 <li class="divider"></li>
 <li>
-    <a class="text-center" href="errors/under-construction">
+    <a class="text-center" href="under-construction">
         <strong>Read All Messages</strong>
         <i class="fa fa-angle-right"></i>
     </a>

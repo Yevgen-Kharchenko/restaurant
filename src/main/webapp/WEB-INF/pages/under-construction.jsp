@@ -7,8 +7,8 @@
 
 <html lang="en">
 <head>
-  <title>404</title>
-  <c:import url="../templ/head-part.jsp"/>
+  <title>Under Construction</title>
+  <c:import url="templ/head-part.jsp"/>
 </head>
 <body>
 
@@ -31,6 +31,6 @@
       </div>
     </section>
 
-    <c:import url="../templ/loader.jsp"/>
+    <c:import url="templ/loader.jsp"/>
 </body>
 </html>

@@ -1,5 +1,6 @@
 package com.restaurant.service;
 
+import com.restaurant.config.transaction.TransactionHandler;
 import com.restaurant.controller.view.DishDTO;
 import com.restaurant.model.Dish;
 import com.restaurant.model.enums.DishType;
@@ -13,6 +14,7 @@ import java.util.stream.Collectors;
 public class DishService {
     private static final Logger LOG = Logger.getLogger(DishService.class);
     private DishDaoImpl dishDao;
+
 
     public DishService() {
         this.dishDao = DaoFactory.getDishDao();
@@ -51,7 +53,9 @@ public class DishService {
         return createdDish;
     }
 
-    public Dish updateDish(long id, DishType dishType, String nameUK, String nameEN, String ingredientsUK, String ingredientsEN, double price) {
+    public Dish updateDish(long id, DishType dishType, String nameUK,
+                           String nameEN, String ingredientsUK,
+                           String ingredientsEN, double price) {
         Dish updatedDish = dishDao.getById(id);
         LOG.info("updeted dish = " + updatedDish);
         updatedDish.setDishType(dishType);

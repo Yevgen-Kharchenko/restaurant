@@ -1,5 +1,6 @@
 package com.restaurant.config;
 
+import com.restaurant.config.transaction.ConnectionHolder;
 import org.apache.log4j.Logger;
 
 import javax.naming.Context;
@@ -26,15 +27,31 @@ public class DataSourceConnectionPool implements ConnectionFactory {
     private DataSourceConnectionPool() {
     }
 
+//    public Connection getConnection() {
+//        Connection connection = null;
+//        try {
+//            connection = dataSource.getConnection();
+//            LOG.debug("Connection received " + connection + " " + connection.hashCode());
+//        } catch (SQLException e) {
+//            LOG.error("Some problem was occurred while getting connection to BD", e);
+//        }
+//        return connection;
+//    }
+
     public Connection getConnection() {
-        Connection connection = null;
+
+        if (ConnectionHolder.getCurrentConnection() != null) {
+            LOG.debug("Connection already exists for thread: " + Thread.currentThread().getName());
+            return ConnectionHolder.getCurrentConnection();
+        }
         try {
-            connection = dataSource.getConnection();
-            LOG.debug("Connection received " + connection + " " + connection.hashCode());
+            Connection connection = dataSource.getConnection();
+            LOG.debug("New connection received");
+            return connection;
         } catch (SQLException e) {
             LOG.error("Some problem was occurred while getting connection to BD", e);
+            throw new RuntimeException(e);
         }
-        return connection;
     }
 
     public static DataSourceConnectionPool getInstance() {
