@@ -7,6 +7,7 @@ import com.restaurant.model.enums.DishType;
 import com.restaurant.service.DishService;
 import com.restaurant.service.OrderService;
 import com.restaurant.service.ServiceFactory;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,18 +16,13 @@ import java.util.Map;
 
 import static com.restaurant.controller.PageUrlConstants.MENU_PAGE;
 
+@AllArgsConstructor
 public class MenuCommand extends UniCommand {
     private static final Logger LOG = Logger.getLogger(MenuCommand.class);
     private DishService dishService;
     private OrderService orderService;
 
     public static final String LOCALE = "locale";
-
-    public MenuCommand() {
-        this.dishService = ServiceFactory.getDishService();
-        this.orderService = ServiceFactory.getOrderService();
-    }
-
 
     @Override
     protected PageResponse performGet(HttpServletRequest request) {

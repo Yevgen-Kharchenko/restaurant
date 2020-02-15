@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import static com.restaurant.controller.PageUrlConstants.*;
 public class LogoutCommand implements Command {
+
     @Override
     public PageResponse execute(HttpServletRequest request) {
         request.getSession().invalidate();

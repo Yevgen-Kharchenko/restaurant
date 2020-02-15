@@ -4,6 +4,7 @@ import com.restaurant.controller.command.UniCommand;
 import com.restaurant.controller.data.PageResponse;
 import com.restaurant.service.DishService;
 import com.restaurant.service.ServiceFactory;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,16 +13,12 @@ import static com.google.common.primitives.Ints.tryParse;
 import static com.restaurant.controller.PageUrlConstants.EDIT_MENU_PAGE;
 import static java.util.Objects.isNull;
 
+@AllArgsConstructor
 public class EditMenuCommand extends UniCommand {
     private static final Logger LOG = Logger.getLogger(EditMenuCommand.class);
     private DishService dishService;
 
     public static final String LOCALE = "locale";
-
-    public EditMenuCommand() {
-        this.dishService = ServiceFactory.getDishService();
-    }
-
 
     @Override
     protected PageResponse performGet(HttpServletRequest request) {

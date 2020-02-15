@@ -11,14 +11,6 @@ import static com.restaurant.controller.PageUrlConstants.ELEMENT_PAGE;
 
 public class ElementCommand implements Command {
 
-    private UserService userService;
-
-
-    public ElementCommand() {
-        this.userService = ServiceFactory.getUserService();
-
-    }
-
     @Override
     public PageResponse execute(HttpServletRequest request) {
 

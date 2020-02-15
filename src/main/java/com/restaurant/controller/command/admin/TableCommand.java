@@ -11,14 +11,6 @@ import static com.restaurant.controller.PageUrlConstants.TABLE_PAGE;
 
 public class TableCommand implements Command {
 
-    private UserService userService;
-
-
-    public TableCommand() {
-        this.userService = ServiceFactory.getUserService();
-
-    }
-
     @Override
     public PageResponse execute(HttpServletRequest request) {
 

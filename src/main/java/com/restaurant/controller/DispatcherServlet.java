@@ -5,6 +5,7 @@ import com.restaurant.controller.data.PageResponse;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,25 +20,23 @@ public class DispatcherServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         LOG.info("doGET");
         processRequest(req, resp);
+
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         LOG.info("doPost");
         processRequest(req, resp);
+
     }
 
-    private void processRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    private void processRequest(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         String path = getPath(req);
         LOG.info("Will get command py path: " + path);
         Command command = CommandFactory.getCommand(path, req.getMethod());
         LOG.info("Extracted command " + command + command.getClass());
 
-//        PageResponse commandResponse = command.execute(req);
-//        switch (commandResponse.getResponseType()) {
-//            case PAGE: {
         PageResponse pageResponse = command.execute(req);
-        ;
         if (pageResponse.isRedirect()) {
             String url = pageResponse.getUrl();
             LOG.info("Request redirect into new url: " + url);
@@ -48,27 +47,6 @@ public class DispatcherServlet extends HttpServlet {
             LOG.info("Request forward into modified path: " + modifiedPath);
             req.getRequestDispatcher(modifiedPath).forward(req, resp);
         }
-//                break;
-//            }
-//            case PAYLOAD: {
-//                SuccessResponse successResponse = (SuccessResponse) commandResponse;
-//                PrintWriter out = resp.getWriter();
-//                resp.setCharacterEncoding("UTF-8");
-//                out.print(successResponse.getPayload());
-//                out.flush();
-//                break;
-//            }
-//            case ERROR: {
-//                ErrorResponse errorResponse = (ErrorResponse) commandResponse;
-//                resp.setStatus(errorResponse.getHttpStatus());
-//                PrintWriter out = resp.getWriter();
-//                resp.setCharacterEncoding("UTF-8");
-//                out.print(errorResponse.getErrorMsg());
-//                out.flush();
-//                break;
-//            }
-//            default:
-//                throw new IllegalStateException("Unknown command response type");
 
     }
 

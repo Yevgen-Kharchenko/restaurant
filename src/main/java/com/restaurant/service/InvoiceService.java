@@ -6,6 +6,7 @@ import com.restaurant.model.Invoice;
 import com.restaurant.model.enums.InvoiceStatus;
 import com.restaurant.repository.DaoFactory;
 import com.restaurant.repository.impl.InvoiceDaoImpl;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
 import java.time.LocalDateTime;
@@ -13,20 +14,12 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@AllArgsConstructor
 public class InvoiceService {
     private static final Logger LOG = Logger.getLogger(InvoiceService.class);
     private InvoiceDaoImpl invoiceDao;
     private OrderService orderService;
-//    private TransactionHandler transactionHandler;
-
-    public InvoiceService() {
-        this.invoiceDao = DaoFactory.getInvoiceDao();
-        this.orderService = new OrderService();
-//        this.transactionHandler = transactionHandler;
-
-    }
-
-
+    private TransactionHandler transactionHandler;
 
     public void createInvoice(String id) {
 //        transactionHandler.runInTransaction(() -> {

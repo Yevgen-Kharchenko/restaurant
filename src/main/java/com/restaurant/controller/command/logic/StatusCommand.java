@@ -4,24 +4,22 @@ import com.restaurant.controller.command.UniCommand;
 import com.restaurant.controller.data.PageResponse;
 import com.restaurant.service.InvoiceService;
 import com.restaurant.service.OrderService;
-import com.restaurant.service.ServiceFactory;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
+
 import javax.servlet.http.HttpServletRequest;
+
 import static com.restaurant.controller.PageUrlConstants.CHEF_PAGE;
 
+@AllArgsConstructor
 public class StatusCommand extends UniCommand {
     private static final Logger LOG = Logger.getLogger(StatusCommand.class);
     private OrderService orderService;
     private InvoiceService invoiceService;
 
-    public StatusCommand() {
-        this.orderService = ServiceFactory.getOrderService();
-        this.invoiceService = ServiceFactory.getInvoiceService();
-    }
-
     @Override
     protected PageResponse performGet(HttpServletRequest request) {
-        return new PageResponse(CHEF_PAGE,true);
+        return new PageResponse(CHEF_PAGE, true);
     }
 
     @Override
@@ -33,14 +31,14 @@ public class StatusCommand extends UniCommand {
         LOG.info("Post status: " + status);
         if (status.equals("REPEAT")) {
             orderService.repeatOrder(orderId);
-        }else if (status.equals("PAYMENT")){
+        } else if (status.equals("PAYMENT")) {
             invoiceService.createInvoice(orderId);
             orderService.changeStatus(status, orderId);
-        }else {
+        } else {
             orderService.changeStatus(status, orderId);
             request.setAttribute("notification", "Order status changed!");
             LOG.info("status : " + status);
         }
-        return new PageResponse(originUrl,true);
+        return new PageResponse(originUrl, true);
     }
 }

@@ -1,13 +1,29 @@
 package com.restaurant.service;
 
+import com.restaurant.repository.DaoFactory;
+
 public class ServiceFactory {
     private ServiceFactory() {
     }
 
-    private static UserService userService = new UserService();
-    private static DishService dishService = new DishService();
-    private static OrderService orderService = new OrderService();
-    private static InvoiceService invoiceService = new InvoiceService();
+    private static OrderService orderService = OrderServiceFactory.getOrderService();
+
+    private static UserService userService = new UserService(
+            DaoFactory.getUserDao()
+    );
+    private static DishService dishService = new DishService(
+            DaoFactory.getDishDao()
+    );
+
+    private static InvoiceService invoiceService = new InvoiceService(
+            DaoFactory.getInvoiceDao(),
+            OrderServiceFactory.getOrderService(),
+            TransactionHandlerFactory.getTransactionHandler()
+    );
+
+    public static OrderService getOrderService() {
+        return orderService;
+    }
 
     public static UserService getUserService() {
         return userService;
@@ -15,10 +31,6 @@ public class ServiceFactory {
 
     public static DishService getDishService() {
         return dishService;
-    }
-
-    public static OrderService getOrderService() {
-        return orderService;
     }
 
     public static InvoiceService getInvoiceService() {

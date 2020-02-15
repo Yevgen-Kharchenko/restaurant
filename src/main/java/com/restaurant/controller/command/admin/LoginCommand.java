@@ -6,6 +6,7 @@ import com.restaurant.model.User;
 import com.restaurant.model.enums.Role;
 import com.restaurant.service.ServiceFactory;
 import com.restaurant.service.UserService;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,13 +14,10 @@ import javax.servlet.http.HttpSession;
 
 import static com.restaurant.controller.PageUrlConstants.*;
 
+@AllArgsConstructor
 public class LoginCommand extends UniCommand {
     private UserService userService;
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
-
-    public LoginCommand() {
-        this.userService = ServiceFactory.getUserService();
-    }
 
     @Override
     protected PageResponse performGet(HttpServletRequest request) {

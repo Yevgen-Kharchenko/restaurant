@@ -5,24 +5,20 @@ import com.restaurant.controller.data.PageResponse;
 import com.restaurant.model.enums.DishType;
 import com.restaurant.service.DishService;
 import com.restaurant.service.OrderService;
-import com.restaurant.service.ServiceFactory;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 
 import static com.restaurant.controller.PageUrlConstants.ORDER_PAGE;
 
+@AllArgsConstructor
 public class OrderCommand extends UniCommand {
     private static final Logger LOG = Logger.getLogger(OrderCommand.class);
     private OrderService orderService;
     private DishService dishService;
     public static final String ID = "orderId";
     public static final String LOCALE = "locale";
-
-    public OrderCommand() {
-        this.orderService = ServiceFactory.getOrderService();
-        this.dishService = ServiceFactory.getDishService();
-    }
 
     @Override
     protected PageResponse performGet(HttpServletRequest request) {
@@ -38,7 +34,6 @@ public class OrderCommand extends UniCommand {
 
     @Override
     protected PageResponse performPost(HttpServletRequest request) {
-
 
         return new PageResponse(ORDER_PAGE, false);
     }

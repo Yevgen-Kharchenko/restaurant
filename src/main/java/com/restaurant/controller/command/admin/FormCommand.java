@@ -11,14 +11,6 @@ import static com.restaurant.controller.PageUrlConstants.FORM_PAGE;
 
 public class FormCommand implements Command {
 
-    private UserService userService;
-
-
-    public FormCommand() {
-        this.userService = ServiceFactory.getUserService();
-
-    }
-
     @Override
     public PageResponse execute(HttpServletRequest request) {
 

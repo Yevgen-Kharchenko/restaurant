@@ -37,29 +37,29 @@
 
 					<div class="container" >
 						<div class="col-md-12 dish-menu">
-							<form action="dish" method="post"  enctype = "multipart/form-data" class="col-lg-12">
+							<form method="post" action="dish"  class="col-lg-12">
 							<div class="tab-pane fade show active" >
 								<div class="row">
 
 						<div class="col-lg-6">
 							<label><fmt:message key="nameUK"/></label>
-							<input type="text" value="${dish.nameUK}" class="form-control" name="nameUK">
+							<input type="text" name="nameUK" value="${dish.nameUK}" class="form-control"  >
 						</div>
 						<div class="col-lg-6">
 							<label><fmt:message key="nameEN"/></label>
-							<input type="text" value="${dish.nameEN}" class="form-control" name="nameEN" >
+							<input type="text" name="nameEN" value="${dish.nameEN}" class="form-control"  >
 						</div>
 						<div class="col-lg-6">
 							<label><fmt:message key="ingredientsUK"/></label>
-							<input type="text" value="${dish.ingredientsUK}" class="form-control" name="ingredientsUK" >
+							<input type="text" name="ingredientsUK" value="${dish.ingredientsUK}" class="form-control"  >
 						</div>
 						<div class="col-lg-6">
 							<label><fmt:message key="ingredientsEN"/></label>
-							<input type="text" value="${dish.ingredientsEN}" class="form-control" name="ingredientsEN">
+							<input type="text" name="ingredientsEN" value="${dish.ingredientsEN}" class="form-control" >
 						</div>
 						<div class="col-lg-6">
-							<label for="role" class="col-lg-6"><fmt:message key="dishType"/></label>
-							<select id="role" value="${dish.dishType}" name="dishType"  class="form-control">
+							<label ><fmt:message key="dishType"/></label>
+							<select  name="dishType" value="${dish.dishType}"   class="form-control">
 								<option value="MAIN">MAIN</option>
 								<option value="DESSERT">DESSERT</option>
 								<option value="DRINKS">DRINKS</option>
@@ -68,11 +68,11 @@
 						</div>
 						<div class="col-lg-6">
 							<label class="mb-2"><fmt:message key="price"/></label>
-							<input type="text" value="${dish.price}"class="form-control" name="price" >
+							<input type="text" name="price" value="${dish.price}"class="form-control"  >
 						</div>
 						<div class="col-lg-6">
 							<label class="mb-2"><fmt:message key="images"/></label>
-							<input type="file" value="${dish.imageName}"class="form-control" name="images" >
+							<input type="text" name="images" value="${dish.imageName}" class="form-control"  >
 						</div>
 
 									<div class="col-lg-4">
@@ -89,18 +89,21 @@
 											<button type="submit" class="btn btn-primary btn-outline-primary p-3"><fmt:message key="add.dish"/></button>
 										</c:otherwise>
 										</c:choose>
+
 									</div>
+
 									<div class="col-lg-3">
 										<div class="custom-img">
 										<img src="static/images/${dish.imageName}"  width="100" height="100">
 										</img>
 										</div>
 									</div>
+							</form>
 								</div>
 							</div>
 
 
-							</form>
+
 
 						</div>
 					</div>

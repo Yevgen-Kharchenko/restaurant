@@ -4,22 +4,16 @@ import com.restaurant.controller.command.Command;
 import com.restaurant.controller.data.PageResponse;
 import com.restaurant.model.enums.Status;
 import com.restaurant.service.OrderService;
-import com.restaurant.service.ServiceFactory;
+import lombok.AllArgsConstructor;
 
 import javax.servlet.http.HttpServletRequest;
 
 import static com.restaurant.controller.PageUrlConstants.ORDER_LIST_PAGE;
 
+@AllArgsConstructor
 public class OrderListCommand implements Command {
 
-
     private OrderService orderService;
-
-    public OrderListCommand() {
-
-        this.orderService = ServiceFactory.getOrderService();
-
-    }
 
     @Override
     public PageResponse execute(HttpServletRequest request) {

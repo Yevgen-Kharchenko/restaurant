@@ -90,7 +90,7 @@ public class DishDaoImpl extends AbstractDao<Dish> implements GetAllDao<Dish> {
 
     @Override
     public Dish create(Dish entity) {
-        LOG.debug("Create user: + " + entity);
+        LOG.debug("Create Dish: + " + entity);
         long id = super.create(INSERT_INTO_DISH_MENU, ps -> {
             ps.setString(1, entity.getDishType().toString());
             ps.setString(2, entity.getNameUK());

@@ -19,8 +19,4 @@ public class PageResponse {
         return redirect;
     }
 
-//    @Override
-//    public CommandResponseType getResponseType() {
-//        return CommandResponseType.PAGE;
-//    }
 }

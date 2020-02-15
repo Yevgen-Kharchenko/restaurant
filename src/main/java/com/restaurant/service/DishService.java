@@ -3,21 +3,17 @@ package com.restaurant.service;
 import com.restaurant.controller.view.DishDTO;
 import com.restaurant.model.Dish;
 import com.restaurant.model.enums.DishType;
-import com.restaurant.repository.DaoFactory;
 import com.restaurant.repository.impl.DishDaoImpl;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@AllArgsConstructor
 public class DishService {
     private static final Logger LOG = Logger.getLogger(DishService.class);
     private DishDaoImpl dishDao;
-
-
-    public DishService() {
-        this.dishDao = DaoFactory.getDishDao();
-    }
 
     public Dish getDish(long id) {
         return dishDao.getById(id);
@@ -39,7 +35,8 @@ public class DishService {
         return mapToDishDTO(all, local);
     }
 
-    public Dish createDish(DishType dishType, String nameUK, String nameEN, String ingredientsUK, String ingredientsEN, double price) {
+    public Dish createDish(DishType dishType, String nameUK, String nameEN, String ingredientsUK,
+                           String ingredientsEN, double price, String imageName) {
         Dish createdDish = Dish.builder()
                 .dishType(dishType)
                 .nameUK(nameUK)
@@ -47,6 +44,7 @@ public class DishService {
                 .ingredientsUK(ingredientsUK)
                 .ingredientsEN(ingredientsEN)
                 .price(price)
+                .imageName(imageName)
                 .build();
         dishDao.create(createdDish);
         return createdDish;
@@ -54,7 +52,7 @@ public class DishService {
 
     public Dish updateDish(long id, DishType dishType, String nameUK,
                            String nameEN, String ingredientsUK,
-                           String ingredientsEN, double price) {
+                           String ingredientsEN, double price, String imageName) {
         Dish updatedDish = dishDao.getById(id);
         LOG.info("updeted dish = " + updatedDish);
         updatedDish.setDishType(dishType);
@@ -63,6 +61,7 @@ public class DishService {
         updatedDish.setIngredientsUK(ingredientsUK);
         updatedDish.setIngredientsEN(ingredientsEN);
         updatedDish.setPrice(price);
+        updatedDish.setImageName(imageName);
 
         dishDao.update(updatedDish);
         return updatedDish;

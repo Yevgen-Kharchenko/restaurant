@@ -11,14 +11,6 @@ import static com.restaurant.controller.PageUrlConstants.EMPTY_PAGE;
 
 public class EmptyCommand implements Command {
 
-    private UserService userService;
-
-
-    public EmptyCommand() {
-        this.userService = ServiceFactory.getUserService();
-
-    }
-
     @Override
     public PageResponse execute(HttpServletRequest request) {
 

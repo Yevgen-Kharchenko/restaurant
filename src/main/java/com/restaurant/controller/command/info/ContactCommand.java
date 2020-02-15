@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import static com.restaurant.controller.PageUrlConstants.CONTACT_PAGE;
 
 public class ContactCommand implements Command {
+
     @Override
     public PageResponse execute(HttpServletRequest request) {
         return new PageResponse(CONTACT_PAGE);

@@ -1,6 +1,5 @@
 package com.restaurant.controller.command.logic;
 
-import com.restaurant.controller.PageUrlConstants;
 import com.restaurant.controller.command.UniCommand;
 import com.restaurant.controller.data.PageResponse;
 import org.apache.log4j.Logger;
@@ -19,7 +18,6 @@ public class ReservationCommand extends UniCommand {
 
     @Override
     protected PageResponse performPost(HttpServletRequest request) {
-
 
         return new PageResponse(RESERVATION_PAGE, true);
     }

@@ -1,6 +1,7 @@
 package com.restaurant.config.transaction;
 
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 import java.util.function.Supplier;
 
@@ -14,8 +15,10 @@ import java.util.function.Supplier;
  */
 
 @AllArgsConstructor
+
 public class TransactionHandler {
     private final TransactionManager transactionManager;
+
 
     public <T> T runInTransaction(Supplier<T> supplier) {
         transactionManager.begin();

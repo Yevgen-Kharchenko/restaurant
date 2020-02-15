@@ -25,14 +25,9 @@ public class OrderService {
     private OrderDaoImpl orderDao;
     private UserDaoImpl userDao;
     private OrderDishDaoImpl orderDishDao;
-//    private TransactionHandler transactionHandler;
+    private TransactionHandler transactionHandler;
 
-    public OrderService() {
-        this.userDao = DaoFactory.getUserDao();
-        this.orderDao = DaoFactory.getOrderDao();
-        this.orderDishDao = DaoFactory.getOrderDishDao();
-//        this.transactionHandler = transactionHandler;
-    }
+
 
 
     /**

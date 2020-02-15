@@ -5,20 +5,21 @@ import com.restaurant.model.User;
 import com.restaurant.model.enums.Role;
 import com.restaurant.repository.DaoFactory;
 import com.restaurant.repository.impl.UserDaoImpl;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-
+@AllArgsConstructor
 public class UserService {
 
     private static final Logger LOG = Logger.getLogger(UserService.class);
     private UserDaoImpl userDao;
 
-    public UserService() {
-        this.userDao = DaoFactory.getUserDao();
-    }
+//    public UserService() {
+//        this.userDao = DaoFactory.getUserDao();
+//    }
 
     /**
      * Validates User's Login and checks if it corresponds with password

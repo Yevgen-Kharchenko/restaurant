@@ -11,14 +11,6 @@ import static com.restaurant.controller.PageUrlConstants.CHART_PAGE;
 
 public class ChartCommand implements Command {
 
-    private UserService userService;
-
-
-    public ChartCommand() {
-        this.userService = ServiceFactory.getUserService();
-
-    }
-
     @Override
     public PageResponse execute(HttpServletRequest request) {
 

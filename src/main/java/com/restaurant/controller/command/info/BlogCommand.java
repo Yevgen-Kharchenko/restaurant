@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import static com.restaurant.controller.PageUrlConstants.BLOG_PAGE;
 
 public class BlogCommand implements Command {
+
     @Override
     public PageResponse execute(HttpServletRequest request) {
         return new PageResponse(BLOG_PAGE);
