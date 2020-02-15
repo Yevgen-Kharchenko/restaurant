@@ -91,4 +91,13 @@
     <error-code>503</error-code>
     <location>/WEB-INF/pages/errors/503-error.jsp</location>
   </error-page>
+
+  <context-param>
+    <description>Location to store uploaded file</description>
+    <param-name>file-upload</param-name>
+    <param-value>
+      /webapp/static/images/
+    </param-value>
+  </context-param>
+
 </web-app>

@@ -1,6 +1,5 @@
 package com.restaurant.service;
 
-import com.restaurant.config.transaction.TransactionHandler;
 import com.restaurant.controller.view.DishDTO;
 import com.restaurant.model.Dish;
 import com.restaurant.model.enums.DishType;
@@ -88,7 +87,7 @@ public class DishService {
             }
             dishDTO.setPrice(dish.getPrice());
             dishDTO.setQuantity(1);
-            dishDTO.setImages(dish.getImages());
+            dishDTO.setImageName(dish.getImageName());
             return dishDTO;
         }).collect(Collectors.toList());
     }

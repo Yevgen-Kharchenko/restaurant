@@ -40,7 +40,7 @@
 					<div class="col-lg-6">
                         <a href="dish?id=${dish.id}">
                         <div  class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(static/images/dish-${dish.id}.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(static/images/${dish.imageName});"></div>
 						<div class="text d-flex">
 							<div class="one-half">
                                 <h3>${dish.dishType}</h3>

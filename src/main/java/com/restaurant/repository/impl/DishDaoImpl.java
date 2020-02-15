@@ -24,7 +24,7 @@ public class DishDaoImpl extends AbstractDao<Dish> implements GetAllDao<Dish> {
     public static final String COLUMN_INGREDIENTS_UK = "ingredients_UK";
     public static final String COLUMN_INGREDIENTS_EN = "ingredients_EN";
     public static final String COLUMN_PRICE = "price";
-    public static final String COLUMN_PHOTO = "photo";
+    public static final String IMAGE_NAME = "photo";
     private static final String SELECT_ALL_DISH_MENU = "SELECT * FROM `dish_menu`";
     private static final String SELECT_ALL_DISH_PAGINATED = "SELECT * FROM `dish_menu` LIMIT ?,?";
 
@@ -35,7 +35,7 @@ public class DishDaoImpl extends AbstractDao<Dish> implements GetAllDao<Dish> {
             + COLUMN_INGREDIENTS_UK + ", "
             + COLUMN_INGREDIENTS_EN + ", "
             + COLUMN_PRICE + ", "
-            + COLUMN_PHOTO + ") VALUE (?, ?, ?, ?, ?, ?, ?)";
+            + IMAGE_NAME + ") VALUE (?, ?, ?, ?, ?, ?, ?)";
 
     private static final String UPDATE_DISH_MENU = "UPDATE `dish_menu` SET "
             + COLUMN_DISH_TYPE + "= ?, "
@@ -44,7 +44,7 @@ public class DishDaoImpl extends AbstractDao<Dish> implements GetAllDao<Dish> {
             + COLUMN_INGREDIENTS_UK + "= ?, "
             + COLUMN_INGREDIENTS_EN + "= ?, "
             + COLUMN_PRICE + "= ?, "
-            + COLUMN_PHOTO + "= ? WHERE "
+            + IMAGE_NAME + "= ? WHERE "
             + COLUMN_ID + " = ?";
 
 
@@ -98,7 +98,7 @@ public class DishDaoImpl extends AbstractDao<Dish> implements GetAllDao<Dish> {
             ps.setString(4, entity.getIngredientsUK());
             ps.setString(5, entity.getIngredientsEN());
             ps.setBigDecimal(6, BigDecimal.valueOf(entity.getPrice()));
-            ps.setBlob(7, entity.getImages());
+            ps.setString(7, entity.getImageName());
         });
         entity.setId(id);
         return entity;
@@ -114,7 +114,7 @@ public class DishDaoImpl extends AbstractDao<Dish> implements GetAllDao<Dish> {
             ps.setString(4, entity.getIngredientsUK());
             ps.setString(5, entity.getIngredientsEN());
             ps.setBigDecimal(6, BigDecimal.valueOf(entity.getPrice()));
-            ps.setBlob(7, entity.getImages());
+            ps.setString(7, entity.getImageName());
             ps.setLong(8, entity.getId());
         });
     }
@@ -133,6 +133,6 @@ public class DishDaoImpl extends AbstractDao<Dish> implements GetAllDao<Dish> {
                 resultSet.getString(COLUMN_INGREDIENTS_UK),
                 resultSet.getString(COLUMN_INGREDIENTS_EN),
                 resultSet.getDouble(COLUMN_PRICE),
-                resultSet.getBlob(COLUMN_PHOTO));
+                resultSet.getString(IMAGE_NAME));
     }
 }

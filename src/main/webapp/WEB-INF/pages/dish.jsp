@@ -37,7 +37,7 @@
 
 					<div class="container" >
 						<div class="col-md-12 dish-menu">
-							<form action="dish" method="post"  class="col-lg-12">
+							<form action="dish" method="post"  enctype = "multipart/form-data" class="col-lg-12">
 							<div class="tab-pane fade show active" >
 								<div class="row">
 
@@ -72,7 +72,7 @@
 						</div>
 						<div class="col-lg-6">
 							<label class="mb-2"><fmt:message key="images"/></label>
-							<input type="file" value="${dish.id}"class="form-control" name="images" >
+							<input type="file" value="${dish.imageName}"class="form-control" name="images" >
 						</div>
 
 									<div class="col-lg-4">
@@ -92,7 +92,7 @@
 									</div>
 									<div class="col-lg-3">
 										<div class="custom-img">
-										<img src="static/images/dish-${dish.id}.jpg"  width="100" height="100">
+										<img src="static/images/${dish.imageName}"  width="100" height="100">
 										</img>
 										</div>
 									</div>

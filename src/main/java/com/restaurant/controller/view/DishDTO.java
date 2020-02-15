@@ -1,5 +1,6 @@
 package com.restaurant.controller.view;
 
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import com.restaurant.model.enums.DishType;
 import lombok.*;
 
@@ -18,6 +19,6 @@ public class DishDTO {
     private int quantity;
     private double cost;
     private DishType dishType;
-    private Blob images;
+    private String imageName;
 
 }

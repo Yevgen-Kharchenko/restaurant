@@ -94,7 +94,7 @@
 					<div class="col-lg-6">
 				     <input type="checkbox" id="dish_${dishMain.id}" onmousedown="this.form.dish${dishMain.id}.disabled=this.checked"/>
 					<label for="dish_${dishMain.id}" class="menus d-flex ftco-animate" onmousedown="this.form.dish${dishMain.id}.disabled=this.checked">
-                      <div class="menu-img" style="background-image: url(static/images/dish-${dishMain.id}.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(static/images/${dishMain.imageName});"></div>
 						<div class="text d-flex">
 							<div class="one-half">
 								<h3>${dishMain.name}</h3>
@@ -123,7 +123,7 @@
 					<div class="col-lg-6">
                         <input type="checkbox" id="dish_${dishDessert.id}" onmousedown="this.form.dish${dishDessert.id}.disabled=this.checked"/>
                         <label for="dish_${dishDessert.id}" class="menus d-flex ftco-animate" onmousedown="this.form.dish${dishDessert.id}.disabled=this.checked">
-                          <div class="menu-img" style="background-image: url(static/images/dish-${dishDessert.id}.jpg);"></div>
+                          <div class="menu-img" style="background-image: url(static/images/${dishDessert.imageName});"></div>
                           <div class="text d-flex">
                             <div class="one-half">
                               <h3>${dishDessert.name}</h3>
@@ -152,7 +152,7 @@
 					<div class="col-lg-6">
                         <input type="checkbox" id="dish_${dishDrinks.id}" onmousedown="this.form.dish${dishDrinks.id}.disabled=this.checked"/>
                         <label for="dish_${dishDrinks.id}" class="menus d-flex ftco-animate" onmousedown="this.form.dish${dishDrinks.id}.disabled=this.checked">
-                          <div class="menu-img" style="background-image: url(static/images/dish-${dishDrinks.id}.jpg);"></div>
+                          <div class="menu-img" style="background-image: url(static/images/${dishDrinks.imageName});"></div>
                           <div class="text d-flex">
                             <div class="one-half">
                               <h3>${dishDrinks.name}</h3>

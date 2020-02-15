@@ -3,8 +3,6 @@ package com.restaurant.model;
 import com.restaurant.model.enums.DishType;
 import lombok.*;
 
-import java.sql.Blob;
-
 @ToString
 @Getter
 @Setter
@@ -18,7 +16,7 @@ public class Dish {
     private String ingredientsUK;
     private String ingredientsEN;
     private double price;
-    private Blob images;
+    private String imageName;
 
 //    public Dish(DishType dishType, String nameUK, String nameEN, String ingredientsUK, String ingredientsEN, double price) {
 //        this.dishType = dishType;

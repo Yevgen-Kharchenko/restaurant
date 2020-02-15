@@ -1,5 +1,5 @@
-package com.restaurant.controller.data;
-
-public interface CommandResponse {
-    CommandResponseType getResponseType();
-}
+//package com.restaurant.controller.data;
+//
+//public interface CommandResponse {
+//    CommandResponseType getResponseType();
+//}

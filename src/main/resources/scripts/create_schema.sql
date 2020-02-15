@@ -19,7 +19,7 @@ id bigint auto_increment,
 `ingredients_UK` varchar(255) not null,
 `ingredients_EN` varchar(255) not null,
 `price` DECIMAL(5,2) default 0,
-`photo` mediumblob,
+`photo` varchar(255),
 primary key (id));
 
 create table `order`(

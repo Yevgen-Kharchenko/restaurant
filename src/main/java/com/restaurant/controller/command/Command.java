@@ -1,10 +1,10 @@
 package com.restaurant.controller.command;
 
-import com.restaurant.controller.data.CommandResponse;
+import com.restaurant.controller.data.PageResponse;
 
 import javax.servlet.http.HttpServletRequest;
 
 public interface Command {
 
-    CommandResponse execute(HttpServletRequest request);
+    PageResponse execute(HttpServletRequest request);
 }

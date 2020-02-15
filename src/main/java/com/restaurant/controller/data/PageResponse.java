@@ -6,7 +6,7 @@ import lombok.*;
 @RequiredArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class PageResponse implements CommandResponse{
+public class PageResponse {
     @NonNull
     private String url;
     private boolean redirect;
@@ -19,8 +19,8 @@ public class PageResponse implements CommandResponse{
         return redirect;
     }
 
-    @Override
-    public CommandResponseType getResponseType() {
-        return CommandResponseType.PAGE;
-    }
+//    @Override
+//    public CommandResponseType getResponseType() {
+//        return CommandResponseType.PAGE;
+//    }
 }

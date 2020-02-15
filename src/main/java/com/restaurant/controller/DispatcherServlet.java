@@ -1,10 +1,7 @@
 package com.restaurant.controller;
 
 import com.restaurant.controller.command.Command;
-import com.restaurant.controller.data.CommandResponse;
-import com.restaurant.controller.data.ErrorResponse;
 import com.restaurant.controller.data.PageResponse;
-import com.restaurant.controller.data.SuccessResponse;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -13,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet(value = "/app/*")
 public class DispatcherServlet extends HttpServlet {
@@ -37,21 +33,21 @@ public class DispatcherServlet extends HttpServlet {
         Command command = CommandFactory.getCommand(path, req.getMethod());
         LOG.info("Extracted command " + command + command.getClass());
 
-        CommandResponse commandResponse = command.execute(req);
-
+//        PageResponse commandResponse = command.execute(req);
 //        switch (commandResponse.getResponseType()) {
 //            case PAGE: {
-                PageResponse pageResponse = (PageResponse) commandResponse;
-                if (pageResponse.isRedirect()) {
-                    String url = pageResponse.getUrl();
-                    LOG.info("Request redirect into new url: " + url);
-                    resp.sendRedirect(url);
+        PageResponse pageResponse = command.execute(req);
+        ;
+        if (pageResponse.isRedirect()) {
+            String url = pageResponse.getUrl();
+            LOG.info("Request redirect into new url: " + url);
+            resp.sendRedirect(url);
 
-                } else {
-                    String modifiedPath = "/WEB-INF/pages/" + pageResponse.getUrl()+".jsp";
-                    LOG.info("Request forward into modified path: " + modifiedPath);
-                    req.getRequestDispatcher(modifiedPath).forward(req, resp);
-                }
+        } else {
+            String modifiedPath = "/WEB-INF/pages/" + pageResponse.getUrl() + ".jsp";
+            LOG.info("Request forward into modified path: " + modifiedPath);
+            req.getRequestDispatcher(modifiedPath).forward(req, resp);
+        }
 //                break;
 //            }
 //            case PAYLOAD: {
