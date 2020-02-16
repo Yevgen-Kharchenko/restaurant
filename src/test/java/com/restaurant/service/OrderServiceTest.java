@@ -29,9 +29,9 @@ public class OrderServiceTest {
     private UserDaoImpl userDao = mock(UserDaoImpl.class);
     private OrderDishDaoImpl orderDishDao = mock(OrderDishDaoImpl.class);
     private TransactionHandler transactionHandler = mock(TransactionHandler.class);
-    public User user;
-    public List<Order> orders = new ArrayList<>();
-    public Order order;
+    private User user;
+    private List<Order> orders = new ArrayList<>();
+    private Order order;
 
     @Before
     public void init() {
@@ -76,7 +76,7 @@ public class OrderServiceTest {
     public void getById() {
         when(orderDao.getById(anyLong())).thenReturn(order);
         when(userDao.getById(anyLong())).thenReturn(user);
-        assertNotNull(orderService.getById(2,"uk"));
+        assertNotNull(orderService.getById(2, "uk"));
     }
 
     @Test

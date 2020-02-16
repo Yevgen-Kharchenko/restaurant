@@ -23,7 +23,7 @@ public class ContactCommandTest {
     public void shouldReturnContactPage() {
         PageResponse result = instance.execute(request);
 
-        assertThat(result.getUrl()).isEqualTo(CONTACT_PAGE );
+        assertThat(result.getUrl()).isEqualTo(CONTACT_PAGE);
         assertThat(result.isRedirect()).isFalse();
     }
 }

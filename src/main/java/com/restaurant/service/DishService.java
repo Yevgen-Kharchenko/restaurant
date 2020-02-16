@@ -46,7 +46,7 @@ public class DishService {
                 .price(price)
                 .imageName(imageName)
                 .build();
-        dishDao.create(createdDish);
+        createdDish = dishDao.create(createdDish);
         return createdDish;
     }
 
