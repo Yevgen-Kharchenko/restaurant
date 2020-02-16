@@ -20,7 +20,7 @@ Tема: "Система Ресторан"
 4. Run insert_into_schema.sql from src/main/resources/script folder
 5. Update DB username and password in scr/main/webapp/META_INF/context.xml (and in db.properties from src/main/resources folder)
 6. Start mysql service with 'service mysql start' (http://www.mysqltutorial.org/mysql-adminsitration/start-mysql/)
-7. Go to project root ../restaurant directory and run in terminal command 'mvn clean tomcat7:run' or 'mvn tomcat7:run -f pom.xml'
+7. Go to project  ../restaurant directory and run in terminal command 'mvn clean tomcat7:run' or 'mvn tomcat7:run -f pom.xml'
 8. Go to link localhost:8880/restaurant and have fan 
 9. Use login:admin@g.com password:admin to check up admin functional,
     login:chef@g.com password:chef for chef functional,
