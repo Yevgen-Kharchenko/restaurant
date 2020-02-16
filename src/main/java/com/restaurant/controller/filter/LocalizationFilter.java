@@ -27,22 +27,25 @@ public class LocalizationFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
+        String new_locale = request.getParameter(LOCALE);
         HttpSession session = httpServletRequest.getSession();
 
-        setLocale(session);
+        setLocale(new_locale, session);
         setBundle(session);
 
         chain.doFilter(request, response);
     }
 
-    private void setLocale(HttpSession session) {
+    private void setLocale(String new_locale, HttpSession session) {
         String locale = (String) session.getAttribute(LOCALE);
         if (locale == null) {
             LOG.info("Set locale to session");
             session.setAttribute(LOCALE, defaultLocale);
         }
+        if(new_locale != null) {
+            session.setAttribute(LOCALE, new_locale);
+        }
     }
-
     private void setBundle(HttpSession session) {
         String bundle = (String) session.getAttribute(BUNDLE);
         if (bundle == null) {

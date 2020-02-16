@@ -7,6 +7,7 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @Builder
+@EqualsAndHashCode
 public class OrderDish {
     private long id;
     private long orderId;

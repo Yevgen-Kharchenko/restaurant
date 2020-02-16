@@ -8,6 +8,7 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @Builder
+@EqualsAndHashCode
 public class User {
     private long id;
     private String name;

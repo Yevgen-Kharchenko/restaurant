@@ -7,6 +7,7 @@ import lombok.*;
 @Setter
 @ToString
 @Builder
+@EqualsAndHashCode
 public class InvoiceDTO {
     private long id;
     private String date;

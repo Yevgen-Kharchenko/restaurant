@@ -8,6 +8,7 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @Builder
+@EqualsAndHashCode
 public class Dish {
     private long id;
     private DishType dishType;

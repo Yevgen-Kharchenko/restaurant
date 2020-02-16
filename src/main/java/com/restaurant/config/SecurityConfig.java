@@ -24,9 +24,10 @@ public class SecurityConfig {
 
     public static boolean isSecurePage(String page) {
         return securityPages.values().stream()
-                .anyMatch(list -> list.stream()
-                        .anyMatch(pageValue -> pageValue.equals(page)));
+                .anyMatch(list -> list.contains(page));
     }
+
+
 
     public static boolean hasPermission(String page, Role role) {
         return securityPages.containsKey(role) && securityPages.get(role).contains(page);

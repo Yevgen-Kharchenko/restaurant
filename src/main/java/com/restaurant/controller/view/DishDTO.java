@@ -7,6 +7,7 @@ import lombok.*;
 @Setter
 @ToString
 @Builder
+@EqualsAndHashCode
 public class DishDTO {
     private long id;
     private String name;

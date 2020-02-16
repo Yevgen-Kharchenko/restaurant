@@ -19,7 +19,7 @@ public class TransactionHandler {
         try {
             runnable.run();
             transactionManager.commit();
-        } catch (Throwable e) {
+        } catch (Exception e) {
             transactionManager.rollback();
             throw e;
         }
