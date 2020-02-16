@@ -6,7 +6,6 @@ import lombok.*;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @ToString
 @Builder
 public class UserDTO {

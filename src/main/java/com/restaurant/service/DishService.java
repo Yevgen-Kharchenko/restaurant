@@ -74,9 +74,14 @@ public class DishService {
 
     private List<DishDTO> mapToDishDTO(List<Dish> all, String local) {
         return all.stream().map(dish -> {
-            DishDTO dishDTO = new DishDTO();
-            dishDTO.setId(dish.getId());
-            dishDTO.setDishType(dish.getDishType());
+            DishDTO dishDTO = DishDTO.builder()
+                    .id(dish.getId())
+                    .dishType(dish.getDishType())
+                    .price(dish.getPrice())
+                    .quantity(1)
+                    .imageName(dish.getImageName())
+                    .build();
+
             if (local.equals("uk_UA")) {
                 dishDTO.setName(dish.getNameUK());
                 dishDTO.setIngredients(dish.getIngredientsUK());
@@ -84,9 +89,6 @@ public class DishService {
                 dishDTO.setName(dish.getNameEN());
                 dishDTO.setIngredients(dish.getIngredientsEN());
             }
-            dishDTO.setPrice(dish.getPrice());
-            dishDTO.setQuantity(1);
-            dishDTO.setImageName(dish.getImageName());
             return dishDTO;
         }).collect(Collectors.toList());
     }

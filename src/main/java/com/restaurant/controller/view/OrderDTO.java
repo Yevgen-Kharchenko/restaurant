@@ -8,7 +8,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@NoArgsConstructor
+@AllArgsConstructor
 @ToString
 @Builder
 public class OrderDTO {

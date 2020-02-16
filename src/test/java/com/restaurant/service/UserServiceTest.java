@@ -114,6 +114,11 @@ public class UserServiceTest {
                 .role(Role.GUEST)
                 .build();
         when(userDao.create(anyObject())).thenReturn(newUser);
-        assertEquals(userService.registrationUser(name, login, phone, password), newUser);
+        User actualUser = userService.registrationUser(name, login, phone, password);
+
+        assertEquals(actualUser.getName(), name);
+        assertEquals(actualUser.getLogin(), login);
+        assertEquals(actualUser.getPhone(), phone);
+        assertTrue(PasswordsUtil.verifyHash(password, newUser.getPassword()));
     }
 }

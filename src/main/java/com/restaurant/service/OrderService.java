@@ -35,13 +35,14 @@ public class OrderService {
     public List<OrderDTO> getAllForUser(String local, long id) {
         List<Order> all = orderDao.getAllByFieldId(id);
         return all.stream().map(orders -> {
-            OrderDTO orderDTO = new OrderDTO();
-            orderDTO.setId(orders.getId());
-            orderDTO.setDate(orders.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")));
-            orderDTO.setTotal(orders.getTotal());
-            orderDTO.setCustomer(userDao.getById(orders.getUserId()));
-            orderDTO.setStatus(orders.getStatus());
-            orderDTO.setOrderDish(getListDishDTO(local, orders.getId()));
+            OrderDTO orderDTO = OrderDTO.builder()
+                    .id(orders.getId())
+                    .date(orders.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")))
+                    .total(orders.getTotal())
+                    .customer(userDao.getById(orders.getUserId()))
+                    .status(orders.getStatus())
+                    .orderDish(getListDishDTO(local, orders.getId()))
+                    .build();
 
             return orderDTO;
         }).collect(Collectors.toList());
@@ -74,12 +75,13 @@ public class OrderService {
     public List<OrderDTO> getAllByStatus(Status status) {
         List<Order> all = orderDao.getAllByField(status.toString());
         return all.stream().map(orders -> {
-            OrderDTO orderDTO = new OrderDTO();
-            orderDTO.setId(orders.getId());
-            orderDTO.setDate(orders.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")));
-            orderDTO.setTotal(orders.getTotal());
-            orderDTO.setCustomer(userDao.getById(orders.getUserId()));
-            orderDTO.setStatus(orders.getStatus());
+            OrderDTO orderDTO = OrderDTO.builder()
+                    .id(orders.getId())
+                    .date(orders.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")))
+                    .total(orders.getTotal())
+                    .customer(userDao.getById(orders.getUserId()))
+                    .status(orders.getStatus())
+                    .build();
 
             return orderDTO;
         }).collect(Collectors.toList());
@@ -88,10 +90,11 @@ public class OrderService {
     public List<OrderDTO> getAllForChef(String local) {
         List<Order> all = orderDao.getAllByField((Status.IN_PROGRESS).toString());
         return all.stream().map(orders -> {
-            OrderDTO orderDTO = new OrderDTO();
-            orderDTO.setId(orders.getId());
-            orderDTO.setDate(orders.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")));
-            orderDTO.setOrderDish(getListDishDTO(local, orders.getId()));
+            OrderDTO orderDTO = OrderDTO.builder()
+                    .id(orders.getId())
+                    .date(orders.getDate().format(DateTimeFormatter.ofPattern("dd.MM HH:mm")))
+                    .orderDish(getListDishDTO(local, orders.getId()))
+                    .build();
             return orderDTO;
         }).collect(Collectors.toList());
     }
@@ -99,8 +102,13 @@ public class OrderService {
     private List<DishDTO> getListDishDTO(String local, long id) {
         List<OrderDish> all = orderDishDao.getAllByFieldId(id);
         return all.stream().map(orderDish -> {
-            DishDTO dishDTO = new DishDTO();
-            dishDTO.setId(orderDish.getId());
+            DishDTO dishDTO = DishDTO.builder()
+                    .id(orderDish.getId())
+                    .price(orderDish.getPrice())
+                    .quantity(orderDish.getQuantity())
+                    .cost(orderDish.getPrice() * orderDish.getQuantity())
+                    .build();
+
             if (local.equals("uk_UA")) {
                 dishDTO.setName(orderDish.getNameUK());
                 dishDTO.setIngredients(orderDish.getIngredientsUK());
@@ -108,9 +116,6 @@ public class OrderService {
                 dishDTO.setName(orderDish.getNameEN());
                 dishDTO.setIngredients(orderDish.getIngredientsEN());
             }
-            dishDTO.setPrice(orderDish.getPrice());
-            dishDTO.setQuantity(orderDish.getQuantity());
-            dishDTO.setCost(orderDish.getPrice() * orderDish.getQuantity());
             return dishDTO;
         }).collect(Collectors.toList());
     }

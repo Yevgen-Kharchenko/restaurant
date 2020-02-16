@@ -5,9 +5,7 @@ import lombok.*;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @ToString
-@AllArgsConstructor
 @Builder
 public class InvoiceDTO {
     private long id;
