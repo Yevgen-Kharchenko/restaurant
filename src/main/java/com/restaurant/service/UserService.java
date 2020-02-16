@@ -17,10 +17,6 @@ public class UserService {
     private static final Logger LOG = Logger.getLogger(UserService.class);
     private UserDaoImpl userDao;
 
-//    public UserService() {
-//        this.userDao = DaoFactory.getUserDao();
-//    }
-
     /**
      * Validates User's Login and checks if it corresponds with password
      *
