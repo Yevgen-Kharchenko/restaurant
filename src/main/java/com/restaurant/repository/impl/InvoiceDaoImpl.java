@@ -2,9 +2,7 @@ package com.restaurant.repository.impl;
 
 import com.restaurant.config.ConnectionFactory;
 import com.restaurant.model.Invoice;
-import com.restaurant.model.OrderDish;
 import com.restaurant.model.enums.InvoiceStatus;
-import com.restaurant.model.enums.Status;
 import com.restaurant.repository.AbstractDao;
 import com.restaurant.repository.EntityMapper;
 import com.restaurant.repository.GetAllDao;
@@ -114,5 +112,4 @@ public class InvoiceDaoImpl extends AbstractDao<Invoice> implements GetAllDao<In
                 .invoiceStatus(InvoiceStatus.valueOf(resultSet.getString(COLUMN_STATUS)))
                 .build();
     }
-
 }

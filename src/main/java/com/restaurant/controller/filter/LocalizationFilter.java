@@ -4,7 +4,6 @@ import org.apache.log4j.Logger;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
@@ -54,13 +53,5 @@ public class LocalizationFilter implements Filter {
 
     @Override
     public void destroy() {
-    }
-
-    public String getDefaultLocale() {
-        return defaultLocale;
-    }
-
-    public String getDefaultBundle() {
-        return defaultBundle;
     }
 }

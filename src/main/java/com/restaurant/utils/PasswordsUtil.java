@@ -1,4 +1,4 @@
-package com.restaurant.service;
+package com.restaurant.utils;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
 import lombok.AccessLevel;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.nio.charset.StandardCharsets;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class Passwords {
+public class PasswordsUtil {
 
     public static String hash(String password) {
         return new String(BCrypt.withDefaults().hash(12, password.getBytes(StandardCharsets.UTF_8)));

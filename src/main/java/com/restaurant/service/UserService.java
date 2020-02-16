@@ -3,8 +3,8 @@ package com.restaurant.service;
 import com.restaurant.controller.view.UserDTO;
 import com.restaurant.model.User;
 import com.restaurant.model.enums.Role;
-import com.restaurant.repository.DaoFactory;
 import com.restaurant.repository.impl.UserDaoImpl;
+import com.restaurant.utils.PasswordsUtil;
 import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
@@ -27,7 +27,7 @@ public class UserService {
     public boolean validateUser(String login, String password) {
         User user = userDao.getByLogin(login);
         LOG.info("Get user by login:" + user);
-        if (user != null && Passwords.verifyHash(password, user.getPassword())) {
+        if (user != null && PasswordsUtil.verifyHash(password, user.getPassword())) {
             return true;
         }
         return false;
@@ -83,8 +83,8 @@ public class UserService {
      * @param password
      * @return
      */
-    public User registrationUser(String name,String login, String phone, String password) {
-        String hashedPass = Passwords.hash(password.trim());
+    public User registrationUser(String name, String login, String phone, String password) {
+        String hashedPass = PasswordsUtil.hash(password.trim());
         User newUser = User.builder()
                 .name(name)
                 .login(login)
@@ -97,52 +97,12 @@ public class UserService {
     }
 
     /**
-     * Converts data from Post request to User and updates it in DB
-     *
-     * @param id
-     * @param name
-     * @param phone
-     * @param login
-     * @param password
-     * @param role
-     * @return
-     */
-
-
-    public User updateUser(int id, String name, String phone, String login, String password, Role role) {
-        User updatedUser = User.builder()
-                .id(id)
-                .name(name)
-                .phone(phone)
-                .login(login)
-                .password(password)
-                .role(Role.GUEST)
-                .build();
-        userDao.update(updatedUser);
-        return updatedUser;
-    }
-
-
-
-    /**
      * Gets List UserDTO from DB
      *
      * @return
      */
     public List<UserDTO> getAll() {
         List<User> all = userDao.getAll();
-        return mapToUserDTO(all);
-    }
-
-    /**
-     * Gets a paginated List UserDTO from DB
-     *
-     * @param page
-     * @param size
-     * @return
-     */
-    public List<UserDTO> getAllPaginated(int page, int size) {
-        List<User> all = userDao.getAllPaginated(page, size);
         return mapToUserDTO(all);
     }
 
@@ -155,24 +115,15 @@ public class UserService {
     private List<UserDTO> mapToUserDTO(List<User> all) {
         return all.stream().map(users -> {
             User userProfile = userDao.getById(users.getId());
-            UserDTO userDTO = new UserDTO();
+            UserDTO userDTO = UserDTO.builder()
+                    .id(userProfile.getId())
+                    .name(userProfile.getName())
+                    .phone(userProfile.getPhone())
+                    .login(userProfile.getLogin())
+                    .role(userProfile.getRole())
+                    .build();
 
-            userDTO.setId(userProfile.getId());
-            userDTO.setName(userProfile.getName());
-            userDTO.setPhone(userProfile.getPhone());
-            userDTO.setLogin(userProfile.getLogin());
-            userDTO.setRole(userProfile.getRole());
             return userDTO;
         }).collect(Collectors.toList());
-    }
-
-    /**
-     * Deletes User from DB
-     *
-     * @param id
-     */
-    public void deleteUser(long id) {
-        User deletedUser = getUser(id);
-        userDao.remove(deletedUser);
     }
 }

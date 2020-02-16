@@ -1,6 +1,5 @@
 package com.restaurant.repository;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 public interface GetAllDao<T> {

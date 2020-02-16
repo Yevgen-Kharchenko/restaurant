@@ -4,7 +4,6 @@ import com.restaurant.model.enums.Status;
 import lombok.*;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @ToString
 @Getter

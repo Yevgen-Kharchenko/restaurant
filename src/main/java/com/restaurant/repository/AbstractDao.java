@@ -49,9 +49,8 @@ public abstract class AbstractDao<T> implements CrudDao<T> {
 
     public T getByField(String query, StatementMapper<T> statementMapper, EntityMapper<T> mapper) {
         T result = null;
-
-        try (Connection conn = getConnection();
-             PreparedStatement preparedStatement = conn.prepareStatement(query)) {
+        Connection conn = getConnection();
+        try (PreparedStatement preparedStatement = conn.prepareStatement(query)) {
             statementMapper.map(preparedStatement);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 while (resultSet.next()) {
@@ -67,9 +66,8 @@ public abstract class AbstractDao<T> implements CrudDao<T> {
 
     public List<T> getAllByField(String query, StatementMapper<T> statementMapper, EntityMapper<T> mapper) {
         List<T> result = new ArrayList<>();
-
-        try (Connection conn = getConnection();
-             PreparedStatement preparedStatement = conn.prepareStatement(query)) {
+        Connection conn = getConnection();
+        try (PreparedStatement preparedStatement = conn.prepareStatement(query)) {
             statementMapper.map(preparedStatement);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
 
@@ -169,6 +167,7 @@ public abstract class AbstractDao<T> implements CrudDao<T> {
     protected void closeAutocommitConnection(Connection connection) {
         try {
             if (connection != null && connection.getAutoCommit()) {
+                LOG.error("Connection closed");
                 connection.close();
             }
         } catch (SQLException e) {

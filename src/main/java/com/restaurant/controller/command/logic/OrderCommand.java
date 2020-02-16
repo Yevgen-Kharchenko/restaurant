@@ -28,13 +28,12 @@ public class OrderCommand extends UniCommand {
         request.setAttribute("main", dishService.getAllByField(DishType.MAIN, local));
         request.setAttribute("dessert", dishService.getAllByField(DishType.DESSERT, local));
         request.setAttribute("drinks", dishService.getAllByField(DishType.DRINKS, local));
-
+        LOG.info("OrderCommand GET");
         return new PageResponse(ORDER_PAGE);
     }
 
     @Override
     protected PageResponse performPost(HttpServletRequest request) {
-
         return new PageResponse(ORDER_PAGE, false);
     }
 }

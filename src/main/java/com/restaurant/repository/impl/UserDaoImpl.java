@@ -41,10 +41,8 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao, GetAllDao
             + COLUMN_ROLE + "= ? WHERE "
             + COLUMN_ID + " = ?";
 
-
     private static final String DELETE_USER = "DELETE FROM `user` "
             + "WHERE " + COLUMN_ID + " = ?";
-
 
     @Override
     public boolean isUserExists(String login) {
@@ -52,7 +50,6 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao, GetAllDao
         return super.checkIfDataExists(query,
                 ps -> ps.setString(1, login));
     }
-
 
     @Override
     public User getByLogin(String login) {
@@ -75,7 +72,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao, GetAllDao
 
     @Override
     public List<User> getAllByField(String field) {
-        return getAllByField(SELECT_ALL_USERS + "WHERE "+COLUMN_ROLE+" = ?",
+        return getAllByField(SELECT_ALL_USERS + "WHERE " + COLUMN_ROLE + " = ?",
                 ps -> ps.setString(1, field),
                 getMapper());
     }

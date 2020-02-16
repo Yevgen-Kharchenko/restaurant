@@ -1,7 +1,10 @@
 package com.restaurant.controller;
 
 import com.restaurant.controller.command.Command;
-import com.restaurant.controller.command.admin.*;
+import com.restaurant.controller.command.admin.LanguageCommand;
+import com.restaurant.controller.command.admin.LoginCommand;
+import com.restaurant.controller.command.admin.LogoutCommand;
+import com.restaurant.controller.command.admin.RegisterCommand;
 import com.restaurant.controller.command.error.ErrorCommand;
 import com.restaurant.controller.command.error.ForbiddenCommand;
 import com.restaurant.controller.command.error.NotFoundCommand;
@@ -85,7 +88,6 @@ public class CommandFactory {
         getCommandMap.put("invoice", new InvoiceCommand(
                 ServiceFactory.getInvoiceService()
         ));
-
 
 
         postCommandMap.put("invoice", new InvoiceCommand(

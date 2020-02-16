@@ -47,7 +47,6 @@ public class DishDaoImpl extends AbstractDao<Dish> implements GetAllDao<Dish> {
             + IMAGE_NAME + "= ? WHERE "
             + COLUMN_ID + " = ?";
 
-
     private static final String DELETE_DISH_MENU = "DELETE FROM `dish_menu` "
             + "WHERE " + COLUMN_ID + " = ?";
 

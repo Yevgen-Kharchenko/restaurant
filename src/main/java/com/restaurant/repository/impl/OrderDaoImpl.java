@@ -6,13 +6,12 @@ import com.restaurant.model.enums.Status;
 import com.restaurant.repository.AbstractDao;
 import com.restaurant.repository.EntityMapper;
 import com.restaurant.repository.GetAllDao;
-import com.restaurant.repository.OrderDao;
 import org.apache.log4j.Logger;
 
 import java.sql.Timestamp;
 import java.util.List;
 
-public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao, GetAllDao<Order> {
+public class OrderDaoImpl extends AbstractDao<Order> implements GetAllDao<Order> {
     public OrderDaoImpl(ConnectionFactory connectionFactory) {
         super(connectionFactory);
     }
@@ -47,11 +46,6 @@ public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao, GetAll
 
     private static final String DELETE_ORDER = "DELETE FROM `order` "
             + "WHERE " + COLUMN_ID + " = ?";
-
-    @Override
-    public List<Order> getAllForChef() {
-        return null;
-    }
 
     @Override
     public List<Order> getAll() {

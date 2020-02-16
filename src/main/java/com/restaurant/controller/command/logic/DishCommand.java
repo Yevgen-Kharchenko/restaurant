@@ -8,16 +8,7 @@ import com.restaurant.service.DishService;
 import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.Part;
-
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 import static com.google.common.primitives.Ints.tryParse;
 import static com.restaurant.controller.PageUrlConstants.DISH_PAGE;
@@ -63,7 +54,6 @@ public class DishCommand extends UniCommand {
             LOG.info("id!=0 update dish");
             dishService.updateDish(id, dishType, nameUK, nameEN, ingredientsUK, ingredientsEN, price, fileName);
         }
-
 
         return new PageResponse(EDIT_MENU_PAGE, true);
     }

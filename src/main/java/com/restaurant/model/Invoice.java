@@ -1,8 +1,6 @@
 package com.restaurant.model;
 
 import com.restaurant.model.enums.InvoiceStatus;
-import com.restaurant.model.enums.Role;
-import com.restaurant.model.enums.Status;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -17,4 +15,5 @@ public class Invoice {
     private LocalDateTime date;
     private long orderId;
     private InvoiceStatus invoiceStatus;
+
 }

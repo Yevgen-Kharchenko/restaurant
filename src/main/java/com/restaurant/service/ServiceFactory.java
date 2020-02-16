@@ -17,8 +17,7 @@ public class ServiceFactory {
 
     private static InvoiceService invoiceService = new InvoiceService(
             DaoFactory.getInvoiceDao(),
-            OrderServiceFactory.getOrderService(),
-            TransactionHandlerFactory.getTransactionHandler()
+            OrderServiceFactory.getOrderService()
     );
 
     public static OrderService getOrderService() {

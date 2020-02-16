@@ -1,16 +1,14 @@
 package com.restaurant.controller.view;
 
-import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import com.restaurant.model.enums.DishType;
 import lombok.*;
-
-import java.sql.Blob;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Builder
 public class DishDTO {
     private long id;
     private String name;

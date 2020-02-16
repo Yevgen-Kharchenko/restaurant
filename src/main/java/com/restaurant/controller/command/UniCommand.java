@@ -1,10 +1,8 @@
 package com.restaurant.controller.command;
 
 import com.restaurant.controller.data.PageResponse;
-import org.apache.commons.fileupload.FileUploadException;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 public abstract class UniCommand implements Command {
 

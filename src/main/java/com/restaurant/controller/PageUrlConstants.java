@@ -30,5 +30,4 @@ public class PageUrlConstants {
     public static final String DISH_PAGE = "dish";
     public static final String FORBIDDEN_PAGE = "errors/403-error";
     public static final String ERROR_PAGE = "errors/error";
-    public static final String REDIRECT_HOME_PAGE = "/";
 }

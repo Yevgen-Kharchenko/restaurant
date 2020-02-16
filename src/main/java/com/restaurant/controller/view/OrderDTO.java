@@ -2,26 +2,21 @@ package com.restaurant.controller.view;
 
 import com.restaurant.model.User;
 import com.restaurant.model.enums.Status;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @ToString
-
+@Builder
 public class OrderDTO {
     private long id;
     private String date;
     private double total;
     private User customer;
     private Status status;
-    List<DishDTO> orderDish;
+    private List<DishDTO> orderDish;
 
-    }
+}

@@ -3,7 +3,6 @@ package com.restaurant.controller.command.logic;
 import com.restaurant.controller.command.UniCommand;
 import com.restaurant.controller.data.PageResponse;
 import com.restaurant.service.DishService;
-import com.restaurant.service.ServiceFactory;
 import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
@@ -49,8 +48,6 @@ public class EditMenuCommand extends UniCommand {
 
     @Override
     protected PageResponse performPost(HttpServletRequest request) {
-
-
         return new PageResponse("/", true);
     }
 }

@@ -23,6 +23,7 @@ public class InvoiceCommand extends UniCommand {
         long orderId = Long.parseLong(request.getParameter(ID));
         String local = (String) request.getSession().getAttribute(LOCALE);
         request.setAttribute("invoice", invoiceService.getById(orderId, local));
+        LOG.info("invoice = " + invoiceService.getById(orderId, local));
 
         return new PageResponse(INVOICE_PAGE);
     }
@@ -33,6 +34,7 @@ public class InvoiceCommand extends UniCommand {
         String invoiceStatus = request.getParameter("invoiceStatus");
         String invoiceId = request.getParameter("invoiceId");
         invoiceService.changeInvoiceStatus(invoiceStatus, invoiceId);
+        LOG.info("InvoiceStatus = " + invoiceStatus);
 
         return new PageResponse(INVOICE_PAGE + "?orderId=" + orderId, true);
     }

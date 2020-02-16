@@ -27,17 +27,6 @@ public class DataSourceConnectionPool implements ConnectionFactory {
     private DataSourceConnectionPool() {
     }
 
-//    public Connection getConnection() {
-//        Connection connection = null;
-//        try {
-//            connection = dataSource.getConnection();
-//            LOG.debug("Connection received " + connection + " " + connection.hashCode());
-//        } catch (SQLException e) {
-//            LOG.error("Some problem was occurred while getting connection to BD", e);
-//        }
-//        return connection;
-//    }
-
     public Connection getConnection() {
 
         if (ConnectionHolder.getCurrentConnection() != null) {
@@ -46,7 +35,7 @@ public class DataSourceConnectionPool implements ConnectionFactory {
         }
         try {
             Connection connection = dataSource.getConnection();
-            LOG.debug("New connection received");
+            LOG.debug("New connection received " + connection.toString());
             return connection;
         } catch (SQLException e) {
             LOG.error("Some problem was occurred while getting connection to BD", e);

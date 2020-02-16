@@ -1,4 +1,4 @@
-package com.restaurant.controller.command.error;
+package com.restaurant.controller.command.admin;
 
 import com.restaurant.controller.data.PageResponse;
 import org.junit.Test;
@@ -9,21 +9,22 @@ import org.mockito.runners.MockitoJUnitRunner;
 
 import javax.servlet.http.HttpServletRequest;
 
+import static com.restaurant.controller.PageUrlConstants.HOME_PAGE;
 import static com.restaurant.controller.PageUrlConstants.NOT_FOUND_PAGE;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(MockitoJUnitRunner.class)
-public class NotFoundCommandTest {
+public class LogoutCommandTest {
     @InjectMocks
-    private NotFoundCommand instance;
+    private LogoutCommand instance;
     @Mock
     private HttpServletRequest request;
 
     @Test
-    public void shouldReturnNotFoundPage() {
+    public void shouldReturnHomePageAfterLogout() {
         PageResponse result = instance.execute(request);
 
-        assertThat(result.getUrl()).isEqualTo(NOT_FOUND_PAGE);
-        assertThat(result.isRedirect()).isFalse();
+        assertThat(result.getUrl()).isEqualTo(HOME_PAGE);
+        assertThat(result.isRedirect()).isTrue();
     }
 }

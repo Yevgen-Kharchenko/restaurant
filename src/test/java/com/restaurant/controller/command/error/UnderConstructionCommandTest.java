@@ -10,20 +10,22 @@ import org.mockito.runners.MockitoJUnitRunner;
 import javax.servlet.http.HttpServletRequest;
 
 import static com.restaurant.controller.PageUrlConstants.NOT_FOUND_PAGE;
+import static com.restaurant.controller.PageUrlConstants.UNDER_CONSTRUCTION_PAGE;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(MockitoJUnitRunner.class)
-public class NotFoundCommandTest {
+public class UnderConstructionCommandTest {
+
     @InjectMocks
-    private NotFoundCommand instance;
+    private UnderConstructionCommand instance;
     @Mock
     private HttpServletRequest request;
 
     @Test
-    public void shouldReturnNotFoundPage() {
+    public void shouldReturnUnderConstructionPage() {
         PageResponse result = instance.execute(request);
 
-        assertThat(result.getUrl()).isEqualTo(NOT_FOUND_PAGE);
+        assertThat(result.getUrl()).isEqualTo(UNDER_CONSTRUCTION_PAGE);
         assertThat(result.isRedirect()).isFalse();
     }
 }

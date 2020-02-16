@@ -18,15 +18,4 @@ public class Dish {
     private double price;
     private String imageName;
 
-//    public Dish(DishType dishType, String nameUK, String nameEN, String ingredientsUK, String ingredientsEN, double price) {
-//        this.dishType = dishType;
-//        this.nameUK = nameUK;
-//        this.nameEN = nameEN;
-//        this.ingredientsUK = ingredientsUK;
-//        this.ingredientsEN = ingredientsEN;
-//        this.price = price;
-//
-//    }
-
-
 }

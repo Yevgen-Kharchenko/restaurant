@@ -1,10 +1,11 @@
 package com.restaurant.config;
 
-import com.restaurant.model.User;
 import com.restaurant.model.enums.Role;
 
-import javax.servlet.http.HttpServletRequest;
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class SecurityConfig {
 
@@ -12,11 +13,11 @@ public class SecurityConfig {
 
     static {
         securityPages.put(Role.ADMIN, Arrays.asList("/edit-menu", "/dish", "/chef", "/master",
-                 "/order", "/user-profile","/my-orders",
+                "/order", "/user-profile", "/my-orders",
                 "/users", "/ui-element", "/chart", "/tab-panel",
-                "/table", "/form", "/empty","/order-list",
-                "/menu","/invoice","/admin"));
-        securityPages.put(Role.GUEST, Arrays.asList("/my-orders", "/menu","/invoice"));
+                "/table", "/form", "/empty", "/order-list",
+                "/menu", "/invoice", "/admin"));
+        securityPages.put(Role.GUEST, Arrays.asList("/my-orders", "/menu", "/invoice"));
         securityPages.put(Role.CHEF, Arrays.asList("/chef"));
 
     }
@@ -28,19 +29,6 @@ public class SecurityConfig {
     }
 
     public static boolean hasPermission(String page, Role role) {
-//        return securityPages.getOrDefault(role, Collections.EMPTY_LIST)
-//                .stream()
-//                .anyMatch(securePage -> securePage.equals(page));
         return securityPages.containsKey(role) && securityPages.get(role).contains(page);
     }
-
-//    public static boolean hasPermission(HttpServletRequest request, Role role) {
-//        User currentUser = getCurrentUser(request);
-//        return currentUser != null && currentUser.getRole().equals(role);
-//    }
-
-//    public static User getCurrentUser(HttpServletRequest request) {
-//        return (User) request.getSession().getAttribute("user");
-//    }
-
 }

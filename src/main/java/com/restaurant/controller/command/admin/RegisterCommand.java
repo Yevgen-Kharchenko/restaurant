@@ -3,7 +3,6 @@ package com.restaurant.controller.command.admin;
 import com.restaurant.controller.command.UniCommand;
 import com.restaurant.controller.data.PageResponse;
 import com.restaurant.model.User;
-import com.restaurant.service.ServiceFactory;
 import com.restaurant.service.UserService;
 import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
@@ -11,7 +10,8 @@ import org.apache.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import static com.restaurant.controller.PageUrlConstants.*;
+import static com.restaurant.controller.PageUrlConstants.HOME_PAGE;
+import static com.restaurant.controller.PageUrlConstants.REGISTER_PAGE;
 
 @AllArgsConstructor
 public class RegisterCommand extends UniCommand {
@@ -43,7 +43,7 @@ public class RegisterCommand extends UniCommand {
             User user = userService.getUserByLogin(login);
             session.setAttribute("user", user);
             LOG.info("registration user setAttribute: + " + user);
-            return new PageResponse(HOME_PAGE,true);
+            return new PageResponse(HOME_PAGE, true);
         }
         request.setAttribute("notification", "Not valid login or password");
         return new PageResponse(REGISTER_PAGE);

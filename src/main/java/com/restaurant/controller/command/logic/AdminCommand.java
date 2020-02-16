@@ -11,10 +11,8 @@ import static com.restaurant.controller.PageUrlConstants.ADMIN_PAGE;
 @AllArgsConstructor
 public class AdminCommand implements Command {
 
-
     @Override
     public PageResponse execute(HttpServletRequest request) {
-
         return new PageResponse(ADMIN_PAGE);
     }
 }

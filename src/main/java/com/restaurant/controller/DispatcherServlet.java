@@ -5,7 +5,6 @@ import com.restaurant.controller.data.PageResponse;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -50,7 +49,6 @@ public class DispatcherServlet extends HttpServlet {
 
     }
 
-
     private String getPath(HttpServletRequest req) {
         String requestUri = req.getRequestURI();
         int lastPath = requestUri.lastIndexOf("app/") + 4;
@@ -64,4 +62,3 @@ public class DispatcherServlet extends HttpServlet {
         return path;
     }
 }
-

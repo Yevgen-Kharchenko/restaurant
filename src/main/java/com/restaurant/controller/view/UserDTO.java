@@ -8,6 +8,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @ToString
+@Builder
 public class UserDTO {
     private long id;
     private String name;

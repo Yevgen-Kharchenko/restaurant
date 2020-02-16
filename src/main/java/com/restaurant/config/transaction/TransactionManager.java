@@ -12,7 +12,6 @@ import java.sql.SQLException;
  * for {@link com.restaurant.config.transaction.TransactionHandler} class
  * Properties: <b>connectionFactory</b>
  *
- * @author Hlushchenko Renata
  * @see com.restaurant.config.ConnectionFactory
  */
 

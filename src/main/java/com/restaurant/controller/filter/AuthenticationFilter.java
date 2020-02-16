@@ -66,13 +66,13 @@ public class AuthenticationFilter implements Filter {
 
     private String getPath(HttpServletRequest req) {
         String requestUri = req.getRequestURI();
-        int lastPath = requestUri.lastIndexOf("restaurant/")+11;
+        int lastPath = requestUri.lastIndexOf("restaurant/") + 11;
         String path = requestUri.substring(lastPath);
-        if (path.contains("/")){
+        if (path.contains("/")) {
             int nextPath = path.lastIndexOf('/');
-            path=path.substring(0,nextPath);
+            path = path.substring(0, nextPath);
         }
         LOG.info("Path: " + (path.isEmpty() ? "context path" : path));
-        return "/"+ path;
+        return "/" + path;
     }
 }

@@ -1,9 +1,7 @@
-package com.restaurant.controller.command.admin;
+package com.restaurant.controller.command.info;
 
 import com.restaurant.controller.command.Command;
 import com.restaurant.controller.data.PageResponse;
-import com.restaurant.service.ServiceFactory;
-import com.restaurant.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -13,7 +11,6 @@ public class EmptyCommand implements Command {
 
     @Override
     public PageResponse execute(HttpServletRequest request) {
-
         return new PageResponse(EMPTY_PAGE);
     }
 }

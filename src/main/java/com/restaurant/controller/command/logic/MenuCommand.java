@@ -6,7 +6,6 @@ import com.restaurant.model.User;
 import com.restaurant.model.enums.DishType;
 import com.restaurant.service.DishService;
 import com.restaurant.service.OrderService;
-import com.restaurant.service.ServiceFactory;
 import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
@@ -40,8 +39,6 @@ public class MenuCommand extends UniCommand {
     @Override
     protected PageResponse performPost(HttpServletRequest request) {
         HttpSession session = request.getSession();
-
-
         User user = (User) session.getAttribute("user");
 
         long orderId = orderService.createOrder(user.getId());

@@ -3,6 +3,7 @@ package com.restaurant.service;
 import com.restaurant.model.User;
 import com.restaurant.model.enums.Role;
 import com.restaurant.repository.impl.UserDaoImpl;
+import com.restaurant.utils.PasswordsUtil;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -27,7 +28,7 @@ public class UserServiceTest {
         String phone = "123456789";
         String login = "login";
         String password = "password";
-        String hashedPass = Passwords.hash(password.trim());
+        String hashedPass = PasswordsUtil.hash(password.trim());
         when(userDao.getByLogin(anyString())).thenReturn(new User(1, name, phone, login, hashedPass, Role.GUEST));
         assertTrue(userService.validateUser(login, password));
     }
@@ -39,7 +40,7 @@ public class UserServiceTest {
         String login = "login";
         String password = "password";
         String wrongPassword = "wrongPassword";
-        String hashedPass = Passwords.hash(password.trim());
+        String hashedPass = PasswordsUtil.hash(password.trim());
         when(userDao.getByLogin(anyString())).thenReturn(new User(1, name, phone, login, hashedPass, Role.GUEST));
         assertFalse(userService.validateUser(login, wrongPassword));
     }
@@ -79,7 +80,7 @@ public class UserServiceTest {
         String phone = "123456789";
         String login = "login";
         String password = "password";
-        String hashedPass = Passwords.hash(password.trim());
+        String hashedPass = PasswordsUtil.hash(password.trim());
         User user = new User(id, name, phone, login, hashedPass, Role.GUEST);
         when(userDao.getById(anyLong())).thenReturn(user);
         assertEquals(userService.getUser(1), user);
@@ -92,7 +93,7 @@ public class UserServiceTest {
         String phone = "123456789";
         String login = "login";
         String password = "password";
-        String hashedPass = Passwords.hash(password.trim());
+        String hashedPass = PasswordsUtil.hash(password.trim());
         User user = new User(id, name, phone, login, hashedPass, Role.GUEST);
         when(userDao.getByLogin(anyString())).thenReturn(user);
         assertEquals(userService.getUserByLogin(login), user);
@@ -100,12 +101,11 @@ public class UserServiceTest {
 
     @Test
     public void shouldRegistrationUser() {
-        long id = 1;
         String name = "John";
         String phone = "123456789";
         String login = "login";
         String password = "password";
-        String hashedPass = Passwords.hash(password.trim());
+        String hashedPass = PasswordsUtil.hash(password.trim());
         User newUser = User.builder()
                 .name(name)
                 .login(login)
@@ -115,21 +115,5 @@ public class UserServiceTest {
                 .build();
         when(userDao.create(anyObject())).thenReturn(newUser);
         assertEquals(userService.registrationUser(name, login, phone, password), newUser);
-    }
-
-    @Test
-    public void updateUser() {
-    }
-
-    @Test
-    public void getAll() {
-    }
-
-    @Test
-    public void getAllPaginated() {
-    }
-
-    @Test
-    public void deleteUser() {
     }
 }

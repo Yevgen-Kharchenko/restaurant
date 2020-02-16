@@ -9,21 +9,22 @@ import org.mockito.runners.MockitoJUnitRunner;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.restaurant.controller.PageUrlConstants.NOT_FOUND_PAGE;
+import static com.restaurant.controller.PageUrlConstants.ERROR_PAGE;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(MockitoJUnitRunner.class)
-public class NotFoundCommandTest {
+public class ErrorCommandTest {
+
     @InjectMocks
-    private NotFoundCommand instance;
+    private ErrorCommand instance;
     @Mock
     private HttpServletRequest request;
 
     @Test
-    public void shouldReturnNotFoundPage() {
+    public void shouldReturnErrorPage() {
         PageResponse result = instance.execute(request);
 
-        assertThat(result.getUrl()).isEqualTo(NOT_FOUND_PAGE);
+        assertThat(result.getUrl()).isEqualTo(ERROR_PAGE);
         assertThat(result.isRedirect()).isFalse();
     }
 }
